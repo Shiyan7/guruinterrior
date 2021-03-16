@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Создание, техническая и маркетинговая поддержка сайтов от компании Remobius</title>
+    <title>Stages</title>
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="styles/main.min.css">
   </head>
   <body>
-    <div class="site-container"> 
+    <div class="site-container">
       <header class="header"> 
         <div class="container-fluid header__container">
           <button class="btn-reset burger" aria-label="Бургер меню"><span class="burger__line"></span></button><a class="logo header__logo" href="/">GuruInterrior</a>
@@ -49,7 +49,56 @@
           </div>
         </div>
       </header>
-      <main class="main"></main>
+      <main class="main">
+        <section class="hero-stages">
+          <div class="container hero-stages__container">
+            <div class="hero-stage__item"><img class="hero-stage__image" src="img/stage-image.png" alt="">
+              <div class="hero-stage__left">
+                <h1 class="hero-stage__title">Дизайн-проект квартиры на улице Бородинской</h1>
+                <p class="hero-stage__map">г. Новосибирск, ул. Бородинская, д. 7</p>
+                <div class="progressbar hero-stage__progressbar">
+                  <progress class="progressbar__line" value="40" max="100"></progress>
+                  <div class="progressbar-bottom"><span class="progressbar-bottom__start">1 сен 2020</span><span class="progressbar-bottom__end">10 сен 2020</span></div>
+                </div>
+              </div>
+              <div class="hero-stage__right">
+                <ul class="hero-stage__info list-reset">
+                  <li class="hero-stage__info-item">
+                    <div class="hero-stage__info-image">
+                      <svg class="svg-icon">
+                        <use xlink:href="./img/sprites/sprite.svg#square"></use>
+                      </svg>
+                    </div>
+                    <div class="hero-stage__info-text">
+                      <h2 class="hero-stage__info-title">1250 м2</h2><span class="hero-stage__info-desc">площадь</span>
+                    </div>
+                  </li>
+                  <li class="hero-stage__info-item">
+                    <div class="hero-stage__info-image">
+                      <svg class="svg-icon">
+                        <use xlink:href="./img/sprites/sprite.svg#purse"></use>
+                      </svg>
+                    </div>
+                    <div class="hero-stage__info-text">
+                      <h2 class="hero-stage__info-title">1200 ₽</h2><span class="hero-stage__info-desc">цена за м2</span>
+                    </div>
+                  </li>
+                  <li class="hero-stage__info-item">
+                    <div class="hero-stage__info-image">
+                      <svg class="svg-icon">
+                        <use xlink:href="./img/sprites/sprite.svg#cost"></use>
+                      </svg>
+                    </div>
+                    <div class="hero-stage__info-text">
+                      <h2 class="hero-stage__info-title">250 000 ₽ </h2><span class="hero-stage__info-desc">стомость</span>
+                    </div>
+                  </li>
+                </ul><a class="hero-stage__link primary-btn" href="#">Новый этап</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
       <footer class="footer"></footer>
     </div>
     <script src="js/main.min.js"></script>
