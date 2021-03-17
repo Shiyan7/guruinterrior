@@ -31,50 +31,71 @@
         <div class="container-fluid header__container">
           <button class="btn-reset burger" aria-label="Бургер меню"><span class="burger__line"></span></button><a class="logo header__logo" href="/">GuruInterrior</a>
           <div class="header__right">
-            <ul class="header-actions list-reset">
-              <li class="header-actions__item">
-                <button class="btn-reset header-actions__btn" href="#">
+            <div class="header-actions">
+              <div class="bookmarks">
+                <button class="btn-reset bookmarks__btn">
                   <svg class="svg-icon header-actions__icon">
                     <use xlink:href="./img/sprites/sprite.svg#bookmarks"></use>
                   </svg>
                 </button>
-              </li>
-              <li class="header-actions__item">
-                <button class="btn-reset header-actions__btn" href="#">
+                <ul class="bookmarks-dropdown list-reset dropdown">
+                  <li class="bookmarks-dropdown__item dropdown__item"><a class="bookmarks-dropdown__link dropdown__link" href="#">В избранное</a></li>
+                </ul>
+              </div>
+              <div class="more">
+                <button class="btn-reset more dropdown__btn" href="#">
                   <svg class="svg-icon header-actions__icon">
                     <use xlink:href="./img/sprites/sprite.svg#more"></use>
                   </svg>
                 </button>
-              </li>
-            </ul>
+                <ul class="more-dropdown list-reset dropdown">
+                  <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="./img/sprites/sprite.svg#edit"></use>
+                      </svg>Редактировать</a></li>
+                  <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="./img/sprites/sprite.svg#copy"></use>
+                      </svg>Копировать</a></li>
+                  <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="./img/sprites/sprite.svg#close"></use>
+                      </svg>Закрыть</a></li>
+                  <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="./img/sprites/sprite.svg#archive"></use>
+                      </svg>В архив</a></li>
+                </ul>
+              </div>
+            </div>
             <div class="user">
-              <button class="btn-reset user__btn">
+              <button class="btn-reset user__btn dropdown__btn">
                 <svg class="svg-icon user__icon">
                   <use xlink:href="./img/sprites/sprite.svg#user"></use>
                 </svg><span class="arrow user__arrow"></span>
               </button>
-              <ul class="user-dropdown list-reset">
-                <li class="user-dropdown__item"><a class="user-dropdown__link" href="#">
+              <ul class="user-dropdown list-reset dropdown">
+                <li class="user-dropdown__item dropdown__item"><a class="user-dropdown__link dropdown__link" href="#">
                     <svg class="svg-icon">
                       <use xlink:href="./img/sprites/sprite.svg#user-small"></use>
                     </svg>Аккаунт</a></li>
-                <li class="user-dropdown__item"><a class="user-dropdown__link" href="#">
+                <li class="user-dropdown__item dropdown__item"><a class="user-dropdown__link dropdown__link" href="#">
                     <svg class="svg-icon">
                       <use xlink:href="./img/sprites/sprite.svg#setting"></use>
                     </svg>Настройки</a></li>
-                <li class="user-dropdown__item"><a class="user-dropdown__link" href="#">
+                <li class="user-dropdown__item dropdown__item"><a class="user-dropdown__link dropdown__link" href="#">
                     <svg class="svg-icon">
                       <use xlink:href="./img/sprites/sprite.svg#notifications"></use>
                     </svg>Уведомления</a></li>
-                <li class="user-dropdown__item"><a class="user-dropdown__link" href="#">
+                <li class="user-dropdown__item dropdown__item"><a class="user-dropdown__link dropdown__link" href="#">
                     <svg class="svg-icon">
                       <use xlink:href="./img/sprites/sprite.svg#wallet"></use>
                     </svg>Баланс</a></li>
-                <li class="user-dropdown__item"><a class="user-dropdown__link" href="#">
+                <li class="user-dropdown__item dropdown__item"><a class="user-dropdown__link dropdown__link" href="#">
                     <svg class="svg-icon">
                       <use xlink:href="./img/sprites/sprite.svg#support"></use>
                     </svg>Поддержка</a></li>
-                <li class="user-dropdown__item"><a class="user-dropdown__link" href="#">
+                <li class="user-dropdown__item dropdown__item"><a class="user-dropdown__link dropdown__link" href="#">
                     <svg class="svg-icon">
                       <use xlink:href="./img/sprites/sprite.svg#exit"></use>
                     </svg>Выход</a></li>
@@ -89,7 +110,7 @@
             <div class="hero-stage__item"><img class="hero-stage__image" src="img/stage-image.png" alt="">
               <div class="hero-stage__left">
                 <h1 class="hero-stage__title">Дизайн-проект квартиры на улице Бородинской</h1>
-                <p class="hero-stage__map">г. Новосибирск, ул. Бородинская, д. 7</p>
+                <address class="hero-stage__map">г. Новосибирск, ул. Бородинская, д. 7</address>
                 <div class="progressbar hero-stage__progressbar">
                   <progress class="progressbar__line" value="40" max="100"></progress>
                   <div class="progressbar-bottom"><span class="progressbar-bottom__start">1 сен 2020</span><span class="progressbar-bottom__end">10 сен 2020</span></div>
@@ -103,9 +124,7 @@
                         <use xlink:href="./img/sprites/sprite.svg#square"></use>
                       </svg>
                     </div>
-                    <div class="hero-stage__info-text">
-                      <h2 class="hero-stage__info-title">1250 м2</h2><span class="hero-stage__info-desc">площадь</span>
-                    </div>
+                    <div class="hero-stage__info-text"><span class="hero-stage__info-name">1250 м2</span><span class="hero-stage__info-desc">площадь</span></div>
                   </li>
                   <li class="hero-stage__info-item">
                     <div class="hero-stage__info-image">
@@ -113,9 +132,7 @@
                         <use xlink:href="./img/sprites/sprite.svg#purse"></use>
                       </svg>
                     </div>
-                    <div class="hero-stage__info-text">
-                      <h2 class="hero-stage__info-title">1200 ₽</h2><span class="hero-stage__info-desc">цена за м2</span>
-                    </div>
+                    <div class="hero-stage__info-text"><span class="hero-stage__info-name">1200 ₽</span><span class="hero-stage__info-desc">цена за м2</span></div>
                   </li>
                   <li class="hero-stage__info-item">
                     <div class="hero-stage__info-image">
@@ -123,9 +140,7 @@
                         <use xlink:href="./img/sprites/sprite.svg#cost"></use>
                       </svg>
                     </div>
-                    <div class="hero-stage__info-text">
-                      <h2 class="hero-stage__info-title">250 000 ₽ </h2><span class="hero-stage__info-desc">стомость</span>
-                    </div>
+                    <div class="hero-stage__info-text"><span class="hero-stage__info-name">250 000 ₽ </span><span class="hero-stage__info-desc">стомость</span></div>
                   </li>
                 </ul><a class="hero-stage__link primary-btn" href="#">Новый этап</a>
               </div>
@@ -137,7 +152,7 @@
             <div class="tabs stages__tabs">
               <ul class="tabs__list stages__tabs-list list-reset">
                 <li class="tabs__item">
-                  <button class="btn-reset tabs__btn stages__tabs-btn stages__tabs-btn--active tabs__btn--active" data-tabs-path="stages">Этапы</button>
+                  <button class="btn-reset tabs__btn stages__tabs-btn stages__tabs-btn--active" data-tabs-path="stages">Этапы</button>
                 </li>
                 <li class="tabs__item">
                   <button class="btn-reset tabs__btn stages__tabs-btn" data-tabs-path="description">Описание</button>
@@ -155,6 +170,22 @@
                   <button class="btn-reset tabs__btn stages__tabs-btn" data-tabs-path="deal">сделка</button>
                 </li>
               </ul>
+              <div class="tabs__content tabs__content--active" data-tabs-target="stages"></div>
+              <div class="tabs__content" data-tabs-target="description">
+                <p>описание</p>
+              </div>
+              <div class="tabs__content" data-tabs-target="files">
+                <p>файлы</p>
+              </div>
+              <div class="tabs__content" data-tabs-target="events">
+                <p>события</p>
+              </div>
+              <div class="tabs__content" data-tabs-target="finish">
+                <p>финал</p>
+              </div>
+              <div class="tabs__content" data-tabs-target="deal">
+                <p>сделка</p>
+              </div>
             </div>
           </div>
         </section>

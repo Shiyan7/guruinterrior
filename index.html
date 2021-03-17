@@ -31,50 +31,71 @@
         <div class="container-fluid header__container">
           <button class="btn-reset burger" aria-label="Бургер меню"><span class="burger__line"></span></button><a class="logo header__logo" href="/">GuruInterrior</a>
           <div class="header__right">
-            <ul class="header-actions list-reset">
-              <li class="header-actions__item">
-                <button class="btn-reset header-actions__btn" href="#">
+            <div class="header-actions">
+              <div class="bookmarks">
+                <button class="btn-reset bookmarks__btn">
                   <svg class="svg-icon header-actions__icon">
                     <use xlink:href="./img/sprites/sprite.svg#bookmarks"></use>
                   </svg>
                 </button>
-              </li>
-              <li class="header-actions__item">
-                <button class="btn-reset header-actions__btn" href="#">
+                <ul class="bookmarks-dropdown list-reset dropdown">
+                  <li class="bookmarks-dropdown__item dropdown__item"><a class="bookmarks-dropdown__link dropdown__link" href="#">В избранное</a></li>
+                </ul>
+              </div>
+              <div class="more">
+                <button class="btn-reset more dropdown__btn" href="#">
                   <svg class="svg-icon header-actions__icon">
                     <use xlink:href="./img/sprites/sprite.svg#more"></use>
                   </svg>
                 </button>
-              </li>
-            </ul>
+                <ul class="more-dropdown list-reset dropdown">
+                  <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="./img/sprites/sprite.svg#edit"></use>
+                      </svg>Редактировать</a></li>
+                  <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="./img/sprites/sprite.svg#copy"></use>
+                      </svg>Копировать</a></li>
+                  <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="./img/sprites/sprite.svg#close"></use>
+                      </svg>Закрыть</a></li>
+                  <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="./img/sprites/sprite.svg#archive"></use>
+                      </svg>В архив</a></li>
+                </ul>
+              </div>
+            </div>
             <div class="user">
-              <button class="btn-reset user__btn">
+              <button class="btn-reset user__btn dropdown__btn">
                 <svg class="svg-icon user__icon">
                   <use xlink:href="./img/sprites/sprite.svg#user"></use>
                 </svg><span class="arrow user__arrow"></span>
               </button>
-              <ul class="user-dropdown list-reset">
-                <li class="user-dropdown__item"><a class="user-dropdown__link" href="#">
+              <ul class="user-dropdown list-reset dropdown">
+                <li class="user-dropdown__item dropdown__item"><a class="user-dropdown__link dropdown__link" href="#">
                     <svg class="svg-icon">
                       <use xlink:href="./img/sprites/sprite.svg#user-small"></use>
                     </svg>Аккаунт</a></li>
-                <li class="user-dropdown__item"><a class="user-dropdown__link" href="#">
+                <li class="user-dropdown__item dropdown__item"><a class="user-dropdown__link dropdown__link" href="#">
                     <svg class="svg-icon">
                       <use xlink:href="./img/sprites/sprite.svg#setting"></use>
                     </svg>Настройки</a></li>
-                <li class="user-dropdown__item"><a class="user-dropdown__link" href="#">
+                <li class="user-dropdown__item dropdown__item"><a class="user-dropdown__link dropdown__link" href="#">
                     <svg class="svg-icon">
                       <use xlink:href="./img/sprites/sprite.svg#notifications"></use>
                     </svg>Уведомления</a></li>
-                <li class="user-dropdown__item"><a class="user-dropdown__link" href="#">
+                <li class="user-dropdown__item dropdown__item"><a class="user-dropdown__link dropdown__link" href="#">
                     <svg class="svg-icon">
                       <use xlink:href="./img/sprites/sprite.svg#wallet"></use>
                     </svg>Баланс</a></li>
-                <li class="user-dropdown__item"><a class="user-dropdown__link" href="#">
+                <li class="user-dropdown__item dropdown__item"><a class="user-dropdown__link dropdown__link" href="#">
                     <svg class="svg-icon">
                       <use xlink:href="./img/sprites/sprite.svg#support"></use>
                     </svg>Поддержка</a></li>
-                <li class="user-dropdown__item"><a class="user-dropdown__link" href="#">
+                <li class="user-dropdown__item dropdown__item"><a class="user-dropdown__link dropdown__link" href="#">
                     <svg class="svg-icon">
                       <use xlink:href="./img/sprites/sprite.svg#exit"></use>
                     </svg>Выход</a></li>
