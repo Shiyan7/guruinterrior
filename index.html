@@ -32,20 +32,54 @@
           <button class="btn-reset burger" aria-label="Бургер меню"><span class="burger__line"></span></button><a class="logo header__logo" href="/">GuruInterrior</a>
           <div class="header__right">
             <ul class="header-actions list-reset">
-              <li class="header-actions__item"><a class="header-actions__link" href="#">
+              <li class="header-actions__item">
+                <button class="btn-reset header-actions__btn" href="#">
                   <svg class="svg-icon header-actions__icon">
                     <use xlink:href="./img/sprites/sprite.svg#bookmarks"></use>
-                  </svg></a></li>
-              <li class="header-actions__item"><a class="header-actions__link" href="#">
+                  </svg>
+                </button>
+              </li>
+              <li class="header-actions__item">
+                <button class="btn-reset header-actions__btn" href="#">
                   <svg class="svg-icon header-actions__icon">
                     <use xlink:href="./img/sprites/sprite.svg#more"></use>
-                  </svg></a></li>
+                  </svg>
+                </button>
+              </li>
             </ul>
-            <button class="btn-reset user">
-              <svg class="svg-icon user__icon">
-                <use xlink:href="./img/sprites/sprite.svg#user"></use>
-              </svg><span class="arrow user__arrow"></span>
-            </button>
+            <div class="user">
+              <button class="btn-reset user__btn">
+                <svg class="svg-icon user__icon">
+                  <use xlink:href="./img/sprites/sprite.svg#user"></use>
+                </svg><span class="arrow user__arrow"></span>
+              </button>
+              <ul class="user-dropdown list-reset">
+                <li class="user-dropdown__item"><a class="user-dropdown__link" href="#">
+                    <svg class="svg-icon">
+                      <use xlink:href="./img/sprites/sprite.svg#user-small"></use>
+                    </svg>Аккаунт</a></li>
+                <li class="user-dropdown__item"><a class="user-dropdown__link" href="#">
+                    <svg class="svg-icon">
+                      <use xlink:href="./img/sprites/sprite.svg#setting"></use>
+                    </svg>Настройки</a></li>
+                <li class="user-dropdown__item"><a class="user-dropdown__link" href="#">
+                    <svg class="svg-icon">
+                      <use xlink:href="./img/sprites/sprite.svg#notifications"></use>
+                    </svg>Уведомления</a></li>
+                <li class="user-dropdown__item"><a class="user-dropdown__link" href="#">
+                    <svg class="svg-icon">
+                      <use xlink:href="./img/sprites/sprite.svg#wallet"></use>
+                    </svg>Баланс</a></li>
+                <li class="user-dropdown__item"><a class="user-dropdown__link" href="#">
+                    <svg class="svg-icon">
+                      <use xlink:href="./img/sprites/sprite.svg#support"></use>
+                    </svg>Поддержка</a></li>
+                <li class="user-dropdown__item"><a class="user-dropdown__link" href="#">
+                    <svg class="svg-icon">
+                      <use xlink:href="./img/sprites/sprite.svg#exit"></use>
+                    </svg>Выход</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
