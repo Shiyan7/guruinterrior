@@ -113,14 +113,14 @@
                 <h1 class="hero-stage__title">Дизайн-проект квартиры на улице Бородинской</h1>
                 <address class="hero-stage__map">г. Новосибирск, ул. Бородинская, д. 7</address>
                 <div class="progressbar hero-stage__progressbar">
-                  <progress class="progressbar__line" value="40" max="100"></progress>
+                  <progress class="progressbar__line" value="4" max="10"></progress>
                   <div class="progressbar-bottom"><span class="progressbar-bottom__desc">
                       <svg class="svg-icon">
                         <use xlink:href="./img/sprites/sprite.svg#start"></use>
                       </svg>1 сен 2020</span><span class="progressbar-bottom__desc">
                       <svg class="svg-icon">
                         <use xlink:href="./img/sprites/sprite.svg#finish"></use>
-                      </svg>10 сен 2020</span></div>
+                      </svg>10 сен 2020</span></div><span class="tooltip">Осталось 6 дней</span>
                 </div>
               </div>
               <div class="hero-stage__right">
@@ -131,7 +131,7 @@
                         <use xlink:href="./img/sprites/sprite.svg#square"></use>
                       </svg>
                     </div>
-                    <div class="hero-stage__info-text"><span class="hero-stage__info-name">1250 м2</span><span class="hero-stage__info-desc">площадь</span></div>
+                    <div class="hero-stage__info-text"><span class="hero-stage__info-name">1250 м<sup>2</sup></span><span class="hero-stage__info-desc">площадь</span></div>
                   </div>
                   <div class="hero-stage__info-item">
                     <div class="hero-stage__info-image">
@@ -139,7 +139,7 @@
                         <use xlink:href="./img/sprites/sprite.svg#purse"></use>
                       </svg>
                     </div>
-                    <div class="hero-stage__info-text"><span class="hero-stage__info-name">1200 ₽</span><span class="hero-stage__info-desc">цена за м2</span></div>
+                    <div class="hero-stage__info-text"><span class="hero-stage__info-name">1200 ₽</span><span class="hero-stage__info-desc">цена за м<sup>2</sup></span></div>
                   </div>
                   <div class="hero-stage__info-item">
                     <div class="hero-stage__info-image">
@@ -156,11 +156,6 @@
         </section>
         <section class="stages">
           <nav class="nav">
-            <button class="btn-reset nav-close">
-              <svg class="svg-icon">
-                <use xlink:href="./img/sprites/sprite.svg#mobile-close"></use>
-              </svg>
-            </button>
             <ul class="nav__list list-reset">
               <li class="nav__item"><a class="nav__link" href="/">
                   <svg class="svg-icon">
@@ -190,761 +185,668 @@
           </nav>
           <div class="container stages__container">
             <h2 class="visually-hidden">Этапы</h2>
-            <ul class="tabs__list stages__tabs list-reset">
-              <li class="tabs__item">
-                <button class="btn-reset tabs__btn stages__tabs-btn stages__tabs-btn--active" data-tabs-path="stages">Этапы</button>
-              </li>
-              <li class="tabs__item">
-                <button class="btn-reset tabs__btn stages__tabs-btn" data-tabs-path="description">Описание</button>
-              </li>
-              <li class="tabs__item">
-                <button class="btn-reset tabs__btn stages__tabs-btn" data-tabs-path="files">файлы </button>
-              </li>
-              <li class="tabs__item">
-                <button class="btn-reset tabs__btn stages__tabs-btn" data-tabs-path="events">события</button>
-              </li>
-              <li class="tabs__item">
-                <button class="btn-reset tabs__btn stages__tabs-btn" data-tabs-path="finish">финал</button>
-              </li>
-              <li class="tabs__item">
-                <button class="btn-reset tabs__btn stages__tabs-btn" data-tabs-path="deal">сделка</button>
-              </li>
+            <ul class="project-nav list-reset">
+              <li class="project-nav__item"><a class="project-nav__link project-nav__link--current">Этапы</a></li>
+              <li class="project-nav__item"><a class="project-nav__link" href="#">Описание</a></li>
+              <li class="project-nav__item"><a class="project-nav__link" href="#">файлы </a></li>
+              <li class="project-nav__item"><a class="project-nav__link" href="#">события</a></li>
+              <li class="project-nav__item"><a class="project-nav__link" href="#">финал</a></li>
+              <li class="project-nav__item"><a class="project-nav__link" href="#">сделка</a></li>
             </ul>
-            <div class="tabs__content stages__content tabs__content--active" data-tabs-target="stages">
-              <div class="accordion">
-                <div class="accordion__item">
-                  <div class="accordion__top"><span class="accordion__title">Этап 1</span>
-                    <button class="btn-reset btn-more accordion__btn">
-                      <svg class="svg-icon">
-                        <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="accordion__bottom stage__bottom">
-                    <div class="stage__left">
-                      <div class="stage__left-top">
-                        <h2 class="stage__left-title">Обмерный план</h2>
-                        <div class="more">
-                          <button class="btn-reset stage__left-btn dropdown__btn">
-                            <svg class="svg-icon more__icon">
-                              <use xlink:href="./img/sprites/sprite.svg#more"></use>
-                            </svg>
-                          </button>
-                          <ul class="more-dropdown list-reset dropdown stage__dropdown">
-                            <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
-                                <svg class="svg-icon">
-                                  <use xlink:href="./img/sprites/sprite.svg#edit"></use>
-                                </svg>Редактировать</a></li>
-                            <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
-                                <svg class="svg-icon">
-                                  <use xlink:href="./img/sprites/sprite.svg#add"></use>
-                                </svg>Добавить задачу</a></li>
-                            <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
-                                <svg class="svg-icon">
-                                  <use xlink:href="./img/sprites/sprite.svg#change"></use>
-                                </svg>Изменить ответственного</a></li>
-                            <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
-                                <svg class="svg-icon">
-                                  <use xlink:href="./img/sprites/sprite.svg#close"></use>
-                                </svg>Завершить этап</a></li>
-                            <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
-                                <svg class="svg-icon">
-                                  <use xlink:href="./img/sprites/sprite.svg#look"></use>
-                                </svg>Смотреть на платформе</a></li>
-                            <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
-                                <svg class="svg-icon">
-                                  <use xlink:href="./img/sprites/sprite.svg#trash"></use>
-                                </svg>Удалить</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="author stage__author">
-                        <div class="author-left"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></div><span class="author__desc">ответственный</span>
-                      </div>
-                      <div class="stage__left-info">
-                        <div class="stage__left-info__item">
-                          <div class="stage__left-info__image stage__left-info__image--1">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#files"></use>
-                            </svg>
-                          </div>
-                          <div class="stage__left-info__desc">Файлы <span>25 шт</span></div>
-                        </div>
-                        <div class="stage__left-info__item">
-                          <div class="stage__left-info__image stage__left-info__image--2">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#square2"></use>
-                            </svg>
-                          </div>
-                          <div class="stage__left-info__desc">Площадь <span>25 м2</span></div>
-                        </div>
-                      </div>
-                      <div class="stage__left-members">
-                        <div class="stage__left-members__left"><img class="stage__left-members__image" src="img/stage-1.png" alt="Human image 1"><img class="stage__left-members__image" src="img/stage-2.png" alt="Human image 2"><img class="stage__left-members__image" src="img/stage-3.png" alt="Human image 3"><img class="stage__left-members__image" src="img/stage-4.png" alt="Human image 4"><img class="stage__left-members__image" src="img/stage-5.png" alt="Human image 5"><span class="stage__left-members__more">+ 5</span></div><span class="stage__left-members__desc">участники</span>
-                      </div>
-                      <div class="progressbar stage__progressbar">
-                        <div class="progressbar-bottom stage__progressbar-bottom"><span class="progressbar-bottom__desc">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#start"></use>
-                            </svg>1 сен 2020</span><span class="progressbar-bottom__desc">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#finish"></use>
-                            </svg>10 сен 2020</span></div>
-                        <progress class="progressbar__line stage__progressbar-line" value="50" max="100"></progress>
-                      </div>
-                      <div class="progressbar stage__progressbar">
-                        <div class="progressbar-bottom stage__progressbar-bottom"><span class="progressbar-bottom__desc">40% Выполнено </span><span class="progressbar-bottom__desc">2 задачи из 5</span></div>
-                        <progress class="progressbar__line stage__progressbar-line" value="70" max="100"></progress>
-                      </div>
-                    </div>
-                    <div class="stage__right">
-                      <article class="stage__item">
-                        <div class="stage__item-top">
-                          <h3 class="stage__item-title">Коридор с нишей для обуви - 26 m2</h3>
-                          <button class="btn-reset stage__item-save">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="stage__item-body">
-                          <div class="author stage__item-author"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></div><span class="stage__item-status status-work">В работе</span>
-                        </div>
-                        <div class="stage__item-footer"><span class="stage__item-priority priority priority-7">7</span><a class="stage__item-comments" href="#">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#comments"></use>
-                            </svg>15</a>
-                          <time class="stage__item-time">16 авг 12:00</time>
-                        </div>
-                      </article>
-                      <article class="stage__item">
-                        <div class="stage__item-top">
-                          <h3 class="stage__item-title">Коридор с нишей для обуви - 26 m2 в две строки пример</h3>
-                          <button class="btn-reset stage__item-save">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="stage__item-body">
-                          <div class="author stage__item-author"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></div><span class="stage__item-status status-new">В работе</span>
-                        </div>
-                        <div class="stage__item-footer"><span class="stage__item-priority priority priority-6">6</span><a class="stage__item-comments" href="#">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#comments"></use>
-                            </svg>15</a>
-                          <time class="stage__item-time">16 авг 12:00</time>
-                        </div>
-                      </article>
-                      <article class="stage__item">
-                        <div class="stage__item-top">
-                          <h3 class="stage__item-title">Функциональное зонирование</h3>
-                          <button class="btn-reset stage__item-save">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="stage__item-body">
-                          <div class="author stage__item-author"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></div><span class="stage__item-status status-check">В работе</span>
-                        </div>
-                        <div class="stage__item-footer"><span class="stage__item-priority priority priority-6">6</span><a class="stage__item-comments" href="#">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#comments"></use>
-                            </svg>15</a>
-                          <time class="stage__item-time">16 авг 12:00</time>
-                        </div>
-                      </article>
-                      <article class="stage__item">
-                        <div class="stage__item-top">
-                          <h3 class="stage__item-title">Цветовое решение входной группы</h3>
-                          <button class="btn-reset stage__item-save">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="stage__item-body">
-                          <div class="author stage__item-author"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></div><span class="stage__item-status status-work">В работе</span>
-                        </div>
-                        <div class="stage__item-footer"><span class="stage__item-priority priority priority-3">3</span><a class="stage__item-comments" href="#">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#comments"></use>
-                            </svg>15</a>
-                          <time class="stage__item-time">16 авг 12:00</time>
-                        </div>
-                      </article>
-                      <article class="stage__item">
-                        <div class="stage__item-top">
-                          <h3 class="stage__item-title">Проектировочный расчёт с описанием и докуменацией</h3>
-                          <button class="btn-reset stage__item-save">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="stage__item-body">
-                          <div class="author stage__item-author"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></div><span class="stage__item-status status-work">В работе</span>
-                        </div>
-                        <div class="stage__item-footer"><span class="stage__item-priority priority priority-4">4</span><a class="stage__item-comments" href="#">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#comments"></use>
-                            </svg>15</a>
-                          <time class="stage__item-time">16 авг 12:00</time>
-                        </div>
-                      </article><a class="stage__create" href="#">
-                        <svg class="svg-icon">
-                          <use xlink:href="./img/sprites/sprite.svg#new"></use>
-                        </svg>Новая задача</a>
-                    </div>
-                  </div>
+            <div class="accordion stages__content">
+              <div class="accordion__item">
+                <div class="accordion__top"><span class="accordion__title">Этап 1</span>
+                  <button class="btn-reset btn-more accordion__btn">
+                    <svg class="svg-icon">
+                      <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
                 </div>
-                <div class="accordion__item">
-                  <div class="accordion__top"><span class="accordion__title">Этап 2</span>
-                    <button class="btn-reset btn-more accordion__btn">
+                <div class="accordion__bottom stage__bottom">
+                  <div class="stage__left">
+                    <div class="stage__left-top"><a class="stage__left-title" href="#">Обмерный план</a>
+                      <div class="more">
+                        <button class="btn-reset stage__left-btn dropdown__btn">
+                          <svg class="svg-icon more__icon">
+                            <use xlink:href="./img/sprites/sprite.svg#more"></use>
+                          </svg>
+                        </button>
+                        <ul class="more-dropdown list-reset dropdown stage__dropdown">
+                          <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                              <svg class="svg-icon">
+                                <use xlink:href="./img/sprites/sprite.svg#edit"></use>
+                              </svg>Редактировать</a></li>
+                          <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                              <svg class="svg-icon">
+                                <use xlink:href="./img/sprites/sprite.svg#add"></use>
+                              </svg>Добавить задачу</a></li>
+                          <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                              <svg class="svg-icon">
+                                <use xlink:href="./img/sprites/sprite.svg#change"></use>
+                              </svg>Изменить ответственного</a></li>
+                          <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                              <svg class="svg-icon">
+                                <use xlink:href="./img/sprites/sprite.svg#close"></use>
+                              </svg>Завершить этап</a></li>
+                          <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                              <svg class="svg-icon">
+                                <use xlink:href="./img/sprites/sprite.svg#look"></use>
+                              </svg>Смотреть на платформе</a></li>
+                          <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                              <svg class="svg-icon">
+                                <use xlink:href="./img/sprites/sprite.svg#trash"></use>
+                              </svg>Удалить</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="author stage__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="author__desc">ответственный</span></div>
+                    <div class="stage__left-info">
+                      <div class="stage__left-info__item">
+                        <div class="stage__left-info__image stage__left-info__image--1">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#files"></use>
+                          </svg>
+                        </div>
+                        <div class="stage__left-info__desc">Файлы <span>25 шт</span></div>
+                      </div>
+                      <div class="stage__left-info__item">
+                        <div class="stage__left-info__image stage__left-info__image--2">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#square2"></use>
+                          </svg>
+                        </div>
+                        <div class="stage__left-info__desc">Площадь <span>25 м<sup>2</sup></span></div>
+                      </div>
+                    </div>
+                    <div class="stage__left-members">
+                      <div class="stage__left-members__left"><img class="stage__left-members__image" src="img/stage-1.png" alt="Human image 1"><img class="stage__left-members__image" src="img/stage-2.png" alt="Human image 2"><img class="stage__left-members__image" src="img/stage-3.png" alt="Human image 3"><img class="stage__left-members__image" src="img/stage-4.png" alt="Human image 4"><img class="stage__left-members__image" src="img/stage-5.png" alt="Human image 5"><span class="stage__left-members__more">+ 5</span></div><a class="stage__left-members__link" href="#">участники</a>
+                    </div>
+                    <div class="progressbar stage__progressbar">
+                      <div class="progressbar-bottom stage__progressbar-bottom"><span class="progressbar-bottom__desc">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#start"></use>
+                          </svg>1 сен 2020</span><span class="progressbar-bottom__desc">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#finish"></use>
+                          </svg>10 сен 2020</span></div>
+                      <progress class="progressbar__line stage__progressbar-line" value="50" max="100"></progress>
+                    </div>
+                    <div class="progressbar stage__progressbar">
+                      <div class="progressbar-bottom stage__progressbar-bottom"><span class="progressbar-bottom__desc">40% Выполнено </span><span class="progressbar-bottom__desc">2 задачи из 5</span></div>
+                      <progress class="progressbar__line stage__progressbar-line" value="70" max="100"></progress>
+                    </div>
+                  </div>
+                  <div class="stage__right">
+                    <article class="stage__item">
+                      <div class="stage__item-top"><a class="stage__item-title" href="#">Коридор с нишей для обуви - 26 m<sup>2</sup></a>
+                        <button class="btn-reset stage__item-save">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="stage__item-body"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="stage__item-status status-work">В работе</span></div>
+                      <div class="stage__item-footer"><span class="stage__item-priority priority priority-7">7</span><a class="stage__item-comments" href="#">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#comments"></use>
+                          </svg>15</a>
+                        <time class="stage__item-time">16 авг 12:00</time>
+                      </div>
+                    </article>
+                    <article class="stage__item">
+                      <div class="stage__item-top"><a class="stage__item-title" href="#">Коридор с нишей для обуви - 26 m<sup>2</sup>в две строки пример</a>
+                        <button class="btn-reset stage__item-save">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="stage__item-body"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="stage__item-status status-new">В работе</span></div>
+                      <div class="stage__item-footer"><span class="stage__item-priority priority priority-6">6</span><a class="stage__item-comments" href="#">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#comments"></use>
+                          </svg>15</a>
+                        <time class="stage__item-time">16 авг 12:00</time>
+                      </div>
+                    </article>
+                    <article class="stage__item">
+                      <div class="stage__item-top"><a class="stage__item-title" href="#">Функциональное зонирование</a>
+                        <button class="btn-reset stage__item-save">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="stage__item-body"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="stage__item-status status-check">В работе</span></div>
+                      <div class="stage__item-footer"><span class="stage__item-priority priority priority-6">6</span><a class="stage__item-comments" href="#">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#comments"></use>
+                          </svg>15</a>
+                        <time class="stage__item-time">16 авг 12:00</time>
+                      </div>
+                    </article>
+                    <article class="stage__item">
+                      <div class="stage__item-top"><a class="stage__item-title" href="#">Цветовое решение входной группы</a>
+                        <button class="btn-reset stage__item-save">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="stage__item-body"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="stage__item-status status-work">В работе</span></div>
+                      <div class="stage__item-footer"><span class="stage__item-priority priority priority-3">3</span><a class="stage__item-comments" href="#">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#comments"></use>
+                          </svg>15</a>
+                        <time class="stage__item-time">16 авг 12:00</time>
+                      </div>
+                    </article>
+                    <article class="stage__item">
+                      <div class="stage__item-top"><a class="stage__item-title" href="#">Проектировочный решение с описанием и докуменацией</a>
+                        <button class="btn-reset stage__item-save">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="stage__item-body"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="stage__item-status status-work">В работе</span></div>
+                      <div class="stage__item-footer"><span class="stage__item-priority priority priority-4">4</span><a class="stage__item-comments" href="#">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#comments"></use>
+                          </svg>15</a>
+                        <time class="stage__item-time">16 авг 12:00</time>
+                      </div>
+                    </article><a class="stage__create" href="#">
                       <svg class="svg-icon">
-                        <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="accordion__bottom stage__bottom">
-                    <div class="stage__left">
-                      <div class="stage__left-top">
-                        <h2 class="stage__left-title">Обмерный план</h2>
-                        <div class="more">
-                          <button class="btn-reset stage__left-btn dropdown__btn">
-                            <svg class="svg-icon more__icon">
-                              <use xlink:href="./img/sprites/sprite.svg#more"></use>
-                            </svg>
-                          </button>
-                          <ul class="more-dropdown list-reset dropdown stage__dropdown">
-                            <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
-                                <svg class="svg-icon">
-                                  <use xlink:href="./img/sprites/sprite.svg#edit"></use>
-                                </svg>Редактировать</a></li>
-                            <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
-                                <svg class="svg-icon">
-                                  <use xlink:href="./img/sprites/sprite.svg#add"></use>
-                                </svg>Добавить задачу</a></li>
-                            <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
-                                <svg class="svg-icon">
-                                  <use xlink:href="./img/sprites/sprite.svg#change"></use>
-                                </svg>Изменить ответственного</a></li>
-                            <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
-                                <svg class="svg-icon">
-                                  <use xlink:href="./img/sprites/sprite.svg#close"></use>
-                                </svg>Завершить этап</a></li>
-                            <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
-                                <svg class="svg-icon">
-                                  <use xlink:href="./img/sprites/sprite.svg#look"></use>
-                                </svg>Смотреть на платформе</a></li>
-                            <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
-                                <svg class="svg-icon">
-                                  <use xlink:href="./img/sprites/sprite.svg#trash"></use>
-                                </svg>Удалить</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="author stage__author">
-                        <div class="author-left"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></div><span class="author__desc">ответственный</span>
-                      </div>
-                      <div class="stage__left-info">
-                        <div class="stage__left-info__item">
-                          <div class="stage__left-info__image stage__left-info__image--1">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#files"></use>
-                            </svg>
-                          </div>
-                          <div class="stage__left-info__desc">Файлы <span>25 шт</span></div>
-                        </div>
-                        <div class="stage__left-info__item">
-                          <div class="stage__left-info__image stage__left-info__image--2">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#square2"></use>
-                            </svg>
-                          </div>
-                          <div class="stage__left-info__desc">Площадь <span>25 м2</span></div>
-                        </div>
-                      </div>
-                      <div class="stage__left-members">
-                        <div class="stage__left-members__left"><img class="stage__left-members__image" src="img/stage-1.png" alt="Human image 1"><img class="stage__left-members__image" src="img/stage-2.png" alt="Human image 2"><img class="stage__left-members__image" src="img/stage-3.png" alt="Human image 3"><img class="stage__left-members__image" src="img/stage-4.png" alt="Human image 4"><img class="stage__left-members__image" src="img/stage-5.png" alt="Human image 5"><span class="stage__left-members__more">+ 5</span></div><span class="stage__left-members__desc">участники</span>
-                      </div>
-                      <div class="progressbar stage__progressbar">
-                        <div class="progressbar-bottom stage__progressbar-bottom"><span class="progressbar-bottom__desc">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#start"></use>
-                            </svg>1 сен 2020</span><span class="progressbar-bottom__desc">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#finish"></use>
-                            </svg>10 сен 2020</span></div>
-                        <progress class="progressbar__line stage__progressbar-line" value="50" max="100"></progress>
-                      </div>
-                      <div class="progressbar stage__progressbar">
-                        <div class="progressbar-bottom stage__progressbar-bottom"><span class="progressbar-bottom__desc">40% Выполнено </span><span class="progressbar-bottom__desc">2 задачи из 5</span></div>
-                        <progress class="progressbar__line stage__progressbar-line" value="70" max="100"></progress>
-                      </div>
-                    </div>
-                    <div class="stage__right">
-                      <article class="stage__item">
-                        <div class="stage__item-top">
-                          <h3 class="stage__item-title">Коридор с нишей для обуви - 26 m2</h3>
-                          <button class="btn-reset stage__item-save">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="stage__item-body">
-                          <div class="author stage__item-author"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></div><span class="stage__item-status status-work">В работе</span>
-                        </div>
-                        <div class="stage__item-footer"><span class="stage__item-priority priority priority-7">7</span><a class="stage__item-comments" href="#">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#comments"></use>
-                            </svg>15</a>
-                          <time class="stage__item-time">16 авг 12:00</time>
-                        </div>
-                      </article>
-                      <article class="stage__item">
-                        <div class="stage__item-top">
-                          <h3 class="stage__item-title">Коридор с нишей для обуви - 26 m2 в две строки пример</h3>
-                          <button class="btn-reset stage__item-save">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="stage__item-body">
-                          <div class="author stage__item-author"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></div><span class="stage__item-status status-new">В работе</span>
-                        </div>
-                        <div class="stage__item-footer"><span class="stage__item-priority priority priority-6">6</span><a class="stage__item-comments" href="#">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#comments"></use>
-                            </svg>15</a>
-                          <time class="stage__item-time">16 авг 12:00</time>
-                        </div>
-                      </article>
-                      <article class="stage__item">
-                        <div class="stage__item-top">
-                          <h3 class="stage__item-title">Функциональное зонирование</h3>
-                          <button class="btn-reset stage__item-save">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="stage__item-body">
-                          <div class="author stage__item-author"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></div><span class="stage__item-status status-check">В работе</span>
-                        </div>
-                        <div class="stage__item-footer"><span class="stage__item-priority priority priority-6">6</span><a class="stage__item-comments" href="#">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#comments"></use>
-                            </svg>15</a>
-                          <time class="stage__item-time">16 авг 12:00</time>
-                        </div>
-                      </article>
-                      <article class="stage__item">
-                        <div class="stage__item-top">
-                          <h3 class="stage__item-title">Цветовое решение входной группы</h3>
-                          <button class="btn-reset stage__item-save">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="stage__item-body">
-                          <div class="author stage__item-author"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></div><span class="stage__item-status status-work">В работе</span>
-                        </div>
-                        <div class="stage__item-footer"><span class="stage__item-priority priority priority-3">3</span><a class="stage__item-comments" href="#">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#comments"></use>
-                            </svg>15</a>
-                          <time class="stage__item-time">16 авг 12:00</time>
-                        </div>
-                      </article>
-                      <article class="stage__item">
-                        <div class="stage__item-top">
-                          <h3 class="stage__item-title">Проектировочный расчёт с описанием и докуменацией</h3>
-                          <button class="btn-reset stage__item-save">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="stage__item-body">
-                          <div class="author stage__item-author"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></div><span class="stage__item-status status-work">В работе</span>
-                        </div>
-                        <div class="stage__item-footer"><span class="stage__item-priority priority priority-4">4</span><a class="stage__item-comments" href="#">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#comments"></use>
-                            </svg>15</a>
-                          <time class="stage__item-time">16 авг 12:00</time>
-                        </div>
-                      </article><a class="stage__create" href="#">
-                        <svg class="svg-icon">
-                          <use xlink:href="./img/sprites/sprite.svg#new"></use>
-                        </svg>Новая задача</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion__item">
-                  <div class="accordion__top"><span class="accordion__title">Этап 3</span>
-                    <button class="btn-reset btn-more accordion__btn">
-                      <svg class="svg-icon">
-                        <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="accordion__bottom stage__bottom">
-                    <div class="stage__left">
-                      <div class="stage__left-top">
-                        <h2 class="stage__left-title">Стилевое решение</h2>
-                        <div class="more">
-                          <button class="btn-reset stage__left-btn dropdown__btn">
-                            <svg class="svg-icon more__icon">
-                              <use xlink:href="./img/sprites/sprite.svg#more"></use>
-                            </svg>
-                          </button>
-                          <ul class="more-dropdown list-reset dropdown stage__dropdown">
-                            <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
-                                <svg class="svg-icon">
-                                  <use xlink:href="./img/sprites/sprite.svg#edit"></use>
-                                </svg>Редактировать</a></li>
-                            <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
-                                <svg class="svg-icon">
-                                  <use xlink:href="./img/sprites/sprite.svg#add"></use>
-                                </svg>Добавить задачу</a></li>
-                            <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
-                                <svg class="svg-icon">
-                                  <use xlink:href="./img/sprites/sprite.svg#change"></use>
-                                </svg>Изменить ответственного</a></li>
-                            <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
-                                <svg class="svg-icon">
-                                  <use xlink:href="./img/sprites/sprite.svg#close"></use>
-                                </svg>Завершить этап</a></li>
-                            <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
-                                <svg class="svg-icon">
-                                  <use xlink:href="./img/sprites/sprite.svg#look"></use>
-                                </svg>Смотреть на платформе</a></li>
-                            <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
-                                <svg class="svg-icon">
-                                  <use xlink:href="./img/sprites/sprite.svg#trash"></use>
-                                </svg>Удалить</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="author stage__author">
-                        <div class="author-left">
-                          <div class="author__no-image">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#question"></use>
-                            </svg>
-                          </div><span class="author__no-name">Нет ответственного</span>
-                        </div>
-                        <button class="btn-reset author__search">Найти</button>
-                      </div>
-                      <div class="stage__left-info">
-                        <div class="stage__left-info__item">
-                          <div class="stage__left-info__image stage__left-info__image--1">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#files"></use>
-                            </svg>
-                          </div>
-                          <div class="stage__left-info__desc">Файлы <span>25 шт</span></div>
-                        </div>
-                        <div class="stage__left-info__item">
-                          <div class="stage__left-info__image stage__left-info__image--2">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#square2"></use>
-                            </svg>
-                          </div>
-                          <div class="stage__left-info__desc">Площадь <span>25 м2</span></div>
-                        </div>
-                      </div>
-                      <div class="stage__left-members">
-                        <div class="stage__left-members__left"><img class="stage__left-members__image" src="img/stage-1.png" alt="Human image 1"><img class="stage__left-members__image" src="img/stage-2.png" alt="Human image 2"><img class="stage__left-members__image" src="img/stage-3.png" alt="Human image 3"><img class="stage__left-members__image" src="img/stage-4.png" alt="Human image 4"><img class="stage__left-members__image" src="img/stage-5.png" alt="Human image 5"><span class="stage__left-members__more">+ 5</span></div><span class="stage__left-members__desc">участники</span>
-                      </div>
-                      <div class="progressbar stage__progressbar">
-                        <div class="progressbar-bottom stage__progressbar-bottom"><span class="progressbar-bottom__desc">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#start"></use>
-                            </svg>1 сен 2020</span><span class="progressbar-bottom__desc">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#finish"></use>
-                            </svg>10 сен 2020</span></div>
-                        <progress class="progressbar__line stage__progressbar-line" value="50" max="100"></progress>
-                      </div>
-                      <div class="progressbar stage__progressbar">
-                        <div class="progressbar-bottom stage__progressbar-bottom"><span class="progressbar-bottom__desc">40% Выполнено </span><span class="progressbar-bottom__desc">2 задачи из 5</span></div>
-                        <progress class="progressbar__line stage__progressbar-line" value="70" max="100"></progress>
-                      </div>
-                    </div>
-                    <div class="stage__right">
-                      <article class="stage__item">
-                        <div class="stage__item-top">
-                          <h3 class="stage__item-title">Коридор с нишей для обуви - 26 m2</h3>
-                          <button class="btn-reset stage__item-save">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="stage__item-body">
-                          <div class="author stage__item-author"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></div><span class="stage__item-status status-work">В работе</span>
-                        </div>
-                        <div class="stage__item-footer"><span class="stage__item-priority priority priority-7">7</span><a class="stage__item-comments" href="#">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#comments"></use>
-                            </svg>15</a>
-                          <time class="stage__item-time">16 авг 12:00</time>
-                        </div>
-                      </article>
-                      <article class="stage__item">
-                        <div class="stage__item-top">
-                          <h3 class="stage__item-title">Коридор с нишей для обуви - 26 m2 в две строки пример</h3>
-                          <button class="btn-reset stage__item-save">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="stage__item-body">
-                          <div class="author stage__item-author"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></div><span class="stage__item-status status-new">В работе</span>
-                        </div>
-                        <div class="stage__item-footer"><span class="stage__item-priority priority priority-6">6</span><a class="stage__item-comments" href="#">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#comments"></use>
-                            </svg>15</a>
-                          <time class="stage__item-time">16 авг 12:00</time>
-                        </div>
-                      </article>
-                      <article class="stage__item">
-                        <div class="stage__item-top">
-                          <h3 class="stage__item-title">Цветовое решение входной группы</h3>
-                          <button class="btn-reset stage__item-save">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="stage__item-body">
-                          <div class="author stage__item-author"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></div><span class="stage__item-status status-work">В работе</span>
-                        </div>
-                        <div class="stage__item-footer"><span class="stage__item-priority priority priority-3">3</span><a class="stage__item-comments" href="#">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#comments"></use>
-                            </svg>15</a>
-                          <time class="stage__item-time">16 авг 12:00</time>
-                        </div>
-                      </article><a class="stage__create" href="#">
-                        <svg class="svg-icon">
-                          <use xlink:href="./img/sprites/sprite.svg#new"></use>
-                        </svg>Новая задача</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion__item">
-                  <div class="accordion__top"><span class="accordion__title">Этап 1</span>
-                    <button class="btn-reset btn-more accordion__btn">
-                      <svg class="svg-icon">
-                        <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="accordion__bottom stage__bottom">
-                    <div class="stage__left">
-                      <div class="stage__left-top">
-                        <h2 class="stage__left-title">Обмерный план</h2>
-                        <div class="more">
-                          <button class="btn-reset stage__left-btn dropdown__btn">
-                            <svg class="svg-icon more__icon">
-                              <use xlink:href="./img/sprites/sprite.svg#more"></use>
-                            </svg>
-                          </button>
-                          <ul class="more-dropdown list-reset dropdown stage__dropdown">
-                            <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
-                                <svg class="svg-icon">
-                                  <use xlink:href="./img/sprites/sprite.svg#edit"></use>
-                                </svg>Редактировать</a></li>
-                            <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
-                                <svg class="svg-icon">
-                                  <use xlink:href="./img/sprites/sprite.svg#add"></use>
-                                </svg>Добавить задачу</a></li>
-                            <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
-                                <svg class="svg-icon">
-                                  <use xlink:href="./img/sprites/sprite.svg#change"></use>
-                                </svg>Изменить ответственного</a></li>
-                            <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
-                                <svg class="svg-icon">
-                                  <use xlink:href="./img/sprites/sprite.svg#close"></use>
-                                </svg>Завершить этап</a></li>
-                            <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
-                                <svg class="svg-icon">
-                                  <use xlink:href="./img/sprites/sprite.svg#look"></use>
-                                </svg>Смотреть на платформе</a></li>
-                            <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
-                                <svg class="svg-icon">
-                                  <use xlink:href="./img/sprites/sprite.svg#trash"></use>
-                                </svg>Удалить</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="author stage__author">
-                        <div class="author-left"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></div><span class="author__desc">ответственный</span>
-                      </div>
-                      <div class="stage__left-info">
-                        <div class="stage__left-info__item">
-                          <div class="stage__left-info__image stage__left-info__image--1">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#files"></use>
-                            </svg>
-                          </div>
-                          <div class="stage__left-info__desc">Файлы <span>25 шт</span></div>
-                        </div>
-                        <div class="stage__left-info__item">
-                          <div class="stage__left-info__image stage__left-info__image--2">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#square2"></use>
-                            </svg>
-                          </div>
-                          <div class="stage__left-info__desc">Площадь <span>25 м2</span></div>
-                        </div>
-                      </div>
-                      <div class="stage__left-members">
-                        <div class="stage__left-members__left"><img class="stage__left-members__image" src="img/stage-1.png" alt="Human image 1"><img class="stage__left-members__image" src="img/stage-2.png" alt="Human image 2"><img class="stage__left-members__image" src="img/stage-3.png" alt="Human image 3"><img class="stage__left-members__image" src="img/stage-4.png" alt="Human image 4"><img class="stage__left-members__image" src="img/stage-5.png" alt="Human image 5"><span class="stage__left-members__more">+ 5</span></div><span class="stage__left-members__desc">участники</span>
-                      </div>
-                      <div class="progressbar stage__progressbar">
-                        <div class="progressbar-bottom stage__progressbar-bottom"><span class="progressbar-bottom__desc">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#start"></use>
-                            </svg>1 сен 2020</span><span class="progressbar-bottom__desc">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#finish"></use>
-                            </svg>10 сен 2020</span></div>
-                        <progress class="progressbar__line stage__progressbar-line" value="50" max="100"></progress>
-                      </div>
-                      <div class="progressbar stage__progressbar">
-                        <div class="progressbar-bottom stage__progressbar-bottom"><span class="progressbar-bottom__desc">40% Выполнено </span><span class="progressbar-bottom__desc">2 задачи из 5</span></div>
-                        <progress class="progressbar__line stage__progressbar-line" value="70" max="100"></progress>
-                      </div>
-                    </div>
-                    <div class="stage__right">
-                      <article class="stage__item">
-                        <div class="stage__item-top">
-                          <h3 class="stage__item-title">Коридор с нишей для обуви - 26 m2</h3>
-                          <button class="btn-reset stage__item-save">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="stage__item-body">
-                          <div class="author stage__item-author"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></div><span class="stage__item-status status-work">В работе</span>
-                        </div>
-                        <div class="stage__item-footer"><span class="stage__item-priority priority priority-7">7</span><a class="stage__item-comments" href="#">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#comments"></use>
-                            </svg>15</a>
-                          <time class="stage__item-time">16 авг 12:00</time>
-                        </div>
-                      </article>
-                      <article class="stage__item">
-                        <div class="stage__item-top">
-                          <h3 class="stage__item-title">Коридор с нишей для обуви - 26 m2 в две строки пример</h3>
-                          <button class="btn-reset stage__item-save">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="stage__item-body">
-                          <div class="author stage__item-author"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></div><span class="stage__item-status status-new">В работе</span>
-                        </div>
-                        <div class="stage__item-footer"><span class="stage__item-priority priority priority-6">6</span><a class="stage__item-comments" href="#">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#comments"></use>
-                            </svg>15</a>
-                          <time class="stage__item-time">16 авг 12:00</time>
-                        </div>
-                      </article>
-                      <article class="stage__item">
-                        <div class="stage__item-top">
-                          <h3 class="stage__item-title">Функциональное зонирование</h3>
-                          <button class="btn-reset stage__item-save">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="stage__item-body">
-                          <div class="author stage__item-author"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></div><span class="stage__item-status status-check">В работе</span>
-                        </div>
-                        <div class="stage__item-footer"><span class="stage__item-priority priority priority-6">6</span><a class="stage__item-comments" href="#">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#comments"></use>
-                            </svg>15</a>
-                          <time class="stage__item-time">16 авг 12:00</time>
-                        </div>
-                      </article>
-                      <article class="stage__item">
-                        <div class="stage__item-top">
-                          <h3 class="stage__item-title">Цветовое решение входной группы</h3>
-                          <button class="btn-reset stage__item-save">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="stage__item-body">
-                          <div class="author stage__item-author"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></div><span class="stage__item-status status-work">В работе</span>
-                        </div>
-                        <div class="stage__item-footer"><span class="stage__item-priority priority priority-3">3</span><a class="stage__item-comments" href="#">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#comments"></use>
-                            </svg>15</a>
-                          <time class="stage__item-time">16 авг 12:00</time>
-                        </div>
-                      </article>
-                      <article class="stage__item">
-                        <div class="stage__item-top">
-                          <h3 class="stage__item-title">Проектировочный расчёт с описанием и докуменацией</h3>
-                          <button class="btn-reset stage__item-save">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
-                            </svg>
-                          </button>
-                        </div>
-                        <div class="stage__item-body">
-                          <div class="author stage__item-author"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></div><span class="stage__item-status status-work">В работе</span>
-                        </div>
-                        <div class="stage__item-footer"><span class="stage__item-priority priority priority-4">4</span><a class="stage__item-comments" href="#">
-                            <svg class="svg-icon">
-                              <use xlink:href="./img/sprites/sprite.svg#comments"></use>
-                            </svg>15</a>
-                          <time class="stage__item-time">16 авг 12:00</time>
-                        </div>
-                      </article><a class="stage__create" href="#">
-                        <svg class="svg-icon">
-                          <use xlink:href="./img/sprites/sprite.svg#new"></use>
-                        </svg>Новая задача</a>
-                    </div>
+                        <use xlink:href="./img/sprites/sprite.svg#new"></use>
+                      </svg>Новая задача</a>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="tabs__content stages__content" data-tabs-target="description">
-              <p>Описание</p>
-            </div>
-            <div class="tabs__content stages__content" data-tabs-target="files">
-              <p>файлы</p>
-            </div>
-            <div class="tabs__content stages__content" data-tabs-target="events">
-              <p>События</p>
-            </div>
-            <div class="tabs__content stages__content" data-tabs-target="finish">
-              <p>Финиш</p>
-            </div>
-            <div class="tabs__content stages__content" data-tabs-target="deal">
-              <p>Сделка</p>
+              <div class="accordion__item">
+                <div class="accordion__top"><span class="accordion__title">Этап 2</span>
+                  <button class="btn-reset btn-more accordion__btn">
+                    <svg class="svg-icon">
+                      <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="accordion__bottom stage__bottom">
+                  <div class="stage__left">
+                    <div class="stage__left-top"><a class="stage__left-title" href="#">Обмерный план</a>
+                      <div class="more">
+                        <button class="btn-reset stage__left-btn dropdown__btn">
+                          <svg class="svg-icon more__icon">
+                            <use xlink:href="./img/sprites/sprite.svg#more"></use>
+                          </svg>
+                        </button>
+                        <ul class="more-dropdown list-reset dropdown stage__dropdown">
+                          <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                              <svg class="svg-icon">
+                                <use xlink:href="./img/sprites/sprite.svg#edit"></use>
+                              </svg>Редактировать</a></li>
+                          <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                              <svg class="svg-icon">
+                                <use xlink:href="./img/sprites/sprite.svg#add"></use>
+                              </svg>Добавить задачу</a></li>
+                          <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                              <svg class="svg-icon">
+                                <use xlink:href="./img/sprites/sprite.svg#change"></use>
+                              </svg>Изменить ответственного</a></li>
+                          <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                              <svg class="svg-icon">
+                                <use xlink:href="./img/sprites/sprite.svg#close"></use>
+                              </svg>Завершить этап</a></li>
+                          <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                              <svg class="svg-icon">
+                                <use xlink:href="./img/sprites/sprite.svg#look"></use>
+                              </svg>Смотреть на платформе</a></li>
+                          <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                              <svg class="svg-icon">
+                                <use xlink:href="./img/sprites/sprite.svg#trash"></use>
+                              </svg>Удалить</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="author stage__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="author__desc">ответственный</span></div>
+                    <div class="stage__left-info">
+                      <div class="stage__left-info__item">
+                        <div class="stage__left-info__image stage__left-info__image--1">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#files"></use>
+                          </svg>
+                        </div>
+                        <div class="stage__left-info__desc">Файлы <span>25 шт</span></div>
+                      </div>
+                      <div class="stage__left-info__item">
+                        <div class="stage__left-info__image stage__left-info__image--2">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#square2"></use>
+                          </svg>
+                        </div>
+                        <div class="stage__left-info__desc">Площадь <span>25 м<sup>2</sup></span></div>
+                      </div>
+                    </div>
+                    <div class="stage__left-members">
+                      <div class="stage__left-members__left"><img class="stage__left-members__image" src="img/stage-1.png" alt="Human image 1"><img class="stage__left-members__image" src="img/stage-2.png" alt="Human image 2"><img class="stage__left-members__image" src="img/stage-3.png" alt="Human image 3"><img class="stage__left-members__image" src="img/stage-4.png" alt="Human image 4"><img class="stage__left-members__image" src="img/stage-5.png" alt="Human image 5"><span class="stage__left-members__more">+ 5</span></div><a class="stage__left-members__link" href="#">участники</a>
+                    </div>
+                    <div class="progressbar stage__progressbar">
+                      <div class="progressbar-bottom stage__progressbar-bottom"><span class="progressbar-bottom__desc">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#start"></use>
+                          </svg>1 сен 2020</span><span class="progressbar-bottom__desc">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#finish"></use>
+                          </svg>10 сен 2020</span></div>
+                      <progress class="progressbar__line stage__progressbar-line" value="50" max="100"></progress>
+                    </div>
+                    <div class="progressbar stage__progressbar">
+                      <div class="progressbar-bottom stage__progressbar-bottom"><span class="progressbar-bottom__desc">40% Выполнено </span><span class="progressbar-bottom__desc">2 задачи из 5</span></div>
+                      <progress class="progressbar__line stage__progressbar-line" value="70" max="100"></progress>
+                    </div>
+                  </div>
+                  <div class="stage__right">
+                    <article class="stage__item">
+                      <div class="stage__item-top"><a class="stage__item-title" href="#">Коридор с нишей для обуви - 26 m<sup>2</sup></a>
+                        <button class="btn-reset stage__item-save">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="stage__item-body"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="stage__item-status status-work">В работе</span></div>
+                      <div class="stage__item-footer"><span class="stage__item-priority priority priority-7">7</span><a class="stage__item-comments" href="#">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#comments"></use>
+                          </svg>15</a>
+                        <time class="stage__item-time">16 авг 12:00</time>
+                      </div>
+                    </article>
+                    <article class="stage__item">
+                      <div class="stage__item-top"><a class="stage__item-title" href="#">Коридор с нишей для обуви - 26 m<sup>2</sup>в две строки пример</a>
+                        <button class="btn-reset stage__item-save">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="stage__item-body"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="stage__item-status status-new">В работе</span></div>
+                      <div class="stage__item-footer"><span class="stage__item-priority priority priority-6">6</span><a class="stage__item-comments" href="#">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#comments"></use>
+                          </svg>15</a>
+                        <time class="stage__item-time">16 авг 12:00</time>
+                      </div>
+                    </article>
+                    <article class="stage__item">
+                      <div class="stage__item-top"><a class="stage__item-title" href="#">Функциональное зонирование</a>
+                        <button class="btn-reset stage__item-save">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="stage__item-body"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="stage__item-status status-check">В работе</span></div>
+                      <div class="stage__item-footer"><span class="stage__item-priority priority priority-6">6</span><a class="stage__item-comments" href="#">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#comments"></use>
+                          </svg>15</a>
+                        <time class="stage__item-time">16 авг 12:00</time>
+                      </div>
+                    </article>
+                    <article class="stage__item">
+                      <div class="stage__item-top"><a class="stage__item-title" href="#">Цветовое решение входной группы</a>
+                        <button class="btn-reset stage__item-save">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="stage__item-body"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="stage__item-status status-work">В работе</span></div>
+                      <div class="stage__item-footer"><span class="stage__item-priority priority priority-3">3</span><a class="stage__item-comments" href="#">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#comments"></use>
+                          </svg>15</a>
+                        <time class="stage__item-time">16 авг 12:00</time>
+                      </div>
+                    </article>
+                    <article class="stage__item">
+                      <div class="stage__item-top"><a class="stage__item-title" href="#">Проектировочный расчёт с описанием и докуменацией</a>
+                        <button class="btn-reset stage__item-save">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="stage__item-body"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="stage__item-status status-work">В работе</span></div>
+                      <div class="stage__item-footer"><span class="stage__item-priority priority priority-4">4</span><a class="stage__item-comments" href="#">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#comments"></use>
+                          </svg>15</a>
+                        <time class="stage__item-time">16 авг 12:00</time>
+                      </div>
+                    </article><a class="stage__create" href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="./img/sprites/sprite.svg#new"></use>
+                      </svg>Новая задача</a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion__top"><span class="accordion__title">Этап 3</span>
+                  <button class="btn-reset btn-more accordion__btn">
+                    <svg class="svg-icon">
+                      <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="accordion__bottom stage__bottom">
+                  <div class="stage__left">
+                    <div class="stage__left-top"><a class="stage__left-title" href="#">Стилевое решение</a>
+                      <div class="more">
+                        <button class="btn-reset stage__left-btn dropdown__btn">
+                          <svg class="svg-icon more__icon">
+                            <use xlink:href="./img/sprites/sprite.svg#more"></use>
+                          </svg>
+                        </button>
+                        <ul class="more-dropdown list-reset dropdown stage__dropdown">
+                          <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                              <svg class="svg-icon">
+                                <use xlink:href="./img/sprites/sprite.svg#edit"></use>
+                              </svg>Редактировать</a></li>
+                          <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                              <svg class="svg-icon">
+                                <use xlink:href="./img/sprites/sprite.svg#add"></use>
+                              </svg>Добавить задачу</a></li>
+                          <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                              <svg class="svg-icon">
+                                <use xlink:href="./img/sprites/sprite.svg#change"></use>
+                              </svg>Изменить ответственного</a></li>
+                          <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                              <svg class="svg-icon">
+                                <use xlink:href="./img/sprites/sprite.svg#close"></use>
+                              </svg>Завершить этап</a></li>
+                          <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                              <svg class="svg-icon">
+                                <use xlink:href="./img/sprites/sprite.svg#look"></use>
+                              </svg>Смотреть на платформе</a></li>
+                          <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                              <svg class="svg-icon">
+                                <use xlink:href="./img/sprites/sprite.svg#trash"></use>
+                              </svg>Удалить</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="author stage__author">
+                      <div class="author-left">
+                        <div class="author__no-image">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#question"></use>
+                          </svg>
+                        </div><span class="author__no-name">Нет ответственного</span>
+                      </div>
+                      <button class="btn-reset author__search">Найти</button>
+                    </div>
+                    <div class="stage__left-info">
+                      <div class="stage__left-info__item">
+                        <div class="stage__left-info__image stage__left-info__image--1">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#files"></use>
+                          </svg>
+                        </div>
+                        <div class="stage__left-info__desc">Файлы <span>25 шт</span></div>
+                      </div>
+                      <div class="stage__left-info__item">
+                        <div class="stage__left-info__image stage__left-info__image--2">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#square2"></use>
+                          </svg>
+                        </div>
+                        <div class="stage__left-info__desc">Площадь <span>25 м<sup>2</sup></span></div>
+                      </div>
+                    </div>
+                    <div class="stage__left-members">
+                      <div class="stage__left-members__left"><img class="stage__left-members__image" src="img/stage-1.png" alt="Human image 1"><img class="stage__left-members__image" src="img/stage-2.png" alt="Human image 2"><img class="stage__left-members__image" src="img/stage-3.png" alt="Human image 3"><img class="stage__left-members__image" src="img/stage-4.png" alt="Human image 4"><img class="stage__left-members__image" src="img/stage-5.png" alt="Human image 5"><span class="stage__left-members__more">+ 5</span></div><a class="stage__left-members__link" href="#">участники</a>
+                    </div>
+                    <div class="progressbar stage__progressbar">
+                      <div class="progressbar-bottom stage__progressbar-bottom"><span class="progressbar-bottom__desc">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#start"></use>
+                          </svg>1 сен 2020</span><span class="progressbar-bottom__desc">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#finish"></use>
+                          </svg>10 сен 2020</span></div>
+                      <progress class="progressbar__line stage__progressbar-line" value="50" max="100"></progress>
+                    </div>
+                    <div class="progressbar stage__progressbar">
+                      <div class="progressbar-bottom stage__progressbar-bottom"><span class="progressbar-bottom__desc">40% Выполнено </span><span class="progressbar-bottom__desc">2 задачи из 5</span></div>
+                      <progress class="progressbar__line stage__progressbar-line" value="70" max="100"></progress>
+                    </div>
+                  </div>
+                  <div class="stage__right">
+                    <article class="stage__item">
+                      <div class="stage__item-top"><a class="stage__item-title" href="#">Коридор с нишей для обуви - 26 m<sup>2</sup></a>
+                        <button class="btn-reset stage__item-save">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="stage__item-body"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="stage__item-status status-work">В работе</span></div>
+                      <div class="stage__item-footer"><span class="stage__item-priority priority priority-7">7</span><a class="stage__item-comments" href="#">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#comments"></use>
+                          </svg>15</a>
+                        <time class="stage__item-time">16 авг 12:00</time>
+                      </div>
+                    </article>
+                    <article class="stage__item">
+                      <div class="stage__item-top"><a class="stage__item-title" href="#">Коридор с нишей для обуви - 26 m<sup>2</sup>в две строки пример</a>
+                        <button class="btn-reset stage__item-save">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="stage__item-body"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="stage__item-status status-new">В работе</span></div>
+                      <div class="stage__item-footer"><span class="stage__item-priority priority priority-6">6</span><a class="stage__item-comments" href="#">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#comments"></use>
+                          </svg>15</a>
+                        <time class="stage__item-time">16 авг 12:00</time>
+                      </div>
+                    </article>
+                    <article class="stage__item">
+                      <div class="stage__item-top"><a class="stage__item-title" href="#">Цветовое решение входной группы</a>
+                        <button class="btn-reset stage__item-save">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="stage__item-body"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="stage__item-status status-work">В работе</span></div>
+                      <div class="stage__item-footer"><span class="stage__item-priority priority priority-3">3</span><a class="stage__item-comments" href="#">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#comments"></use>
+                          </svg>15</a>
+                        <time class="stage__item-time">16 авг 12:00</time>
+                      </div>
+                    </article><a class="stage__create" href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="./img/sprites/sprite.svg#new"></use>
+                      </svg>Новая задача</a>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion__top"><span class="accordion__title">Этап 1</span>
+                  <button class="btn-reset btn-more accordion__btn">
+                    <svg class="svg-icon">
+                      <use xlink:href="./img/sprites/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="accordion__bottom stage__bottom">
+                  <div class="stage__left">
+                    <div class="stage__left-top"><a class="stage__left-title" href="#">Обмерный план</a>
+                      <div class="more">
+                        <button class="btn-reset stage__left-btn dropdown__btn">
+                          <svg class="svg-icon more__icon">
+                            <use xlink:href="./img/sprites/sprite.svg#more"></use>
+                          </svg>
+                        </button>
+                        <ul class="more-dropdown list-reset dropdown stage__dropdown">
+                          <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                              <svg class="svg-icon">
+                                <use xlink:href="./img/sprites/sprite.svg#edit"></use>
+                              </svg>Редактировать</a></li>
+                          <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                              <svg class="svg-icon">
+                                <use xlink:href="./img/sprites/sprite.svg#add"></use>
+                              </svg>Добавить задачу</a></li>
+                          <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                              <svg class="svg-icon">
+                                <use xlink:href="./img/sprites/sprite.svg#change"></use>
+                              </svg>Изменить ответственного</a></li>
+                          <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                              <svg class="svg-icon">
+                                <use xlink:href="./img/sprites/sprite.svg#close"></use>
+                              </svg>Завершить этап</a></li>
+                          <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                              <svg class="svg-icon">
+                                <use xlink:href="./img/sprites/sprite.svg#look"></use>
+                              </svg>Смотреть на платформе</a></li>
+                          <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
+                              <svg class="svg-icon">
+                                <use xlink:href="./img/sprites/sprite.svg#trash"></use>
+                              </svg>Удалить</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="author stage__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="author__desc">ответственный</span></div>
+                    <div class="stage__left-info">
+                      <div class="stage__left-info__item">
+                        <div class="stage__left-info__image stage__left-info__image--1">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#files"></use>
+                          </svg>
+                        </div>
+                        <div class="stage__left-info__desc">Файлы <span>25 шт</span></div>
+                      </div>
+                      <div class="stage__left-info__item">
+                        <div class="stage__left-info__image stage__left-info__image--2">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#square2"></use>
+                          </svg>
+                        </div>
+                        <div class="stage__left-info__desc">Площадь <span>25 м<sup>2</sup></span></div>
+                      </div>
+                    </div>
+                    <div class="stage__left-members">
+                      <div class="stage__left-members__left"><img class="stage__left-members__image" src="img/stage-1.png" alt="Human image 1"><img class="stage__left-members__image" src="img/stage-2.png" alt="Human image 2"><img class="stage__left-members__image" src="img/stage-3.png" alt="Human image 3"><img class="stage__left-members__image" src="img/stage-4.png" alt="Human image 4"><img class="stage__left-members__image" src="img/stage-5.png" alt="Human image 5"><span class="stage__left-members__more">+ 5</span></div><a class="stage__left-members__link" href="#">участники</a>
+                    </div>
+                    <div class="progressbar stage__progressbar">
+                      <div class="progressbar-bottom stage__progressbar-bottom"><span class="progressbar-bottom__desc">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#start"></use>
+                          </svg>1 сен 2020</span><span class="progressbar-bottom__desc">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#finish"></use>
+                          </svg>10 сен 2020</span></div>
+                      <progress class="progressbar__line stage__progressbar-line" value="50" max="100"></progress>
+                    </div>
+                    <div class="progressbar stage__progressbar">
+                      <div class="progressbar-bottom stage__progressbar-bottom"><span class="progressbar-bottom__desc">40% Выполнено </span><span class="progressbar-bottom__desc">2 задачи из 5</span></div>
+                      <progress class="progressbar__line stage__progressbar-line" value="70" max="100"></progress>
+                    </div>
+                  </div>
+                  <div class="stage__right">
+                    <article class="stage__item">
+                      <div class="stage__item-top"><a class="stage__item-title" href="#">Коридор с нишей для обуви - 26 m<sup>2</sup></a>
+                        <button class="btn-reset stage__item-save">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="stage__item-body"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="stage__item-status status-work">В работе</span></div>
+                      <div class="stage__item-footer"><span class="stage__item-priority priority priority-7">7</span><a class="stage__item-comments" href="#">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#comments"></use>
+                          </svg>15</a>
+                        <time class="stage__item-time">16 авг 12:00</time>
+                      </div>
+                    </article>
+                    <article class="stage__item">
+                      <div class="stage__item-top"><a class="stage__item-title" href="#">Коридор с нишей для обуви - 26 m<sup>2</sup>в две строки пример</a>
+                        <button class="btn-reset stage__item-save">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="stage__item-body"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="stage__item-status status-new">В работе</span></div>
+                      <div class="stage__item-footer"><span class="stage__item-priority priority priority-6">6</span><a class="stage__item-comments" href="#">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#comments"></use>
+                          </svg>15</a>
+                        <time class="stage__item-time">16 авг 12:00</time>
+                      </div>
+                    </article>
+                    <article class="stage__item">
+                      <div class="stage__item-top"><a class="stage__item-title" href="#">Функциональное зонирование</a>
+                        <button class="btn-reset stage__item-save">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="stage__item-body"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="stage__item-status status-check">В работе</span></div>
+                      <div class="stage__item-footer"><span class="stage__item-priority priority priority-6">6</span><a class="stage__item-comments" href="#">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#comments"></use>
+                          </svg>15</a>
+                        <time class="stage__item-time">16 авг 12:00</time>
+                      </div>
+                    </article>
+                    <article class="stage__item">
+                      <div class="stage__item-top"><a class="stage__item-title" href="#">Цветовое решение входной группы</a>
+                        <button class="btn-reset stage__item-save">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="stage__item-body"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="stage__item-status status-work">В работе</span></div>
+                      <div class="stage__item-footer"><span class="stage__item-priority priority priority-3">3</span><a class="stage__item-comments" href="#">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#comments"></use>
+                          </svg>15</a>
+                        <time class="stage__item-time">16 авг 12:00</time>
+                      </div>
+                    </article>
+                    <article class="stage__item">
+                      <div class="stage__item-top"><a class="stage__item-title" href="#">Проектировочный расчёт с описанием и докуменацией</a>
+                        <button class="btn-reset stage__item-save">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#bookmarks2"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="stage__item-body"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="stage__item-status status-work">В работе</span></div>
+                      <div class="stage__item-footer"><span class="stage__item-priority priority priority-4">4</span><a class="stage__item-comments" href="#">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#comments"></use>
+                          </svg>15</a>
+                        <time class="stage__item-time">16 авг 12:00</time>
+                      </div>
+                    </article><a class="stage__create" href="#">
+                      <svg class="svg-icon">
+                        <use xlink:href="./img/sprites/sprite.svg#new"></use>
+                      </svg>Новая задача</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
