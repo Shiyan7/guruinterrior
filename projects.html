@@ -28,7 +28,7 @@
   <body>
     <div class="site-container">
       <header class="header header-projects">
-        <div class="header__container">
+        <div class="header__container header-projects__container">
           <button class="btn-reset burger" aria-label="Бургер меню"><span class="burger__line"></span></button><a class="logo header__logo" href="/">GuruInterrior</a>
           <div class="user">
             <button class="btn-reset user__btn dropdown__btn">
@@ -107,11 +107,11 @@
               <li class="project-nav__item"><a class="project-nav__link" href="#">Сделка</a></li>
             </ul>
             <div class="projects__top">
-              <h1 class="projects__title section-title">Проекты</h1><a class="btn-reset primary-btn" href="#">Новый проект</a>
+              <h1 class="projects__title section-title">Проекты</h1><a class="btn-reset primary-btn new-project" href="#">Новый проект</a>
             </div>
             <ul class="projects-grid list-reset">
               <li class="projects-grid__item project-item">
-                <div class="project-item__top"><a class="project-item__title" href="#">Обмерный план</a>
+                <div class="project-item__top"><a class="project-item__title" href="#">Дизайн-проект квартиры на Бородинской улице в Новосибирске</a>
                   <div class="more">
                     <button class="btn-reset project-item__btn dropdown__btn">
                       <svg class="svg-icon more__icon">
@@ -130,31 +130,36 @@
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#change"></use>
-                          </svg>Изменить ответственного</a></li>
+                          </svg>Пригласить в проект</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#close"></use>
-                          </svg>Завершить этап</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#file"></use>
+                          </svg>Файлы</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#look"></use>
-                          </svg>Смотреть на платформе</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#rename"></use>
+                          </svg>Переименовать</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#trash"></use>
-                          </svg>Удалить</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#archive"></use>
+                          </svg>В архив</a></li>
                     </ul>
                   </div>
                 </div>
-                <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="author__desc">ответственный</span></div>
+                <address class="project-item__map project__map map--gray">
+                  <svg class="svg-icon">
+                    <use xlink:href="./img/sprites/sprite.svg#map"></use>
+                  </svg>г. Новосибирск, ул. Бородинская, д. 7
+                </address>
+                <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Марина Ковальская</span></a><span class="author__desc">заказчик</span></div>
                 <div class="project-info">
                   <div class="project-info__item">
                     <div class="project-info__image project-info__image--1">
                       <svg class="svg-icon">
-                        <use xlink:href="./img/sprites/sprite.svg#files"></use>
+                        <use xlink:href="./img/sprites/sprite.svg#price"></use>
                       </svg>
                     </div>
-                    <div class="project-info__desc">Файлы&nbsp;<span>25 шт</span></div>
+                    <div class="project-info__desc">Цена&nbsp;<span>1200 ₽/м<sup>2</sup></span></div>
                   </div>
                   <div class="project-info__item">
                     <div class="project-info__image project-info__image--2">
@@ -166,7 +171,7 @@
                   </div>
                 </div>
                 <div class="project-members">
-                  <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">участники</a>
+                  <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">подписчики</a>
                 </div>
                 <div class="progressbar project__progressbar">
                   <div class="progressbar-bottom project__progressbar-bottom"><span class="progressbar-bottom__desc">
@@ -184,7 +189,7 @@
                 </div>
               </li>
               <li class="projects-grid__item project-item">
-                <div class="project-item__top"><a class="project-item__title" href="#">Обмерный план</a>
+                <div class="project-item__top"><a class="project-item__title" href="#">Дизайн проект-Коттеджа</a>
                   <div class="more">
                     <button class="btn-reset project-item__btn dropdown__btn">
                       <svg class="svg-icon more__icon">
@@ -203,31 +208,36 @@
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#change"></use>
-                          </svg>Изменить ответственного</a></li>
+                          </svg>Пригласить в проект</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#close"></use>
-                          </svg>Завершить этап</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#file"></use>
+                          </svg>Файлы</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#look"></use>
-                          </svg>Смотреть на платформе</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#rename"></use>
+                          </svg>Переименовать</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#trash"></use>
-                          </svg>Удалить</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#archive"></use>
+                          </svg>В архив</a></li>
                     </ul>
                   </div>
                 </div>
-                <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="author__desc">ответственный</span></div>
+                <address class="project-item__map project__map map--gray">
+                  <svg class="svg-icon">
+                    <use xlink:href="./img/sprites/sprite.svg#map"></use>
+                  </svg>г. Новосибирск, ул. Бородинская, д. 7ул. Бородинская, д. 7ул. Бородинская, д. 7
+                </address>
+                <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Марина Ковальская</span></a><span class="author__desc">заказчик</span></div>
                 <div class="project-info">
                   <div class="project-info__item">
                     <div class="project-info__image project-info__image--1">
                       <svg class="svg-icon">
-                        <use xlink:href="./img/sprites/sprite.svg#files"></use>
+                        <use xlink:href="./img/sprites/sprite.svg#price"></use>
                       </svg>
                     </div>
-                    <div class="project-info__desc">Файлы&nbsp;<span>25 шт</span></div>
+                    <div class="project-info__desc">Цена&nbsp;<span>1200 ₽/м<sup>2</sup></span></div>
                   </div>
                   <div class="project-info__item">
                     <div class="project-info__image project-info__image--2">
@@ -239,7 +249,7 @@
                   </div>
                 </div>
                 <div class="project-members">
-                  <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">участники</a>
+                  <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">подписчики</a>
                 </div>
                 <div class="progressbar project__progressbar">
                   <div class="progressbar-bottom project__progressbar-bottom"><span class="progressbar-bottom__desc">
@@ -257,7 +267,7 @@
                 </div>
               </li>
               <li class="projects-grid__item project-item">
-                <div class="project-item__top"><a class="project-item__title" href="#">Обмерный план</a>
+                <div class="project-item__top"><a class="project-item__title" href="#">Дизайн-проект квартиры на Бородинской улице в Новосибирске</a>
                   <div class="more">
                     <button class="btn-reset project-item__btn dropdown__btn">
                       <svg class="svg-icon more__icon">
@@ -276,31 +286,36 @@
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#change"></use>
-                          </svg>Изменить ответственного</a></li>
+                          </svg>Пригласить в проект</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#close"></use>
-                          </svg>Завершить этап</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#file"></use>
+                          </svg>Файлы</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#look"></use>
-                          </svg>Смотреть на платформе</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#rename"></use>
+                          </svg>Переименовать</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#trash"></use>
-                          </svg>Удалить</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#archive"></use>
+                          </svg>В архив</a></li>
                     </ul>
                   </div>
                 </div>
-                <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="author__desc">ответственный</span></div>
+                <address class="project-item__map project__map map--gray">
+                  <svg class="svg-icon">
+                    <use xlink:href="./img/sprites/sprite.svg#map"></use>
+                  </svg>г. Новосибирск, ул. Бородинская, д. 7
+                </address>
+                <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Марина Ковальская</span></a><span class="author__desc">заказчик</span></div>
                 <div class="project-info">
                   <div class="project-info__item">
                     <div class="project-info__image project-info__image--1">
                       <svg class="svg-icon">
-                        <use xlink:href="./img/sprites/sprite.svg#files"></use>
+                        <use xlink:href="./img/sprites/sprite.svg#price"></use>
                       </svg>
                     </div>
-                    <div class="project-info__desc">Файлы&nbsp;<span>25 шт</span></div>
+                    <div class="project-info__desc">Цена&nbsp;<span>1200 ₽/м<sup>2</sup></span></div>
                   </div>
                   <div class="project-info__item">
                     <div class="project-info__image project-info__image--2">
@@ -312,7 +327,7 @@
                   </div>
                 </div>
                 <div class="project-members">
-                  <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">участники</a>
+                  <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">подписчики</a>
                 </div>
                 <div class="progressbar project__progressbar">
                   <div class="progressbar-bottom project__progressbar-bottom"><span class="progressbar-bottom__desc">
@@ -330,7 +345,7 @@
                 </div>
               </li>
               <li class="projects-grid__item project-item">
-                <div class="project-item__top"><a class="project-item__title" href="#">Обмерный план</a>
+                <div class="project-item__top"><a class="project-item__title" href="#">Дизайн-проект квартиры на Бородинской улице в Новосибирске</a>
                   <div class="more">
                     <button class="btn-reset project-item__btn dropdown__btn">
                       <svg class="svg-icon more__icon">
@@ -349,31 +364,36 @@
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#change"></use>
-                          </svg>Изменить ответственного</a></li>
+                          </svg>Пригласить в проект</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#close"></use>
-                          </svg>Завершить этап</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#file"></use>
+                          </svg>Файлы</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#look"></use>
-                          </svg>Смотреть на платформе</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#rename"></use>
+                          </svg>Переименовать</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#trash"></use>
-                          </svg>Удалить</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#archive"></use>
+                          </svg>В архив</a></li>
                     </ul>
                   </div>
                 </div>
-                <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="author__desc">ответственный</span></div>
+                <address class="project-item__map project__map map--gray">
+                  <svg class="svg-icon">
+                    <use xlink:href="./img/sprites/sprite.svg#map"></use>
+                  </svg>г. Новосибирск, ул. Бородинская, д. 7
+                </address>
+                <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Марина Ковальская</span></a><span class="author__desc">заказчик</span></div>
                 <div class="project-info">
                   <div class="project-info__item">
                     <div class="project-info__image project-info__image--1">
                       <svg class="svg-icon">
-                        <use xlink:href="./img/sprites/sprite.svg#files"></use>
+                        <use xlink:href="./img/sprites/sprite.svg#price"></use>
                       </svg>
                     </div>
-                    <div class="project-info__desc">Файлы&nbsp;<span>25 шт</span></div>
+                    <div class="project-info__desc">Цена&nbsp;<span>1200 ₽/м<sup>2</sup></span></div>
                   </div>
                   <div class="project-info__item">
                     <div class="project-info__image project-info__image--2">
@@ -385,7 +405,7 @@
                   </div>
                 </div>
                 <div class="project-members">
-                  <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">участники</a>
+                  <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">подписчики</a>
                 </div>
                 <div class="progressbar project__progressbar">
                   <div class="progressbar-bottom project__progressbar-bottom"><span class="progressbar-bottom__desc">
@@ -403,7 +423,7 @@
                 </div>
               </li>
               <li class="projects-grid__item project-item">
-                <div class="project-item__top"><a class="project-item__title" href="#">Обмерный план</a>
+                <div class="project-item__top"><a class="project-item__title" href="#">Дизайн-проект квартиры на Бородинской улице в Новосибирске</a>
                   <div class="more">
                     <button class="btn-reset project-item__btn dropdown__btn">
                       <svg class="svg-icon more__icon">
@@ -422,31 +442,36 @@
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#change"></use>
-                          </svg>Изменить ответственного</a></li>
+                          </svg>Пригласить в проект</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#close"></use>
-                          </svg>Завершить этап</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#file"></use>
+                          </svg>Файлы</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#look"></use>
-                          </svg>Смотреть на платформе</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#rename"></use>
+                          </svg>Переименовать</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#trash"></use>
-                          </svg>Удалить</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#archive"></use>
+                          </svg>В архив</a></li>
                     </ul>
                   </div>
                 </div>
-                <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="author__desc">ответственный</span></div>
+                <address class="project-item__map project__map map--gray">
+                  <svg class="svg-icon">
+                    <use xlink:href="./img/sprites/sprite.svg#map"></use>
+                  </svg>г. Новосибирск, ул. Бородинская, д. 7
+                </address>
+                <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Марина Ковальская</span></a><span class="author__desc">заказчик</span></div>
                 <div class="project-info">
                   <div class="project-info__item">
                     <div class="project-info__image project-info__image--1">
                       <svg class="svg-icon">
-                        <use xlink:href="./img/sprites/sprite.svg#files"></use>
+                        <use xlink:href="./img/sprites/sprite.svg#price"></use>
                       </svg>
                     </div>
-                    <div class="project-info__desc">Файлы&nbsp;<span>25 шт</span></div>
+                    <div class="project-info__desc">Цена&nbsp;<span>1200 ₽/м<sup>2</sup></span></div>
                   </div>
                   <div class="project-info__item">
                     <div class="project-info__image project-info__image--2">
@@ -458,7 +483,7 @@
                   </div>
                 </div>
                 <div class="project-members">
-                  <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">участники</a>
+                  <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">подписчики</a>
                 </div>
                 <div class="progressbar project__progressbar">
                   <div class="progressbar-bottom project__progressbar-bottom"><span class="progressbar-bottom__desc">
@@ -476,7 +501,7 @@
                 </div>
               </li>
               <li class="projects-grid__item project-item">
-                <div class="project-item__top"><a class="project-item__title" href="#">Обмерный план</a>
+                <div class="project-item__top"><a class="project-item__title" href="#">Дизайн-проект квартиры на Бородинской улице в Новосибирске</a>
                   <div class="more">
                     <button class="btn-reset project-item__btn dropdown__btn">
                       <svg class="svg-icon more__icon">
@@ -495,31 +520,36 @@
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#change"></use>
-                          </svg>Изменить ответственного</a></li>
+                          </svg>Пригласить в проект</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#close"></use>
-                          </svg>Завершить этап</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#file"></use>
+                          </svg>Файлы</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#look"></use>
-                          </svg>Смотреть на платформе</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#rename"></use>
+                          </svg>Переименовать</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#trash"></use>
-                          </svg>Удалить</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#archive"></use>
+                          </svg>В архив</a></li>
                     </ul>
                   </div>
                 </div>
-                <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="author__desc">ответственный</span></div>
+                <address class="project-item__map project__map map--gray">
+                  <svg class="svg-icon">
+                    <use xlink:href="./img/sprites/sprite.svg#map"></use>
+                  </svg>г. Новосибирск, ул. Бородинская, д. 7
+                </address>
+                <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Марина Ковальская</span></a><span class="author__desc">заказчик</span></div>
                 <div class="project-info">
                   <div class="project-info__item">
                     <div class="project-info__image project-info__image--1">
                       <svg class="svg-icon">
-                        <use xlink:href="./img/sprites/sprite.svg#files"></use>
+                        <use xlink:href="./img/sprites/sprite.svg#price"></use>
                       </svg>
                     </div>
-                    <div class="project-info__desc">Файлы&nbsp;<span>25 шт</span></div>
+                    <div class="project-info__desc">Цена&nbsp;<span>1200 ₽/м<sup>2</sup></span></div>
                   </div>
                   <div class="project-info__item">
                     <div class="project-info__image project-info__image--2">
@@ -531,7 +561,7 @@
                   </div>
                 </div>
                 <div class="project-members">
-                  <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">участники</a>
+                  <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">подписчики</a>
                 </div>
                 <div class="progressbar project__progressbar">
                   <div class="progressbar-bottom project__progressbar-bottom"><span class="progressbar-bottom__desc">
@@ -549,7 +579,7 @@
                 </div>
               </li>
               <li class="projects-grid__item project-item">
-                <div class="project-item__top"><a class="project-item__title" href="#">Обмерный план</a>
+                <div class="project-item__top"><a class="project-item__title" href="#">Дизайн-проект квартиры на Бородинской улице в Новосибирске</a>
                   <div class="more">
                     <button class="btn-reset project-item__btn dropdown__btn">
                       <svg class="svg-icon more__icon">
@@ -568,31 +598,36 @@
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#change"></use>
-                          </svg>Изменить ответственного</a></li>
+                          </svg>Пригласить в проект</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#close"></use>
-                          </svg>Завершить этап</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#file"></use>
+                          </svg>Файлы</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#look"></use>
-                          </svg>Смотреть на платформе</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#rename"></use>
+                          </svg>Переименовать</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#trash"></use>
-                          </svg>Удалить</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#archive"></use>
+                          </svg>В архив</a></li>
                     </ul>
                   </div>
                 </div>
-                <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="author__desc">ответственный</span></div>
+                <address class="project-item__map project__map map--gray">
+                  <svg class="svg-icon">
+                    <use xlink:href="./img/sprites/sprite.svg#map"></use>
+                  </svg>г. Новосибирск, ул. Бородинская, д. 7
+                </address>
+                <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Марина Ковальская</span></a><span class="author__desc">заказчик</span></div>
                 <div class="project-info">
                   <div class="project-info__item">
                     <div class="project-info__image project-info__image--1">
                       <svg class="svg-icon">
-                        <use xlink:href="./img/sprites/sprite.svg#files"></use>
+                        <use xlink:href="./img/sprites/sprite.svg#price"></use>
                       </svg>
                     </div>
-                    <div class="project-info__desc">Файлы&nbsp;<span>25 шт</span></div>
+                    <div class="project-info__desc">Цена&nbsp;<span>1200 ₽/м<sup>2</sup></span></div>
                   </div>
                   <div class="project-info__item">
                     <div class="project-info__image project-info__image--2">
@@ -604,7 +639,7 @@
                   </div>
                 </div>
                 <div class="project-members">
-                  <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">участники</a>
+                  <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">подписчики</a>
                 </div>
                 <div class="progressbar project__progressbar">
                   <div class="progressbar-bottom project__progressbar-bottom"><span class="progressbar-bottom__desc">
@@ -622,7 +657,7 @@
                 </div>
               </li>
               <li class="projects-grid__item project-item">
-                <div class="project-item__top"><a class="project-item__title" href="#">Обмерный план</a>
+                <div class="project-item__top"><a class="project-item__title" href="#">Дизайн-проект квартиры на Бородинской улице в Новосибирске</a>
                   <div class="more">
                     <button class="btn-reset project-item__btn dropdown__btn">
                       <svg class="svg-icon more__icon">
@@ -641,31 +676,36 @@
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#change"></use>
-                          </svg>Изменить ответственного</a></li>
+                          </svg>Пригласить в проект</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#close"></use>
-                          </svg>Завершить этап</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#file"></use>
+                          </svg>Файлы</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#look"></use>
-                          </svg>Смотреть на платформе</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#rename"></use>
+                          </svg>Переименовать</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#trash"></use>
-                          </svg>Удалить</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#archive"></use>
+                          </svg>В архив</a></li>
                     </ul>
                   </div>
                 </div>
-                <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="author__desc">ответственный</span></div>
+                <address class="project-item__map project__map map--gray">
+                  <svg class="svg-icon">
+                    <use xlink:href="./img/sprites/sprite.svg#map"></use>
+                  </svg>г. Новосибирск, ул. Бородинская, д. 7
+                </address>
+                <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Марина Ковальская</span></a><span class="author__desc">заказчик</span></div>
                 <div class="project-info">
                   <div class="project-info__item">
                     <div class="project-info__image project-info__image--1">
                       <svg class="svg-icon">
-                        <use xlink:href="./img/sprites/sprite.svg#files"></use>
+                        <use xlink:href="./img/sprites/sprite.svg#price"></use>
                       </svg>
                     </div>
-                    <div class="project-info__desc">Файлы&nbsp;<span>25 шт</span></div>
+                    <div class="project-info__desc">Цена&nbsp;<span>1200 ₽/м<sup>2</sup></span></div>
                   </div>
                   <div class="project-info__item">
                     <div class="project-info__image project-info__image--2">
@@ -677,7 +717,7 @@
                   </div>
                 </div>
                 <div class="project-members">
-                  <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">участники</a>
+                  <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">подписчики</a>
                 </div>
                 <div class="progressbar project__progressbar">
                   <div class="progressbar-bottom project__progressbar-bottom"><span class="progressbar-bottom__desc">
@@ -695,7 +735,7 @@
                 </div>
               </li>
               <li class="projects-grid__item project-item">
-                <div class="project-item__top"><a class="project-item__title" href="#">Обмерный план</a>
+                <div class="project-item__top"><a class="project-item__title" href="#">Дизайн-проект квартиры на Бородинской улице в Новосибирске</a>
                   <div class="more">
                     <button class="btn-reset project-item__btn dropdown__btn">
                       <svg class="svg-icon more__icon">
@@ -714,31 +754,36 @@
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#change"></use>
-                          </svg>Изменить ответственного</a></li>
+                          </svg>Пригласить в проект</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#close"></use>
-                          </svg>Завершить этап</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#file"></use>
+                          </svg>Файлы</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#look"></use>
-                          </svg>Смотреть на платформе</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#rename"></use>
+                          </svg>Переименовать</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#trash"></use>
-                          </svg>Удалить</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#archive"></use>
+                          </svg>В архив</a></li>
                     </ul>
                   </div>
                 </div>
-                <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="author__desc">ответственный</span></div>
+                <address class="project-item__map project__map map--gray">
+                  <svg class="svg-icon">
+                    <use xlink:href="./img/sprites/sprite.svg#map"></use>
+                  </svg>г. Новосибирск, ул. Бородинская, д. 7
+                </address>
+                <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Марина Ковальская</span></a><span class="author__desc">заказчик</span></div>
                 <div class="project-info">
                   <div class="project-info__item">
                     <div class="project-info__image project-info__image--1">
                       <svg class="svg-icon">
-                        <use xlink:href="./img/sprites/sprite.svg#files"></use>
+                        <use xlink:href="./img/sprites/sprite.svg#price"></use>
                       </svg>
                     </div>
-                    <div class="project-info__desc">Файлы&nbsp;<span>25 шт</span></div>
+                    <div class="project-info__desc">Цена&nbsp;<span>1200 ₽/м<sup>2</sup></span></div>
                   </div>
                   <div class="project-info__item">
                     <div class="project-info__image project-info__image--2">
@@ -750,7 +795,7 @@
                   </div>
                 </div>
                 <div class="project-members">
-                  <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">участники</a>
+                  <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">подписчики</a>
                 </div>
                 <div class="progressbar project__progressbar">
                   <div class="progressbar-bottom project__progressbar-bottom"><span class="progressbar-bottom__desc">
@@ -768,7 +813,7 @@
                 </div>
               </li>
               <li class="projects-grid__item project-item">
-                <div class="project-item__top"><a class="project-item__title" href="#">Обмерный план</a>
+                <div class="project-item__top"><a class="project-item__title" href="#">Дизайн-проект квартиры на Бородинской улице в Новосибирске</a>
                   <div class="more">
                     <button class="btn-reset project-item__btn dropdown__btn">
                       <svg class="svg-icon more__icon">
@@ -787,31 +832,36 @@
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#change"></use>
-                          </svg>Изменить ответственного</a></li>
+                          </svg>Пригласить в проект</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#close"></use>
-                          </svg>Завершить этап</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#file"></use>
+                          </svg>Файлы</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#look"></use>
-                          </svg>Смотреть на платформе</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#rename"></use>
+                          </svg>Переименовать</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#trash"></use>
-                          </svg>Удалить</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#archive"></use>
+                          </svg>В архив</a></li>
                     </ul>
                   </div>
                 </div>
-                <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="author__desc">ответственный</span></div>
+                <address class="project-item__map project__map map--gray">
+                  <svg class="svg-icon">
+                    <use xlink:href="./img/sprites/sprite.svg#map"></use>
+                  </svg>г. Новосибирск, ул. Бородинская, д. 7
+                </address>
+                <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Марина Ковальская</span></a><span class="author__desc">заказчик</span></div>
                 <div class="project-info">
                   <div class="project-info__item">
                     <div class="project-info__image project-info__image--1">
                       <svg class="svg-icon">
-                        <use xlink:href="./img/sprites/sprite.svg#files"></use>
+                        <use xlink:href="./img/sprites/sprite.svg#price"></use>
                       </svg>
                     </div>
-                    <div class="project-info__desc">Файлы&nbsp;<span>25 шт</span></div>
+                    <div class="project-info__desc">Цена&nbsp;<span>1200 ₽/м<sup>2</sup></span></div>
                   </div>
                   <div class="project-info__item">
                     <div class="project-info__image project-info__image--2">
@@ -823,7 +873,7 @@
                   </div>
                 </div>
                 <div class="project-members">
-                  <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">участники</a>
+                  <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">подписчики</a>
                 </div>
                 <div class="progressbar project__progressbar">
                   <div class="progressbar-bottom project__progressbar-bottom"><span class="progressbar-bottom__desc">
@@ -841,7 +891,7 @@
                 </div>
               </li>
               <li class="projects-grid__item project-item">
-                <div class="project-item__top"><a class="project-item__title" href="#">Обмерный план</a>
+                <div class="project-item__top"><a class="project-item__title" href="#">Дизайн-проект квартиры на Бородинской улице в Новосибирске</a>
                   <div class="more">
                     <button class="btn-reset project-item__btn dropdown__btn">
                       <svg class="svg-icon more__icon">
@@ -860,31 +910,36 @@
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#change"></use>
-                          </svg>Изменить ответственного</a></li>
+                          </svg>Пригласить в проект</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#close"></use>
-                          </svg>Завершить этап</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#file"></use>
+                          </svg>Файлы</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#look"></use>
-                          </svg>Смотреть на платформе</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#rename"></use>
+                          </svg>Переименовать</a></li>
                       <li class="more-dropdown__item dropdown__item"><a class="more-dropdown__link dropdown__link" href="#">
                           <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#trash"></use>
-                          </svg>Удалить</a></li>
+                            <use xlink:href="./img/sprites/sprite.svg#archive"></use>
+                          </svg>В архив</a></li>
                     </ul>
                   </div>
                 </div>
-                <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="author__desc">ответственный</span></div>
+                <address class="project-item__map project__map map--gray">
+                  <svg class="svg-icon">
+                    <use xlink:href="./img/sprites/sprite.svg#map"></use>
+                  </svg>г. Новосибирск, ул. Бородинская, д. 7
+                </address>
+                <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Марина Ковальская</span></a><span class="author__desc">заказчик</span></div>
                 <div class="project-info">
                   <div class="project-info__item">
                     <div class="project-info__image project-info__image--1">
                       <svg class="svg-icon">
-                        <use xlink:href="./img/sprites/sprite.svg#files"></use>
+                        <use xlink:href="./img/sprites/sprite.svg#price"></use>
                       </svg>
                     </div>
-                    <div class="project-info__desc">Файлы&nbsp;<span>25 шт</span></div>
+                    <div class="project-info__desc">Цена&nbsp;<span>1200 ₽/м<sup>2</sup></span></div>
                   </div>
                   <div class="project-info__item">
                     <div class="project-info__image project-info__image--2">
@@ -896,7 +951,7 @@
                   </div>
                 </div>
                 <div class="project-members">
-                  <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">участники</a>
+                  <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">подписчики</a>
                 </div>
                 <div class="progressbar project__progressbar">
                   <div class="progressbar-bottom project__progressbar-bottom"><span class="progressbar-bottom__desc">
