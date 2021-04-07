@@ -162,7 +162,7 @@
                   <svg class="svg-icon">
                     <use xlink:href="./img/sprites/sprite.svg#home"></use>
                   </svg>Главная</a></li>
-              <li class="nav__item"><a class="nav__link nav__link--current" href="#">
+              <li class="nav__item"><a class="nav__link nav__link--current">
                   <svg class="svg-icon">
                     <use xlink:href="./img/sprites/sprite.svg#projects"></use>
                   </svg>проекты</a></li>
@@ -184,7 +184,7 @@
                   </svg>Аккаунт</a></li>
             </ul>
           </nav>
-          <div class="container stages__container">
+          <div class="container page__container">
             <ul class="project-nav list-reset">
               <li class="project-nav__item"><a class="project-nav__link project-nav__link--current">Этапы</a></li>
               <li class="project-nav__item"><a class="project-nav__link" href="#">Описание</a></li>
@@ -203,10 +203,10 @@
                   </button>
                 </div>
                 <div class="accordion__bottom stage__bottom show">
-                  <div class="stage__left">
-                    <div class="stage__left-top"><a class="stage__left-title" href="#">Обмерный план</a>
+                  <div class="project-item">
+                    <div class="project-item__top"><a class="project-item__title" href="#">Обмерный план</a>
                       <div class="more">
-                        <button class="btn-reset stage__left-btn dropdown__btn">
+                        <button class="btn-reset project-item__btn dropdown__btn">
                           <svg class="svg-icon more__icon">
                             <use xlink:href="./img/sprites/sprite.svg#more"></use>
                           </svg>
@@ -239,41 +239,41 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="author stage__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="author__desc">ответственный</span></div>
-                    <div class="stage__left-info">
-                      <div class="stage__left-info__item">
-                        <div class="stage__left-info__image stage__left-info__image--1">
+                    <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="author__desc">ответственный</span></div>
+                    <div class="project-info">
+                      <div class="project-info__item">
+                        <div class="project-info__image project-info__image--1">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#files"></use>
                           </svg>
                         </div>
-                        <div class="stage__left-info__desc">Файлы <span>25 шт</span></div>
+                        <div class="project-info__desc">Файлы&nbsp;<span>25 шт</span></div>
                       </div>
-                      <div class="stage__left-info__item">
-                        <div class="stage__left-info__image stage__left-info__image--2">
+                      <div class="project-info__item">
+                        <div class="project-info__image project-info__image--2">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#square2"></use>
                           </svg>
                         </div>
-                        <div class="stage__left-info__desc">Площадь <span>25 м<sup>2</sup></span></div>
+                        <div class="project-info__desc">Площадь&nbsp;<span>25 м<sup>2</sup></span></div>
                       </div>
                     </div>
-                    <div class="stage__left-members">
-                      <div class="stage__left-members__left"><img class="stage__left-members__image" src="img/stage-1.png" alt="Human image 1"><img class="stage__left-members__image" src="img/stage-2.png" alt="Human image 2"><img class="stage__left-members__image" src="img/stage-3.png" alt="Human image 3"><img class="stage__left-members__image" src="img/stage-4.png" alt="Human image 4"><img class="stage__left-members__image" src="img/stage-5.png" alt="Human image 5"><span class="stage__left-members__more">+ 5</span></div><a class="stage__left-members__link" href="#">участники</a>
+                    <div class="project-members">
+                      <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">участники</a>
                     </div>
-                    <div class="progressbar stage__progressbar">
-                      <div class="progressbar-bottom stage__progressbar-bottom"><span class="progressbar-bottom__desc">
+                    <div class="progressbar project__progressbar">
+                      <div class="progressbar-bottom project__progressbar-bottom"><span class="progressbar-bottom__desc">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#start"></use>
                           </svg>1 сен 2020</span><span class="progressbar-bottom__desc">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#finish"></use>
                           </svg>10 сен 2020</span></div>
-                      <progress class="progressbar__line stage__progressbar-line" value="50" max="100"></progress>
+                      <progress class="progressbar__line project__progressbar-line" value="50" max="100"></progress>
                     </div>
-                    <div class="progressbar stage__progressbar">
-                      <div class="progressbar-bottom stage__progressbar-bottom"><span class="progressbar-bottom__desc">40% Выполнено </span><span class="progressbar-bottom__desc">2 задачи из 5</span></div>
-                      <progress class="progressbar__line stage__progressbar-line" value="70" max="100"></progress>
+                    <div class="progressbar project__progressbar">
+                      <div class="progressbar-bottom project__progressbar-bottom"><span class="progressbar-bottom__desc">40% Выполнено </span><span class="progressbar-bottom__desc">2 задачи из 5</span></div>
+                      <progress class="progressbar__line project__progressbar-line" value="70" max="100"></progress>
                     </div>
                   </div>
                   <div class="stage__right">
@@ -362,10 +362,10 @@
                   </button>
                 </div>
                 <div class="accordion__bottom stage__bottom show">
-                  <div class="stage__left">
-                    <div class="stage__left-top"><a class="stage__left-title" href="#">Обмерный план</a>
+                  <div class="project-item">
+                    <div class="project-item__top"><a class="project-item__title" href="#">Обмерный план</a>
                       <div class="more">
-                        <button class="btn-reset stage__left-btn dropdown__btn">
+                        <button class="btn-reset project-item__btn dropdown__btn">
                           <svg class="svg-icon more__icon">
                             <use xlink:href="./img/sprites/sprite.svg#more"></use>
                           </svg>
@@ -398,41 +398,41 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="author stage__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="author__desc">ответственный</span></div>
-                    <div class="stage__left-info">
-                      <div class="stage__left-info__item">
-                        <div class="stage__left-info__image stage__left-info__image--1">
+                    <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="author__desc">ответственный</span></div>
+                    <div class="project-info">
+                      <div class="project-info__item">
+                        <div class="project-info__image project-info__image--1">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#files"></use>
                           </svg>
                         </div>
-                        <div class="stage__left-info__desc">Файлы <span>25 шт</span></div>
+                        <div class="project-info__desc">Файлы&nbsp;<span>25 шт</span></div>
                       </div>
-                      <div class="stage__left-info__item">
-                        <div class="stage__left-info__image stage__left-info__image--2">
+                      <div class="project-info__item">
+                        <div class="project-info__image project-info__image--2">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#square2"></use>
                           </svg>
                         </div>
-                        <div class="stage__left-info__desc">Площадь <span>25 м<sup>2</sup></span></div>
+                        <div class="project-info__desc">Площадь&nbsp;<span>25 м<sup>2</sup></span></div>
                       </div>
                     </div>
-                    <div class="stage__left-members">
-                      <div class="stage__left-members__left"><img class="stage__left-members__image" src="img/stage-1.png" alt="Human image 1"><img class="stage__left-members__image" src="img/stage-2.png" alt="Human image 2"><img class="stage__left-members__image" src="img/stage-3.png" alt="Human image 3"><img class="stage__left-members__image" src="img/stage-4.png" alt="Human image 4"><img class="stage__left-members__image" src="img/stage-5.png" alt="Human image 5"><span class="stage__left-members__more">+ 5</span></div><a class="stage__left-members__link" href="#">участники</a>
+                    <div class="project-members">
+                      <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">участники</a>
                     </div>
-                    <div class="progressbar stage__progressbar">
-                      <div class="progressbar-bottom stage__progressbar-bottom"><span class="progressbar-bottom__desc">
+                    <div class="progressbar project__progressbar">
+                      <div class="progressbar-bottom project__progressbar-bottom"><span class="progressbar-bottom__desc">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#start"></use>
                           </svg>1 сен 2020</span><span class="progressbar-bottom__desc">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#finish"></use>
                           </svg>10 сен 2020</span></div>
-                      <progress class="progressbar__line stage__progressbar-line" value="50" max="100"></progress>
+                      <progress class="progressbar__line project__progressbar-line" value="50" max="100"></progress>
                     </div>
-                    <div class="progressbar stage__progressbar">
-                      <div class="progressbar-bottom stage__progressbar-bottom"><span class="progressbar-bottom__desc">40% Выполнено </span><span class="progressbar-bottom__desc">2 задачи из 5</span></div>
-                      <progress class="progressbar__line stage__progressbar-line" value="70" max="100"></progress>
+                    <div class="progressbar project__progressbar">
+                      <div class="progressbar-bottom project__progressbar-bottom"><span class="progressbar-bottom__desc">40% Выполнено </span><span class="progressbar-bottom__desc">2 задачи из 5</span></div>
+                      <progress class="progressbar__line project__progressbar-line" value="70" max="100"></progress>
                     </div>
                   </div>
                   <div class="stage__right">
@@ -521,10 +521,10 @@
                   </button>
                 </div>
                 <div class="accordion__bottom stage__bottom show">
-                  <div class="stage__left">
-                    <div class="stage__left-top"><a class="stage__left-title" href="#">Стилевое решение</a>
+                  <div class="project-item">
+                    <div class="project-item__top"><a class="project-item__title" href="#">Обмерный план</a>
                       <div class="more">
-                        <button class="btn-reset stage__left-btn dropdown__btn">
+                        <button class="btn-reset project-item__btn dropdown__btn">
                           <svg class="svg-icon more__icon">
                             <use xlink:href="./img/sprites/sprite.svg#more"></use>
                           </svg>
@@ -557,60 +557,41 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="author stage__author author-search">
-                      <button class="btn-reset author-left author-search__left">
-                        <div class="author__no-image">
-                          <svg class="svg-icon">
-                            <use xlink:href="./img/sprites/sprite.svg#question"></use>
-                          </svg>
-                        </div><span class="author__no-name">Нет ответственного</span>
-                      </button><a class="author-search__link" href="#">Найти</a>
-                      <div class="author-search__content">
-                        <input class="author-search__input" type="search">
-                        <ul class="author-search__list list-reset">
-                          <li class="author-search__item"><a class="author stage__item-author" href="#"><img class="author__image" src="img/svg/author-no-image.svg" alt="Павел Селивёрстов"><span class="author__name">Павел Селивёрстов</span></a></li>
-                          <li class="author-search__item"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-4.png" alt="Без отствественного"><span class="author__name">Без отствественного</span></a></li>
-                          <li class="author-search__item"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-2.png" alt="Адрей Никулин"><span class="author__name">Адрей Никулин</span></a></li>
-                          <li class="author-search__item"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-3.png" alt="Татьяна Кравченко"><span class="author__name">Татьяна Кравченко</span></a></li>
-                          <li class="author-search__item"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-4.png" alt="Ярослав Фельчевский"><span class="author__name">Ярослав Фельчевский</span></a></li>
-                          <li class="author-search__item"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="stage__left-info">
-                      <div class="stage__left-info__item">
-                        <div class="stage__left-info__image stage__left-info__image--1">
+                    <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="author__desc">ответственный</span></div>
+                    <div class="project-info">
+                      <div class="project-info__item">
+                        <div class="project-info__image project-info__image--1">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#files"></use>
                           </svg>
                         </div>
-                        <div class="stage__left-info__desc">Файлы <span>25 шт</span></div>
+                        <div class="project-info__desc">Файлы&nbsp;<span>25 шт</span></div>
                       </div>
-                      <div class="stage__left-info__item">
-                        <div class="stage__left-info__image stage__left-info__image--2">
+                      <div class="project-info__item">
+                        <div class="project-info__image project-info__image--2">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#square2"></use>
                           </svg>
                         </div>
-                        <div class="stage__left-info__desc">Площадь <span>25 м<sup>2</sup></span></div>
+                        <div class="project-info__desc">Площадь&nbsp;<span>25 м<sup>2</sup></span></div>
                       </div>
                     </div>
-                    <div class="stage__left-members">
-                      <div class="stage__left-members__left"><img class="stage__left-members__image" src="img/stage-1.png" alt="Human image 1"><img class="stage__left-members__image" src="img/stage-2.png" alt="Human image 2"><img class="stage__left-members__image" src="img/stage-3.png" alt="Human image 3"><img class="stage__left-members__image" src="img/stage-4.png" alt="Human image 4"><img class="stage__left-members__image" src="img/stage-5.png" alt="Human image 5"><span class="stage__left-members__more">+ 5</span></div><a class="stage__left-members__link" href="#">участники</a>
+                    <div class="project-members">
+                      <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">участники</a>
                     </div>
-                    <div class="progressbar stage__progressbar">
-                      <div class="progressbar-bottom stage__progressbar-bottom"><span class="progressbar-bottom__desc">
+                    <div class="progressbar project__progressbar">
+                      <div class="progressbar-bottom project__progressbar-bottom"><span class="progressbar-bottom__desc">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#start"></use>
                           </svg>1 сен 2020</span><span class="progressbar-bottom__desc">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#finish"></use>
                           </svg>10 сен 2020</span></div>
-                      <progress class="progressbar__line stage__progressbar-line" value="50" max="100"></progress>
+                      <progress class="progressbar__line project__progressbar-line" value="50" max="100"></progress>
                     </div>
-                    <div class="progressbar stage__progressbar">
-                      <div class="progressbar-bottom stage__progressbar-bottom"><span class="progressbar-bottom__desc">40% Выполнено </span><span class="progressbar-bottom__desc">2 задачи из 5</span></div>
-                      <progress class="progressbar__line stage__progressbar-line" value="70" max="100"></progress>
+                    <div class="progressbar project__progressbar">
+                      <div class="progressbar-bottom project__progressbar-bottom"><span class="progressbar-bottom__desc">40% Выполнено </span><span class="progressbar-bottom__desc">2 задачи из 5</span></div>
+                      <progress class="progressbar__line project__progressbar-line" value="70" max="100"></progress>
                     </div>
                   </div>
                   <div class="stage__right">
@@ -671,10 +652,10 @@
                   </button>
                 </div>
                 <div class="accordion__bottom stage__bottom show">
-                  <div class="stage__left">
-                    <div class="stage__left-top"><a class="stage__left-title" href="#">Обмерный план</a>
+                  <div class="project-item">
+                    <div class="project-item__top"><a class="project-item__title" href="#">Обмерный план</a>
                       <div class="more">
-                        <button class="btn-reset stage__left-btn dropdown__btn">
+                        <button class="btn-reset project-item__btn dropdown__btn">
                           <svg class="svg-icon more__icon">
                             <use xlink:href="./img/sprites/sprite.svg#more"></use>
                           </svg>
@@ -707,41 +688,41 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="author stage__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="author__desc">ответственный</span></div>
-                    <div class="stage__left-info">
-                      <div class="stage__left-info__item">
-                        <div class="stage__left-info__image stage__left-info__image--1">
+                    <div class="author project__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="author__desc">ответственный</span></div>
+                    <div class="project-info">
+                      <div class="project-info__item">
+                        <div class="project-info__image project-info__image--1">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#files"></use>
                           </svg>
                         </div>
-                        <div class="stage__left-info__desc">Файлы <span>25 шт</span></div>
+                        <div class="project-info__desc">Файлы&nbsp;<span>25 шт</span></div>
                       </div>
-                      <div class="stage__left-info__item">
-                        <div class="stage__left-info__image stage__left-info__image--2">
+                      <div class="project-info__item">
+                        <div class="project-info__image project-info__image--2">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#square2"></use>
                           </svg>
                         </div>
-                        <div class="stage__left-info__desc">Площадь <span>25 м<sup>2</sup></span></div>
+                        <div class="project-info__desc">Площадь&nbsp;<span>25 м<sup>2</sup></span></div>
                       </div>
                     </div>
-                    <div class="stage__left-members">
-                      <div class="stage__left-members__left"><img class="stage__left-members__image" src="img/stage-1.png" alt="Human image 1"><img class="stage__left-members__image" src="img/stage-2.png" alt="Human image 2"><img class="stage__left-members__image" src="img/stage-3.png" alt="Human image 3"><img class="stage__left-members__image" src="img/stage-4.png" alt="Human image 4"><img class="stage__left-members__image" src="img/stage-5.png" alt="Human image 5"><span class="stage__left-members__more">+ 5</span></div><a class="stage__left-members__link" href="#">участники</a>
+                    <div class="project-members">
+                      <div class="project-members__left"><img class="project-members__image" src="img/stage-1.png" alt="Human image 1"><img class="project-members__image" src="img/stage-2.png" alt="Human image 2"><img class="project-members__image" src="img/stage-3.png" alt="Human image 3"><img class="project-members__image" src="img/stage-4.png" alt="Human image 4"><img class="project-members__image" src="img/stage-5.png" alt="Human image 5"><span class="project-members__more">+ 5</span></div><a class="project-members__link" href="#">участники</a>
                     </div>
-                    <div class="progressbar stage__progressbar">
-                      <div class="progressbar-bottom stage__progressbar-bottom"><span class="progressbar-bottom__desc">
+                    <div class="progressbar project__progressbar">
+                      <div class="progressbar-bottom project__progressbar-bottom"><span class="progressbar-bottom__desc">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#start"></use>
                           </svg>1 сен 2020</span><span class="progressbar-bottom__desc">
                           <svg class="svg-icon">
                             <use xlink:href="./img/sprites/sprite.svg#finish"></use>
                           </svg>10 сен 2020</span></div>
-                      <progress class="progressbar__line stage__progressbar-line" value="50" max="100"></progress>
+                      <progress class="progressbar__line project__progressbar-line" value="50" max="100"></progress>
                     </div>
-                    <div class="progressbar stage__progressbar">
-                      <div class="progressbar-bottom stage__progressbar-bottom"><span class="progressbar-bottom__desc">40% Выполнено </span><span class="progressbar-bottom__desc">2 задачи из 5</span></div>
-                      <progress class="progressbar__line stage__progressbar-line" value="70" max="100"></progress>
+                    <div class="progressbar project__progressbar">
+                      <div class="progressbar-bottom project__progressbar-bottom"><span class="progressbar-bottom__desc">40% Выполнено </span><span class="progressbar-bottom__desc">2 задачи из 5</span></div>
+                      <progress class="progressbar__line project__progressbar-line" value="70" max="100"></progress>
                     </div>
                   </div>
                   <div class="stage__right">
