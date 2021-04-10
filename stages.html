@@ -27,8 +27,8 @@
   </head>
   <body>
     <div class="site-container">
-      <header class="header"> 
-        <div class="header__container">
+      <header class="header header-stages">
+        <div class="header__container header-stages__container">
           <button class="btn-reset burger" aria-label="Бургер меню"><span class="burger__line"></span></button><a class="logo header__logo" href="/">GuruInterrior</a>
           <div class="header__right">
             <div class="header-actions">
@@ -158,9 +158,9 @@
             </div>
           </div>
         </section>
-        <section class="stages">
+        <section class="stages section">
           <h2 class="visually-hidden">Этапы</h2>
-          <nav class="nav">
+          <nav class="nav stages__nav">
             <ul class="nav__list list-reset">
               <li class="nav__item"><a class="nav__link" href="/">
                   <svg class="svg-icon">
@@ -561,7 +561,26 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="author project__author stage__author"><a class="author-left" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a><span class="author__desc">ответственный</span></div>
+                    <div class="author project__author author-search">
+                      <button class="btn-reset author-left author-search__left">
+                        <div class="author__no-image">
+                          <svg class="svg-icon">
+                            <use xlink:href="./img/sprites/sprite.svg#question"></use>
+                          </svg>
+                        </div><span class="author__no-name">Нет ответственного</span>
+                      </button><a class="author-search__link" href="#">Найти</a>
+                      <div class="author-search__content">
+                        <input class="author-search__input" type="search">
+                        <ul class="author-search__list list-reset">
+                          <li class="author-search__item"><a class="author stage__item-author" href="#"><img class="author__image" src="img/svg/author-no-image.svg" alt="Павел Селивёрстов"><span class="author__name">Павел Селивёрстов</span></a></li>
+                          <li class="author-search__item"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-4.png" alt="Без отствественного"><span class="author__name">Без отствественного</span></a></li>
+                          <li class="author-search__item"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-2.png" alt="Адрей Никулин"><span class="author__name">Адрей Никулин</span></a></li>
+                          <li class="author-search__item"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-3.png" alt="Татьяна Кравченко"><span class="author__name">Татьяна Кравченко</span></a></li>
+                          <li class="author-search__item"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-4.png" alt="Ярослав Фельчевский"><span class="author__name">Ярослав Фельчевский</span></a></li>
+                          <li class="author-search__item"><a class="author stage__item-author" href="#"><img class="author__image" src="img/stage-1.png" alt="Коробков Сергей"><span class="author__name">Коробков Сергей</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
                     <div class="project-info stage__left-info">
                       <div class="project-info__item stage__left-info__item">
                         <div class="project-info__image stage__left-info__image project-info__image--1">
@@ -839,6 +858,7 @@
         </div>
       </footer>
     </div>
+    <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
