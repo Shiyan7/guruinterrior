@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Регистрация пользователя</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.min.css">
+  </head>
+  <body>
+    <div class="site-container">
+      <div class="login register">
+        <div class="login__container">
+          <div class="login-content register-content">
+            <div class="login-content__left register-content__left"><img class="login-content__image" src="img/avatar.png" alt=""><span class="logo login-content__logo" href="/">GuruInterrior</span><span class="login-content__desc">Платформа для ведения интерьерных проектов</span></div>
+            <div class="login-content__right register-content__right tabs-box" action="#">
+              <h1 class="login-content__title register-content__title">Регистрация пользователя</h1>
+              <ul class="register-tabs list-reset">
+                <li class="register-tabs__item">
+                  <button class="btn-reset register-tabs__btn tabs__btn tabs__btn--active" data-tabs-path="designer">Дизайнер</button>
+                </li>
+                <li class="register-tabs__item">
+                  <button class="btn-reset register-tabs__btn tabs__btn" data-tabs-path="specialist">Специалист</button>
+                </li>
+                <li class="register-tabs__item">
+                  <button class="btn-reset register-tabs__btn tabs__btn" data-tabs-path="client">Заказчик</button>
+                </li>
+              </ul>
+              <form class="register-form tabs__content tabs__content--active" action="#" data-tabs-target="designer">
+                <div class="register__content">
+                  <input class="login-content__input register-form__input" type="text" name="name" placeholder="Имя">
+                  <input class="login-content__input register-form__input" type="text" name="surname" placeholder="Фамилия">
+                  <input class="login-content__input register-form__input" type="email" name="email" placeholder="Email">
+                  <input class="login-content__input register-form__input" type="tel" name="tel" placeholder="Телефон">
+                  <input class="login-content__input register-form__input" type="password" name="password1" placeholder="Пароль">
+                  <input class="login-content__input register-form__input" type="password" name="password2" placeholder="Повторите пароль">
+                </div>
+                <div class="register__bottom"><span class="login-content__desc register-content__desc">Стоимость проектов Руб. за м²</span>
+                  <div class="slider register__slider"></div>
+                  <div class="new-item__info">
+                    <svg class="svg-icon">
+                      <use xlink:href="./img/sprites/sprite.svg#question-circle"></use>
+                    </svg>
+                    <div class="tooltip new-item__tooltip register__bottom-tooltip">Регистрация пользователя какой-то тултип</div>
+                  </div>
+                </div>
+                <input class="custom-checkbox register__custom-checkbox" type="checkbox" id="accept1">
+                <label for="accept1">Я принимаю условия Политики приватности и даю своё согласие на обработку персональных данных</label>
+                <input class="custom-checkbox register__custom-checkbox" type="checkbox" id="accept2">
+                <label for="accept2">Я cогласен получать email-уведомления о рекламных материалах, финансах и новостях</label>
+                <button class="btn-reset register-content__btn">Зарегистрироваться</button>
+              </form>
+              <form class="register-form tabs__content" action="#" data-tabs-target="specialist">
+                <div class="register__content">
+                  <input class="login-content__input register-form__input" type="text" name="name" placeholder="Имя">
+                  <input class="login-content__input register-form__input" type="text" name="surname" placeholder="Фамилия">
+                  <input class="login-content__input register-form__input" type="email" name="email" placeholder="Email">
+                  <input class="login-content__input register-form__input" type="tel" name="tel" placeholder="Телефон">
+                  <input class="login-content__input register-form__input" type="password" name="password1" placeholder="Пароль">
+                  <input class="login-content__input register-form__input" type="password" name="password2" placeholder="Повторите пароль">
+                </div>
+                <div class="register__bottom"><span class="login-content__desc register-content__desc">Стоимость проектов Руб. за м²</span>
+                  <div class="slider register__slider"></div>
+                  <div class="new-item__info">
+                    <svg class="svg-icon">
+                      <use xlink:href="./img/sprites/sprite.svg#question-circle"></use>
+                    </svg>
+                    <div class="tooltip new-item__tooltip register__bottom-tooltip">Регистрация пользователя какой-то тултип</div>
+                  </div>
+                </div>
+                <input class="custom-checkbox register__custom-checkbox" type="checkbox" id="accept3">
+                <label for="accept3">Я принимаю условия Политики приватности и даю своё согласие на обработку персональных данных</label>
+                <input class="custom-checkbox register__custom-checkbox" type="checkbox" id="accept4">
+                <label for="accept4">Я cогласен получать email-уведомления о рекламных материалах, финансах и новостях</label>
+                <button class="btn-reset register-content__btn">Зарегистрироваться</button>
+              </form>
+              <form class="register-form tabs__content" action="#" data-tabs-target="client">
+                <div class="register__content">
+                  <input class="login-content__input register-form__input" type="text" name="name" placeholder="Имя">
+                  <input class="login-content__input register-form__input" type="text" name="surname" placeholder="Фамилия">
+                  <input class="login-content__input register-form__input" type="email" name="email" placeholder="Email">
+                  <input class="login-content__input register-form__input" type="tel" name="tel" placeholder="Телефон">
+                  <input class="login-content__input register-form__input" type="password" name="password1" placeholder="Пароль">
+                  <input class="login-content__input register-form__input" type="password" name="password2" placeholder="Повторите пароль">
+                </div>
+                <div class="register__bottom"><span class="login-content__desc register-content__desc">Стоимость проектов Руб. за м²</span>
+                  <div class="slider register__slider"></div>
+                  <div class="new-item__info">
+                    <svg class="svg-icon">
+                      <use xlink:href="./img/sprites/sprite.svg#question-circle"></use>
+                    </svg>
+                    <div class="tooltip new-item__tooltip register__bottom-tooltip">Регистрация пользователя какой-то тултип</div>
+                  </div>
+                </div>
+                <input class="custom-checkbox register__custom-checkbox" type="checkbox" id="accept5">
+                <label for="accept5">Я принимаю условия Политики приватности и даю своё согласие на обработку персональных данных</label>
+                <input class="custom-checkbox register__custom-checkbox" type="checkbox" id="accept6">
+                <label for="accept6">Я cогласен получать email-уведомления о рекламных материалах, финансах и новостях</label>
+                <button class="btn-reset register-content__btn">Зарегистрироваться</button>
+              </form>
+            </div>
+          </div>
+          <div class="login-footer"><span class="footer__copy login-footer__copy">&copy;&nbsp;GuruInterrior 2021-2025</span>
+            <div class="login-footer__right"><a class="login-footer__mail footer__mail" href="mailto:support@gurudesign.com">
+                <svg class="svg-icon">
+                  <use xlink:href="./img/sprites/sprite.svg#mail"></use>
+                </svg>Support@gurudesign.com</a><a class="footer-support login-footer__support" href="tel:84950326687">
+                <svg class="svg-icon">
+                  <use xlink:href="./img/sprites/sprite.svg#support2"></use>
+                </svg>
+                <div class="footer-support__text"><span class="footer-support__desc login-footer__support-desc">Техническая поддержка 24/7</span><span class="footer-support__value">8 495 032 66 87</span></div></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

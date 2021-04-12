@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Войти в личный кабинет</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.min.css">
+  </head>
+  <body>
+    <div class="site-container">
+      <div class="login">
+        <div class="login__container">
+          <div class="login-content">
+            <div class="login-content__left"><img class="login-content__image" src="img/avatar.png" alt=""><span class="logo login-content__logo" href="/">GuruInterrior</span><span class="login-content__question">Ещё нет аккаунта?</span><a class="login-content__register" href="register.html">Зарегистрироваться</a><span class="login-content__desc">Входя в систему, вы соглашаетесь c <a class="login-content__link" href="#">Правилами системы </a>и <a class="login-content__link" href="#">Политикой конфиденциальности</a></span></div>
+            <form class="login-content__right validate-form" action="#">
+              <h1 class="login-content__title">Вход в личный кабинет</h1>
+              <input class="login-content__input" type="email" name="email" placeholder="Email">
+              <input class="login-content__input validate-tel" data-validate-field="tel" type="tel" name="tel" placeholder="Телефон">
+              <div class="login-content__bottom">
+                <input class="custom-checkbox" type="checkbox" id="remember">
+                <label for="remember">Запомнить меня</label><a class="login-content__link" href="recovery.html">Забыли пароль ?</a>
+              </div>
+              <button class="btn-reset login-content__enter">Войти</button>
+              <ul class="login-social list-reset">
+                <li class="login-social__item"><a class="login-social__link login-social__link--google" href="#">
+                    <svg class="svg-icon">
+                      <use xlink:href="./img/sprites/sprite.svg#google"></use>
+                    </svg></a></li>
+                <li class="login-social__item"><a class="login-social__link" href="#">
+                    <svg class="svg-icon">
+                      <use xlink:href="./img/sprites/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="login-social__item"><a class="login-social__link" href="#">
+                    <svg class="svg-icon">
+                      <use xlink:href="./img/sprites/sprite.svg#facebook"></use>
+                    </svg></a></li>
+                <li class="login-social__item"><a class="login-social__link" href="#">
+                    <svg class="svg-icon">
+                      <use xlink:href="./img/sprites/sprite.svg#instagram"></use>
+                    </svg></a></li>
+              </ul><a class="login-content__link" href="#">Войти с помощью SMS</a>
+            </form>
+          </div>
+          <div class="login-footer"><span class="footer__copy login-footer__copy">&copy;&nbsp;GuruInterrior 2021-2025</span>
+            <div class="login-footer__right"><a class="login-footer__mail footer__mail" href="mailto:support@gurudesign.com">
+                <svg class="svg-icon">
+                  <use xlink:href="./img/sprites/sprite.svg#mail"></use>
+                </svg>Support@gurudesign.com</a><a class="footer-support login-footer__support" href="tel:84950326687">
+                <svg class="svg-icon">
+                  <use xlink:href="./img/sprites/sprite.svg#support2"></use>
+                </svg>
+                <div class="footer-support__text"><span class="footer-support__desc login-footer__support-desc">Техническая поддержка 24/7</span><span class="footer-support__value">8 495 032 66 87</span></div></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

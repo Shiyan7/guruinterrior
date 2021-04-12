@@ -108,7 +108,7 @@
             </ul>
             <h1 class="section-title new-project__title">Новый проект</h1>
             <form class="new-project__form" action="#">
-              <div class="new-item">
+              <div class="new-item two-columns">
                 <div class="new-item__content">
                   <div class="new-item__top">
                     <h2 class="new-item__title">Основное</h2>
@@ -141,17 +141,19 @@
                         </svg>Загрузить файл
                       </label>
                     </div>
-                    <div class="name-file"><a class="btn-reset name-file__close"></a><span class="name-file__desc">Название файла</span><span class="name-file__type">PNG</span></div>
+                    <div class="name-file">
+                      <button class="btn-reset name-file__close" type="button"></button><span class="name-file__desc">Название файла</span><span class="name-file__type">PNG</span>
+                    </div>
                   </div>
                 </div>
                 <aside class="new-sidebar">
                   <h2 class="new-sidebar__title">Заказчик</h2>
                   <p class="new-sidebar__desc">Видит только те задачи проекта, в которые добавлен в качестве подписчика</p>
                   <select class="select new-sidebar__select">Заказчик
-                    <option>Валентин Абрамсон</option>
-                    <option>Тимофей Порошич</option>
+                    <option>Заказчик</option>
+                    <option>Подписчик</option>
                   </select>
-                  <button class="btn-reset primary-btn new-sidebar__btn">Пригласить</button>
+                  <button class="btn-reset primary-btn new-sidebar__btn" type="button">Пригласить</button>
                 </aside>
               </div>
               <div class="new-item">
@@ -187,8 +189,8 @@
                     </div>
                   </div>
                 </div>
+                <button class="btn-reset new-project__btn">Создать проект</button>
               </div>
-              <button class="btn-reset new-project__btn">Создать проект</button>
             </form>
           </div>
         </section>
@@ -218,7 +220,7 @@
                 <svg class="svg-icon">
                   <use xlink:href="./img/sprites/sprite.svg#mail"></use>
                 </svg>Support@gurudesign.com</a></div>
-          </div><span class="footer__copy">© GuruInterrior 2021-2025</span>
+          </div><span class="footer__copy">&copy;&nbsp;GuruInterrior 2021-2025</span>
         </div>
       </footer>
     </div>
