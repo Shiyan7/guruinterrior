@@ -6,7 +6,7 @@
     <title>Регистрация пользователя</title>
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
     <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
@@ -44,14 +44,14 @@
                   <button class="btn-reset register-tabs__btn tabs__btn" data-tabs-path="client">Заказчик</button>
                 </li>
               </ul>
-              <form class="register-form tabs__content tabs__content--active" action="#" data-tabs-target="designer">
+              <form class="register-form tabs__content validate-form tabs__content--active" action="#" data-tabs-target="designer">
                 <div class="register__content">
-                  <input class="login-content__input register-form__input" type="text" name="name" placeholder="Имя" required>
-                  <input class="login-content__input register-form__input" type="text" name="surname" placeholder="Фамилия" required>
-                  <input class="login-content__input register-form__input" type="email" name="email" placeholder="Email" required>
-                  <input class="login-content__input register-form__input" type="tel" name="tel" placeholder="Телефон" required>
-                  <input class="login-content__input register-form__input" type="password" name="password1" placeholder="Пароль" required>
-                  <input class="login-content__input register-form__input" type="password" name="password2" placeholder="Повторите пароль" required>
+                  <input class="login-content__input register-form__input" data-validate-field="name" type="text" name="name" placeholder="Имя">
+                  <input class="login-content__input register-form__input" data-validate-field="text" type="text" name="surname" placeholder="Фамилия">
+                  <input class="login-content__input register-form__input" data-validate-field="email" type="email" name="email" placeholder="Email">
+                  <input class="login-content__input register-form__input" data-validate-field="tel" type="tel" name="tel" placeholder="Телефон">
+                  <input class="login-content__input register-form__input" data-validate-field="password" type="password" name="password1" placeholder="Пароль">
+                  <input class="login-content__input register-form__input" data-validate-field="password2" type="password" name="password2" placeholder="Повторите пароль">
                 </div>
                 <div class="register__bottom"><span class="login-content__desc register-content__desc">Стоимость проектов Руб. за м²</span>
                   <div class="slider register__slider"></div>
@@ -62,20 +62,20 @@
                     <div class="tooltip new-item__tooltip register__bottom-tooltip">Регистрация пользователя</div>
                   </div>
                 </div>
-                <input class="custom-checkbox register__custom-checkbox" type="checkbox" id="accept1" required>
+                <input class="custom-checkbox register__custom-checkbox" data-validate-field="checkbox1" type="checkbox" id="accept1">
                 <label for="accept1">Я принимаю условия Политики приватности и даю своё согласие на обработку персональных данных</label>
-                <input class="custom-checkbox register__custom-checkbox" type="checkbox" id="accept2" required>
+                <input class="custom-checkbox register__custom-checkbox" data-validate-field="checkbox2" type="checkbox" id="accept2">
                 <label for="accept2">Я cогласен получать email-уведомления о рекламных материалах, финансах и новостях</label>
                 <button class="btn-reset register-content__btn">Зарегистрироваться</button>
               </form>
-              <form class="register-form tabs__content" action="#" data-tabs-target="specialist">
+              <form class="register-form tabs__content validate-form--2" action="#" data-tabs-target="specialist">
                 <div class="register__content">
-                  <input class="login-content__input register-form__input" type="text" name="name1" placeholder="Имя" required>
-                  <input class="login-content__input register-form__input" type="text" name="surname1" placeholder="Фамилия" required>
-                  <input class="login-content__input register-form__input" type="email" name="email1" placeholder="Email" required>
-                  <input class="login-content__input register-form__input" type="tel" name="tel1" placeholder="Телефон" required>
-                  <input class="login-content__input register-form__input" type="password" name="password3" placeholder="Пароль" required>
-                  <input class="login-content__input register-form__input" type="password" name="password4" placeholder="Повторите пароль" required>
+                  <input class="login-content__input register-form__input" data-validate-field="name" type="text" name="name1" placeholder="Имя">
+                  <input class="login-content__input register-form__input" data-validate-field="text" type="text" name="surname1" placeholder="Фамилия">
+                  <input class="login-content__input register-form__input" data-validate-field="email" type="email" name="email1" placeholder="Email">
+                  <input class="login-content__input register-form__input" data-validate-field="tel" type="tel" name="tel1" placeholder="Телефон">
+                  <input class="login-content__input register-form__input" data-validate-field="password" type="password" name="password3" placeholder="Пароль">
+                  <input class="login-content__input register-form__input" data-validate-field="password2" type="password" name="password4" placeholder="Повторите пароль">
                 </div>
                 <div class="register__bottom"><span class="login-content__desc register-content__desc">Стоимость проектов Руб. за м²</span>
                   <div class="slider register__slider"></div>
@@ -86,20 +86,20 @@
                     <div class="tooltip new-item__tooltip register__bottom-tooltip">Регистрация пользователя</div>
                   </div>
                 </div>
-                <input class="custom-checkbox register__custom-checkbox" type="checkbox" id="accept3" required>
+                <input class="custom-checkbox register__custom-checkbox" data-validate-field="checkbox1" type="checkbox" id="accept3">
                 <label for="accept3">Я принимаю условия Политики приватности и даю своё согласие на обработку персональных данных</label>
-                <input class="custom-checkbox register__custom-checkbox" type="checkbox" id="accept4" required>
+                <input class="custom-checkbox register__custom-checkbox" data-validate-field="checkbox2" type="checkbox" id="accept4">
                 <label for="accept4">Я cогласен получать email-уведомления о рекламных материалах, финансах и новостях</label>
                 <button class="btn-reset register-content__btn">Зарегистрироваться</button>
               </form>
-              <form class="register-form tabs__content" action="#" data-tabs-target="client">
+              <form class="register-form tabs__content validate-form--3" action="#" data-tabs-target="client">
                 <div class="register__content">
-                  <input class="login-content__input register-form__input" type="text" name="name2" placeholder="Имя" required>
-                  <input class="login-content__input register-form__input" type="text" name="surname2" placeholder="Фамилия" required>
-                  <input class="login-content__input register-form__input" type="email" name="email2" placeholder="Email" required>
-                  <input class="login-content__input register-form__input" type="tel" name="tel2" placeholder="Телефон" required>
-                  <input class="login-content__input register-form__input" type="password" name="password5" placeholder="Пароль" required>
-                  <input class="login-content__input register-form__input" type="password" name="password6" placeholder="Повторите пароль" required>
+                  <input class="login-content__input register-form__input" data-validate-field="name" type="text" name="name2" placeholder="Имя">
+                  <input class="login-content__input register-form__input" data-validate-field="text" type="text" name="surname2" placeholder="Фамилия">
+                  <input class="login-content__input register-form__input" data-validate-field="email" type="email" name="email2" placeholder="Email" required>
+                  <input class="login-content__input register-form__input" data-validate-field="tel" type="tel" name="tel2" placeholder="Телефон">
+                  <input class="login-content__input register-form__input" data-validate-field="password" type="password" name="password5" placeholder="Пароль">
+                  <input class="login-content__input register-form__input" data-validate-field="password2" type="password" name="password6" placeholder="Повторите пароль">
                 </div>
                 <div class="register__bottom"><span class="login-content__desc register-content__desc">Стоимость проектов Руб. за м²</span>
                   <div class="slider register__slider"></div>
@@ -110,9 +110,9 @@
                     <div class="tooltip new-item__tooltip register__bottom-tooltip">Регистрация пользователя</div>
                   </div>
                 </div>
-                <input class="custom-checkbox register__custom-checkbox" type="checkbox" id="accept5" required>
+                <input class="custom-checkbox register__custom-checkbox" data-validate-field="checkbox1" type="checkbox" id="accept5">
                 <label for="accept5">Я принимаю условия Политики приватности и даю своё согласие на обработку персональных данных</label>
-                <input class="custom-checkbox register__custom-checkbox" type="checkbox" id="accept6" required>
+                <input class="custom-checkbox register__custom-checkbox" data-validate-field="checkbox2" type="checkbox" id="accept6">
                 <label for="accept6">Я cогласен получать email-уведомления о рекламных материалах, финансах и новостях</label>
                 <button class="btn-reset register-content__btn">Зарегистрироваться</button>
               </form>

@@ -6,7 +6,7 @@
     <title>Войти в личный кабинет</title>
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
     <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
@@ -33,10 +33,10 @@
             <div class="login-content__left"><img class="login-content__image" src="img/avatar.png" alt=""><span class="logo login-content__logo">GuruInterrior</span><span class="login-content__question">Ещё нет аккаунта?</span><a class="login-content__register" href="register.html">Зарегистрироваться</a><span class="login-content__desc">Входя в систему, вы соглашаетесь c <a class="login-content__link" href="#">Правилами системы </a>и <a class="login-content__link" href="#">Политикой конфиденциальности</a></span></div>
             <form class="login-content__right validate-form" action="#">
               <h1 class="login-content__title">Вход в личный кабинет</h1>
-              <input class="login-content__input" type="email" name="email" placeholder="Email">
-              <input class="login-content__input validate-tel" data-validate-field="tel" type="tel" name="tel" placeholder="Телефон">
+              <input class="login-content__input" data-validate-field="email" type="email" name="email" placeholder="Email">
+              <input class="login-content__input" data-validate-field="password" type="password" name="password" placeholder="Пароль">
               <div class="login-content__bottom">
-                <input class="custom-checkbox" type="checkbox" id="remember" checkbox>
+                <input class="custom-checkbox" type="checkbox" id="remember">
                 <label for="remember">Запомнить меня</label><a class="login-content__link" href="recovery.html">Забыли пароль ?</a>
               </div>
               <button class="btn-reset login-content__enter">Войти</button>

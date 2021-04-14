@@ -6,7 +6,7 @@
     <title>Восстановление пароля</title>
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
     <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
@@ -29,12 +29,12 @@
     <div class="site-container">
       <div class="recovery auth">
         <div class="recovery__container auth-container">
-          <form class="recovery-content auth-content" action="#">
+          <form class="recovery-content auth-content validate-form" action="#">
             <h1 class="login-content__title">Восстановление пароля</h1>
             <p class="login-content__desc recovery-content__desc">Введите логин или адрес электронной почты</p>
-            <input class="login-content__input" type="text" name="text" placeholder="Логин или Email" required>
-            <div class="recovery-content__btns"><a class="recovery-content__back" href="login.html">Отмена</a>
-              <button class="btn-reset login-content__enter recovery-content__btn">Востановить пароль</button>
+            <input class="login-content__input" data-validate-field="text" type="text" name="text" placeholder="Логин или Email" required>
+            <div class="recovery-content__btns"><a class="recovery-content__back login-content__link" href="login.html">Отмена</a>
+              <button class="btn-reset login-content__enter recovery-content__btn">Восстановить пароль</button>
             </div>
           </form>
           <div class="login-footer"><span class="footer__copy login-footer__copy">&copy;&nbsp;GuruInterrior 2021-2025</span><a class="footer-support login-footer__support" href="tel:84950326687">

@@ -6,7 +6,7 @@
     <title>Новый проект</title>
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
     <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
     <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
@@ -97,7 +97,7 @@
             </ul>
           </nav>
           <div class="container page__container">
-            <ul class="project-nav list-reset">
+            <ul class="project-nav list-reset projects__project-nav">
               <li class="project-nav__item"><a class="project-nav__link" href="#">Главная</a></li>
               <li class="project-nav__item"><a class="project-nav__link project-nav__link--current">Проекты</a></li>
               <li class="project-nav__item"><a class="project-nav__link" href="#">файлы</a></li>
@@ -165,7 +165,20 @@
                       <div class="tooltip new-item__tooltip">Вы можете выбрать заказчика или подписчика из числа своих контактов, пригласить специалиста с платформы или пригласить в проект. После создания проекта подписчики получат приглашение по e-mail.</div>
                     </div>
                   </div>
-                  <div class="new-item__body"></div>
+                  <div class="new-item__box">
+                    <select class="select new-item__select--2">
+                      <option>Ваши контакты</option>
+                      <option>Специалисты платформы</option>
+                      <option>Пригласить</option>
+                    </select>
+                    <div class="new-item__info">
+                      <svg class="svg-icon">
+                        <use xlink:href="./img/sprites/sprite.svg#question-circle"></use>
+                      </svg>
+                      <div class="tooltip new-item__tooltip">Вы можете выбрать заказчика или подписчика из числа своих контактов, пригласить специалиста с платформы или пригласить в проект. После создания проекта подписчики получат приглашение по e-mail.</div>
+                    </div>
+                  </div>
+                  <button class="btn-reset btn-clear" type="button">Очистить</button>
                 </div>
               </div>
               <div class="new-item">
