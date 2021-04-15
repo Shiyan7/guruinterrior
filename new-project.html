@@ -108,7 +108,7 @@
             </ul>
             <h1 class="section-title new-project__title">Новый проект</h1>
             <form class="new-project__form" action="#">
-              <div class="new-item two-columns">
+              <div class="new-item">
                 <div class="new-item__content">
                   <div class="new-item__top">
                     <h2 class="new-item__title">Основное</h2>
@@ -147,9 +147,11 @@
                 <aside class="new-sidebar">
                   <h2 class="new-sidebar__title">Заказчик</h2>
                   <p class="new-sidebar__desc">Видит только те задачи проекта, в которые добавлен в качестве подписчика</p>
-                  <select class="select new-sidebar__select">Заказчик
+                  <select class="select new-sidebar__select">
                     <option>Заказчик</option>
-                    <option>Подписчик</option>
+                    <option>Заказчик</option>
+                    <option>Заказчик</option>
+                    <option>Заказчик</option>
                   </select>
                   <button class="btn-reset primary-btn new-sidebar__btn" type="button">Пригласить</button>
                 </aside>
@@ -158,27 +160,27 @@
                 <div class="new-item__content">
                   <div class="new-item__top">
                     <h2 class="new-item__title">Участники</h2>
-                    <div class="new-item__info">
+                    <div class="tooltip">
                       <svg class="svg-icon">
                         <use xlink:href="./img/sprites/sprite.svg#question-circle"></use>
                       </svg>
-                      <div class="tooltip new-item__tooltip">Вы можете выбрать заказчика или подписчика из числа своих контактов, пригласить специалиста с платформы или пригласить в проект. После создания проекта подписчики получат приглашение по e-mail.</div>
+                      <div class="tooltip__txt">Вы можете выбрать заказчика или подписчика из числа своих контактов, пригласить специалиста с платформы или пригласить в проект. После создания проекта подписчики получат приглашение по e-mail.</div>
                     </div>
                   </div>
                   <div class="new-item__box">
-                    <select class="select new-item__select--2">
-                      <option>Ваши контакты</option>
-                      <option>Специалисты платформы</option>
-                      <option>Пригласить</option>
-                    </select>
-                    <div class="new-item__info">
+                    <div class="tooltip">
                       <svg class="svg-icon">
                         <use xlink:href="./img/sprites/sprite.svg#question-circle"></use>
                       </svg>
-                      <div class="tooltip new-item__tooltip">Вы можете выбрать заказчика или подписчика из числа своих контактов, пригласить специалиста с платформы или пригласить в проект. После создания проекта подписчики получат приглашение по e-mail.</div>
+                      <div class="tooltip__txt">Вы можете выбрать заказчика или подписчика из числа своих контактов, пригласить специалиста с платформы или пригласить в проект. После создания проекта подписчики получат приглашение по e-mail.</div>
                     </div>
+                    <select class="select new-item__select--2">
+                      <option value="contacts">Ваши контакты</option>
+                      <option value="specialists">Специалисты платформы</option>
+                      <option value="invite">Пригласить</option>
+                    </select>
+                    <button class="btn-reset btn-clear" type="button">Очистить                        </button>
                   </div>
-                  <button class="btn-reset btn-clear" type="button">Очистить</button>
                 </div>
               </div>
               <div class="new-item">
@@ -186,17 +188,57 @@
                   <div class="new-item__top">
                     <h2 class="new-item__title">Данные проекта</h2>
                   </div>
+                  <div class="new-project__inputs">
+                    <input class="new-item__input new-project__input" type="text" name="area" placeholder="Площадь, м²">
+                    <select class="select new-project__input" name="house type">
+                      <option>Тип дома</option>
+                      <option>Тип дома1</option>
+                      <option>Тип дома2</option>
+                      <option>Тип дома3</option>
+                    </select>
+                    <select class="select new-project__input" name="quantity rooms">
+                      <option>Количество комнат</option>
+                      <option>Количество комнат1</option>
+                      <option>Количество комнат2</option>
+                      <option>Количество комнат3</option>
+                    </select>
+                    <input class="new-item__input new-project__input" type="text" name="price" placeholder="Цена, руб./м²">
+                    <input class="new-item__input new-project__input" type="text" name="floors" placeholder="Этажей">
+                    <input class="new-item__input new-project__input" type="text" name="ceiling height" placeholder="Высота потолков, м">
+                    <input class="new-item__input new-project__input" type="text" name="reserve" placeholder="Резерв">
+                  </div>
+                  <textarea class="new-project__textarea new-item__input" name="addresses" placeholder="Адреса объектов"></textarea>
+                  <div class="tabs-box">
+                    <ul class="new-tabs list-reset">
+                      <li class="new-tabs__item">
+                        <button class="btn-reset new-tabs__btn tabs__btn tabs__btn--active" data-tabs-path="apartments" type="button">Квартиры</button>
+                      </li>
+                      <li class="new-tabs__item">
+                        <button class="btn-reset new-tabs__btn tabs__btn" data-tabs-path="privare house" type="button">Частный дом</button>
+                      </li>
+                      <li class="new-tabs__item">
+                        <button class="btn-reset new-tabs__btn tabs__btn" data-tabs-path="penthouse" type="button">Пентхаус</button>
+                      </li>
+                      <li class="new-tabs__item">
+                        <button class="btn-reset new-tabs__btn tabs__btn" data-tabs-path="commercial" type="button">Коммерческая</button>
+                      </li>
+                      <li class="new-tabs__item">
+                        <button class="btn-reset new-tabs__btn tabs__btn" data-tabs-path="other" type="button">Другое</button>
+                      </li>
+                    </ul>
+                    <div class="tabs__content" data-tabs-target="apartments"></div>
+                  </div>
                 </div>
               </div>
               <div class="new-item">
                 <div class="new-item__content">
                   <div class="new-item__top">
                     <h2 class="new-item__title">Реквизиты и договор</h2>
-                    <div class="new-item__info">
+                    <div class="tooltip">
                       <svg class="svg-icon">
                         <use xlink:href="./img/sprites/sprite.svg#question-circle"></use>
                       </svg>
-                      <div class="tooltip new-item__tooltip">Вы можете выбрать заказчика или подписчика из числа своих контактов, пригласить специалиста с платформы или пригласить в проект. После создания проекта подписчики получат приглашение по e-mail.</div>
+                      <div class="tooltip__txt">Вы можете выбрать заказчика или подписчика из числа своих контактов, пригласить специалиста с платформы или пригласить в проект. После создания проекта подписчики получат приглашение по e-mail.</div>
                     </div>
                   </div>
                 </div>
