@@ -116,7 +116,58 @@
                   <div class="new-item__body">
                     <input class="new-item__input new-item__name" type="text" name="name-project" placeholder="Название проекта">
                     <input class="new-item__input new-item__date" type="date" name="date1">
-                    <div class="toolbar-container"></div>
+                    <div class="toolbar">
+                      <button class="btn-reset ql-bold ql-btn">
+                        <svg class="svg-icon">
+                          <use xlink:href="./img/sprites/sprite.svg#bold"></use>
+                        </svg>
+                      </button>
+                      <button class="btn-reset ql-italic ql-btn">
+                        <svg class="svg-icon">
+                          <use xlink:href="./img/sprites/sprite.svg#italic"></use>
+                        </svg>
+                      </button>
+                      <button class="btn-reset ql-underline ql-btn">
+                        <svg class="svg-icon">
+                          <use xlink:href="./img/sprites/sprite.svg#underline"></use>
+                        </svg>
+                      </button>
+                      <button class="btn-reset check-list-btn ql-btn">
+                        <svg class="svg-icon">
+                          <use xlink:href="./img/sprites/sprite.svg#check-list"></use>
+                        </svg>
+                      </button>
+                      <button class="btn-reset ql-list ql-btn" value="bullet">
+                        <svg class="svg-icon">
+                          <use xlink:href="./img/sprites/sprite.svg#list-ul"></use>
+                        </svg>
+                      </button>
+                      <button class="btn-reset ql-list ql-btn" value="ordered">
+                        <svg class="svg-icon">
+                          <use xlink:href="./img/sprites/sprite.svg#list-ol"></use>
+                        </svg>
+                      </button>
+                      <button class="btn-reset ql-background ql-btn">
+                        <svg class="svg-icon">
+                          <use xlink:href="./img/sprites/sprite.svg#background"></use>
+                        </svg>
+                      </button>
+                      <button class="btn-reset ql-link ql-btn">
+                        <svg class="svg-icon">
+                          <use xlink:href="./img/sprites/sprite.svg#link"></use>
+                        </svg>
+                      </button>
+                      <button class="btn-reset ql-at ql-btn">
+                        <svg class="svg-icon">
+                          <use xlink:href="./img/sprites/sprite.svg#at"></use>
+                        </svg>
+                      </button>
+                      <button class="btn-reset ql-code ql-btn">
+                        <svg class="svg-icon">
+                          <use xlink:href="./img/sprites/sprite.svg#code"></use>
+                        </svg>
+                      </button>
+                    </div>
                     <input class="new-item__input new-item__date new-item__date--2" type="date" name="date1">
                   </div>
                   <div class="editor"></div>
@@ -148,10 +199,10 @@
                   <h2 class="new-sidebar__title">Заказчик</h2>
                   <p class="new-sidebar__desc">Видит только те задачи проекта, в которые добавлен в качестве подписчика</p>
                   <select class="select new-sidebar__select">
-                    <option>Заказчик</option>
-                    <option>Заказчик</option>
-                    <option>Заказчик</option>
-                    <option>Заказчик</option>
+                    <option value="">Заказчик</option>
+                    <option value="invite">Пригласить</option>
+                    <option value="valentine">Валентин Абрамсон</option>
+                    <option value="timothy">Тимофей Порошич</option>
                   </select>
                   <button class="btn-reset primary-btn new-sidebar__btn" type="button">Пригласить</button>
                 </aside>
@@ -175,6 +226,7 @@
                       <div class="tooltip__txt">Вы можете выбрать заказчика или подписчика из числа своих контактов, пригласить специалиста с платформы или пригласить в проект. После создания проекта подписчики получат приглашение по e-mail.</div>
                     </div>
                     <select class="select new-item__select--2">
+                      <option value="">Подписчики</option>
                       <option value="contacts">Ваши контакты</option>
                       <option value="specialists">Специалисты платформы</option>
                       <option value="invite">Пригласить</option>
@@ -191,16 +243,26 @@
                   <div class="new-project__inputs">
                     <input class="new-item__input new-project__input" type="text" name="area" placeholder="Площадь, м²">
                     <select class="select new-project__input" name="house type">
-                      <option>Тип дома</option>
-                      <option>Тип дома1</option>
-                      <option>Тип дома2</option>
-                      <option>Тип дома3</option>
+                      <option value="">Тип дома</option>
+                      <option value="brick">Кирпичный</option>
+                      <option value="monolithic">Монолитный</option>
+                      <option value="panel">Панельный</option>
+                      <option value="blocky">Блочный</option>
+                      <option value="wood">Деревянный</option>
+                      <option value="other">Другое  </option>
                     </select>
                     <select class="select new-project__input" name="quantity rooms">
-                      <option>Количество комнат</option>
-                      <option>Количество комнат1</option>
-                      <option>Количество комнат2</option>
-                      <option>Количество комнат3</option>
+                      <option value="">Количество комнат</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
                     </select>
                     <input class="new-item__input new-project__input" type="text" name="price" placeholder="Цена, руб./м²">
                     <input class="new-item__input new-project__input" type="text" name="floors" placeholder="Этажей">
