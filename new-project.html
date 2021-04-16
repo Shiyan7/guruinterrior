@@ -29,7 +29,7 @@
     <div class="site-container">
       <header class="header"> 
         <div class="header__container">
-          <button class="btn-reset burger" aria-label="Бургер меню"><span class="burger__line"></span></button><a class="logo header__logo" href="/">GuruInterrior</a>
+          <button class="btn-reset burger new-project__burger" aria-label="Бургер меню"><span class="burger__line"></span></button><a class="logo header__logo" href="/">GuruInterrior</a>
           <div class="user">
             <button class="btn-reset user__btn dropdown__btn">
               <svg class="svg-icon user__icon">
@@ -64,8 +64,8 @@
             </ul>
           </div>
         </div>
-        <div class="overlay"></div>
       </header>
+      <div class="overlay"></div>
       <main class="main">
         <section class="new-project section">
           <nav class="nav">
@@ -180,7 +180,7 @@
                         <option>Документы</option>
                         <option>Другое</option>
                       </select>
-                      <button class="btn-reset btn-add" type="button"></button>
+                      <button class="btn-reset btn-create create-upload" type="button"></button>
                     </div>
                     <div class="input-file__container">
                       <input class="input-file__input" id="input__file" name="file" type="file" multiple>
@@ -210,12 +210,14 @@
               <div class="new-item">
                 <div class="new-item__content">
                   <div class="new-item__top">
-                    <h2 class="new-item__title">Участники</h2>
-                    <div class="tooltip">
-                      <svg class="svg-icon">
-                        <use xlink:href="./img/sprites/sprite.svg#question-circle"></use>
-                      </svg>
-                      <div class="tooltip__txt">Вы можете выбрать заказчика или подписчика из числа своих контактов, пригласить специалиста с платформы или пригласить в проект. После создания проекта подписчики получат приглашение по e-mail.</div>
+                    <div class="new-item__top-left">
+                      <h2 class="new-item__title">Участники</h2>
+                      <div class="tooltip">
+                        <svg class="svg-icon">
+                          <use xlink:href="./img/sprites/sprite.svg#question-circle"></use>
+                        </svg>
+                        <div class="tooltip__txt">Вы можете выбрать заказчика или подписчика из числа своих контактов, пригласить специалиста с платформы или пригласить в проект. После создания проекта подписчики получат приглашение по e-mail.</div>
+                      </div>
                     </div>
                   </div>
                   <div class="new-item__members">
@@ -288,21 +290,220 @@
                         <button class="btn-reset new-tabs__btn tabs__btn" data-tabs-path="other" type="button">Другое</button>
                       </li>
                     </ul>
-                    <div class="tabs__content" data-tabs-target="apartments"></div>
-                    <div class="new-item"></div>
+                    <div class="tabs__content new-project__data tabs__content--active" data-tabs-target="apartments">
+                      <div class="new-project__data-left">
+                        <div class="new-project__data-block">
+                          <select class="select" name="premises">
+                            <option value="">Нет помещения</option>
+                            <option value="bathroom">Ванная</option>
+                            <option value="brick">Детская</option>
+                            <option value="children">Кабинет</option>
+                            <option value="brick">Коридор</option>
+                            <option value="corridor">Лоджия</option>
+                            <option value="kitchen">Кухня</option>
+                            <option value="bedroom">Спальня</option>
+                            <option value="canteen">Столовая</option>
+                            <option value="wardrobe">Гардероб</option>
+                            <option value="another">Другое...</option>
+                          </select>
+                          <button class="btn-reset btn-create create-data" type="button"></button>
+                          <input class="new-item__input new-project__data-input" type="text" name="area" placeholder="Площадь, м²">
+                        </div>
+                        <div class="new-project__data-block">
+                          <select class="select" name="premises">
+                            <option value="">Нет помещения</option>
+                            <option value="bathroom">Ванная</option>
+                            <option value="brick">Детская</option>
+                            <option value="children">Кабинет</option>
+                            <option value="brick">Коридор</option>
+                            <option value="corridor">Лоджия</option>
+                            <option value="kitchen">Кухня</option>
+                            <option value="bedroom">Спальня</option>
+                            <option value="canteen">Столовая</option>
+                            <option value="wardrobe">Гардероб</option>
+                            <option value="another">Другое...</option>
+                          </select>
+                          <button class="btn-reset btn-remove remove-data" type="button"></button>
+                          <input class="new-item__input new-project__data-input" type="text" name="area" placeholder="Площадь, м²">
+                        </div>
+                      </div>
+                      <p class="new-item__desc new-item__info">Для каждого помещения на каждом этапе дизайн-проекта будет создана задача. При этом вы можете добавлять, редактировать и удалять задачи в любой момент.</p>
+                    </div>
+                    <div class="tabs__content new-project__data" data-tabs-target="privare house">
+                      <div class="new-project__data-left">
+                        <div class="new-project__data-block">
+                          <select class="select" name="premises">
+                            <option value="">Нет помещения</option>
+                            <option value="bathroom">Ванная</option>
+                            <option value="brick">Детская</option>
+                            <option value="children">Кабинет</option>
+                            <option value="brick">Коридор</option>
+                            <option value="corridor">Лоджия</option>
+                            <option value="kitchen">Кухня</option>
+                            <option value="bedroom">Спальня</option>
+                            <option value="canteen">Столовая</option>
+                            <option value="wardrobe">Гардероб</option>
+                            <option value="another">Другое...</option>
+                          </select>
+                          <button class="btn-reset btn-create create-data" type="button"></button>
+                          <input class="new-item__input new-project__data-input" type="text" name="area" placeholder="Площадь, м²">
+                        </div>
+                        <div class="new-project__data-block">
+                          <select class="select" name="premises">
+                            <option value="">Нет помещения</option>
+                            <option value="bathroom">Ванная</option>
+                            <option value="brick">Детская</option>
+                            <option value="children">Кабинет</option>
+                            <option value="brick">Коридор</option>
+                            <option value="corridor">Лоджия</option>
+                            <option value="kitchen">Кухня</option>
+                            <option value="bedroom">Спальня</option>
+                            <option value="canteen">Столовая</option>
+                            <option value="wardrobe">Гардероб</option>
+                            <option value="another">Другое...</option>
+                          </select>
+                          <button class="btn-reset btn-remove remove-data" type="button"></button>
+                          <input class="new-item__input new-project__data-input" type="text" name="area" placeholder="Площадь, м²">
+                        </div>
+                      </div>
+                      <p class="new-item__desc new-item__info">Для каждого помещения на каждом этапе дизайн-проекта будет создана задача. При этом вы можете добавлять, редактировать и удалять задачи в любой момент.</p>
+                    </div>
+                    <div class="tabs__content new-project__data" data-tabs-target="penthouse">
+                      <div class="new-project__data-left">
+                        <div class="new-project__data-block">
+                          <select class="select" name="premises">
+                            <option value="">Нет помещения</option>
+                            <option value="bathroom">Ванная</option>
+                            <option value="brick">Детская</option>
+                            <option value="children">Кабинет</option>
+                            <option value="brick">Коридор</option>
+                            <option value="corridor">Лоджия</option>
+                            <option value="kitchen">Кухня</option>
+                            <option value="bedroom">Спальня</option>
+                            <option value="canteen">Столовая</option>
+                            <option value="wardrobe">Гардероб</option>
+                            <option value="another">Другое...</option>
+                          </select>
+                          <button class="btn-reset btn-create create-data" type="button"></button>
+                          <input class="new-item__input new-project__data-input" type="text" name="area" placeholder="Площадь, м²">
+                        </div>
+                        <div class="new-project__data-block">
+                          <select class="select" name="premises">
+                            <option value="">Нет помещения</option>
+                            <option value="bathroom">Ванная</option>
+                            <option value="brick">Детская</option>
+                            <option value="children">Кабинет</option>
+                            <option value="brick">Коридор</option>
+                            <option value="corridor">Лоджия</option>
+                            <option value="kitchen">Кухня</option>
+                            <option value="bedroom">Спальня</option>
+                            <option value="canteen">Столовая</option>
+                            <option value="wardrobe">Гардероб</option>
+                            <option value="another">Другое...</option>
+                          </select>
+                          <button class="btn-reset btn-remove remove-data" type="button"></button>
+                          <input class="new-item__input new-project__data-input" type="text" name="area" placeholder="Площадь, м²">
+                        </div>
+                      </div>
+                      <p class="new-item__desc new-item__info">Для каждого помещения на каждом этапе дизайн-проекта будет создана задача. При этом вы можете добавлять, редактировать и удалять задачи в любой момент.</p>
+                    </div>
+                    <div class="tabs__content new-project__data" data-tabs-target="commercial">
+                      <div class="new-project__data-left">
+                        <div class="new-project__data-block">
+                          <select class="select" name="premises">
+                            <option value="">Нет помещения</option>
+                            <option value="bathroom">Ванная</option>
+                            <option value="brick">Детская</option>
+                            <option value="children">Кабинет</option>
+                            <option value="brick">Коридор</option>
+                            <option value="corridor">Лоджия</option>
+                            <option value="kitchen">Кухня</option>
+                            <option value="bedroom">Спальня</option>
+                            <option value="canteen">Столовая</option>
+                            <option value="wardrobe">Гардероб</option>
+                            <option value="another">Другое...</option>
+                          </select>
+                          <button class="btn-reset btn-create create-data" type="button"></button>
+                          <input class="new-item__input new-project__data-input" type="text" name="area" placeholder="Площадь, м²">
+                        </div>
+                        <div class="new-project__data-block">
+                          <select class="select" name="premises">
+                            <option value="">Нет помещения</option>
+                            <option value="bathroom">Ванная</option>
+                            <option value="brick">Детская</option>
+                            <option value="children">Кабинет</option>
+                            <option value="brick">Коридор</option>
+                            <option value="corridor">Лоджия</option>
+                            <option value="kitchen">Кухня</option>
+                            <option value="bedroom">Спальня</option>
+                            <option value="canteen">Столовая</option>
+                            <option value="wardrobe">Гардероб</option>
+                            <option value="another">Другое...</option>
+                          </select>
+                          <button class="btn-reset btn-remove remove-data" type="button"></button>
+                          <input class="new-item__input new-project__data-input" type="text" name="area" placeholder="Площадь, м²">
+                        </div>
+                      </div>
+                      <p class="new-item__desc new-item__info">Для каждого помещения на каждом этапе дизайн-проекта будет создана задача. При этом вы можете добавлять, редактировать и удалять задачи в любой момент.</p>
+                    </div>
+                    <div class="tabs__content new-project__data" data-tabs-target="other">
+                      <div class="new-project__data-left">
+                        <div class="new-project__data-block">
+                          <select class="select" name="premises">
+                            <option value="">Нет помещения</option>
+                            <option value="bathroom">Ванная</option>
+                            <option value="brick">Детская</option>
+                            <option value="children">Кабинет</option>
+                            <option value="brick">Коридор</option>
+                            <option value="corridor">Лоджия</option>
+                            <option value="kitchen">Кухня</option>
+                            <option value="bedroom">Спальня</option>
+                            <option value="canteen">Столовая</option>
+                            <option value="wardrobe">Гардероб</option>
+                            <option value="another">Другое...</option>
+                          </select>
+                          <button class="btn-reset btn-create create-data" type="button"></button>
+                          <input class="new-item__input new-project__data-input" type="text" name="area" placeholder="Площадь, м²">
+                        </div>
+                        <div class="new-project__data-block">
+                          <select class="select" name="premises">
+                            <option value="">Нет помещения</option>
+                            <option value="bathroom">Ванная</option>
+                            <option value="brick">Детская</option>
+                            <option value="children">Кабинет</option>
+                            <option value="brick">Коридор</option>
+                            <option value="corridor">Лоджия</option>
+                            <option value="kitchen">Кухня</option>
+                            <option value="bedroom">Спальня</option>
+                            <option value="canteen">Столовая</option>
+                            <option value="wardrobe">Гардероб</option>
+                            <option value="another">Другое...</option>
+                          </select>
+                          <button class="btn-reset btn-remove remove-data" type="button"></button>
+                          <input class="new-item__input new-project__data-input" type="text" name="area" placeholder="Площадь, м²">
+                        </div>
+                      </div>
+                      <p class="new-item__desc new-item__info">Для каждого помещения на каждом этапе дизайн-проекта будет создана задача. При этом вы можете добавлять, редактировать и удалять задачи в любой момент.</p>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="new-item">
                 <div class="new-item__content">
                   <div class="new-item__top">
-                    <h2 class="new-item__title">Реквизиты и договор</h2>
-                    <div class="tooltip">
-                      <svg class="svg-icon">
-                        <use xlink:href="./img/sprites/sprite.svg#question-circle"></use>
-                      </svg>
-                      <div class="tooltip__txt">Вы можете выбрать заказчика или подписчика из числа своих контактов, пригласить специалиста с платформы или пригласить в проект. После создания проекта подписчики получат приглашение по e-mail.</div>
+                    <div class="new-item__top-left">
+                      <h2 class="new-item__title">Реквизиты и договор</h2>
+                      <div class="tooltip">
+                        <svg class="svg-icon">
+                          <use xlink:href="./img/sprites/sprite.svg#question-circle"></use>
+                        </svg>
+                        <div class="tooltip__txt">Вы можете выбрать заказчика или подписчика из числа своих контактов, пригласить специалиста с платформы или пригласить в проект. После создания проекта подписчики получат приглашение по e-mail.</div>
+                      </div>
                     </div>
+                    <button class="btn-reset btn-add add-requisites" type="button">Добавить</button>
+                  </div>
+                  <div class="new-project__requisites-text"><span class="new-item__desc new-project__requisites-desc">Между дизайнером и заказчиком</span>
+                    <p class="new-item__desc new-item__info">Для корректного составления договора все пункты из 3-го шага должны быть заполнены без ошибок.</p>
                   </div>
                 </div>
                 <button class="btn-reset new-project__btn">Создать проект</button>
