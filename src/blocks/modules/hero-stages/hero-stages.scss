@@ -1,0 +1,166 @@
+.hero-stages {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(180deg, #2393ff 0%, #35a3fb 100%);
+    &__container {
+        padding-top: 80px;
+        padding-bottom: 76px;
+    }
+}
+
+.hero-stage {
+    &__item {
+        display: grid;
+        color: var(--color-white);
+        column-gap: 24px;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    &__image {
+        display: block;
+        grid-column: 2 span;
+        max-width: calc(100% - 24px);
+        padding: 48px 12px;
+        background-color: var(--color-white);
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    &__left {
+        grid-column: 5 span;
+    }
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        grid-column: 5 span;
+        padding-top: 9px;
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-between;
+        &-item {
+            display: flex;
+            align-items: center;
+        }
+        &-text {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+        }
+        &-name {
+            white-space: nowrap;
+            font-weight: 500;
+            font-size: 18px;
+        }
+        &-desc {
+            white-space: nowrap;
+            font-size: 14px;
+            letter-spacing: 0.01em;
+            font-weight: 500;
+            color: rgba(#fff, 0.8);
+        }
+        &-image {
+            padding: 11px;
+            border-radius: 5px;
+            background-color: var(--color-white);
+            svg {
+                display: block;
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 17px;
+    }
+    &__map {
+        margin-bottom: 21px;
+    }
+    &__link {
+        margin-bottom: 12px;
+    }
+}
+
+.progressbar {
+    position: relative;
+    cursor: pointer;
+    &-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__desc {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            text-transform: uppercase;
+            svg {
+                display: block;
+                padding-right: 6px;
+                width: 14px;
+                height: 14px;
+                fill: var(--color-white);
+            }
+        }
+    }
+    &:hover {
+        .hero-stages__tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.progressbar__line {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 12px;
+    background-color: rgba(#000, 0.21);
+    border-radius: 12px;
+    margin-bottom: 12px;
+    &::-webkit-progress-bar {
+        background-color: rgba(#000, 0.21);
+        border-radius: 12px;
+    }
+    &::-webkit-progress-value {
+        background-color: #2ee1ce;
+        box-shadow: 0 2px 12px #288ad0;
+        border-radius: 12px;
+    }
+    &::-moz-progress-bar {
+        background-color: #2ee1ce;
+        border-radius: 12px;
+    }
+}
+
+.hero-stages__tooltip {
+    position: absolute;
+    z-index: 50;
+    top: 30px;
+    left: 50%;
+    opacity: 0;
+    padding: 8px 20px;
+    visibility: hidden;
+    transform: translateX(-50%);
+    background-color: var(--color-white);
+    color: var(--color-middle-gray);
+    border-radius: 6px;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.12);
+    font-size: 14px;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    &:before {
+        @include pseudo();
+        position: absolute;
+        top: -16px;
+        left: 50%;
+        width: 32px;
+        height: 16px;
+        transform: translateX(-50%);
+        background-image: url(../img/svg/triangle.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

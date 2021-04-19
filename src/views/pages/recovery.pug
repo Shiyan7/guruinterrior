@@ -1,0 +1,12 @@
+extends ../layouts/default
+include ../helpers/mixins
+
+block variables
+	- const title = "Восстановление пароля";
+
+block content
+	.site-container
+		include ../../blocks/modules/recovery/recovery
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

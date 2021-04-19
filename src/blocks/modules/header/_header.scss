@@ -1,0 +1,122 @@
+.header {
+    position: static;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(180deg, #2393FF 0%, #35A3FB 100%);
+    color: var(--color-white);
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 10px 32px 34px;
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+    &-actions {
+        margin-right: 75px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        &__icon {
+            display: block;
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.bookmarks {
+    position: relative;
+    z-index: 50;
+    &-dropdown {
+        z-index: inherit;
+        top: 30px;
+        right: calc(50% + 5px);
+        transform: translateX(50%);
+        &:before {
+            right: 0;
+            transform: translateX(-50%);
+        }
+    }
+    &:hover {
+        .bookmarks-dropdown {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &__icon {
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+}
+.more {
+    position: relative;
+    &-dropdown {
+        top: 30px;
+        right: calc(50% + 5px);
+        transform: translateX(50%);
+        &:before {
+            right: 0;
+            left: calc(50% + 5px);
+            transform: translateX(-50%);
+        }
+    }
+    &__btn {
+        padding: 0 10px;
+    }
+    &__icon {
+        display: block;
+        width: 24px;
+        height: 24px;
+        fill: #D3EAFF;
+    }
+}
+
+
+.user {
+    position: relative;
+    &__btn {
+        display: flex;
+        align-items: center;
+        padding: 9px;
+        border-radius: 6px;
+        background-color: rgba(40, 140, 228, 0.58);
+        transition: background-color 0.3s;
+        &--active {
+            background-color: #217FD1;
+            .user__arrow {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    &__icon {
+        display: block;
+        width: 36px;
+        margin-right: 8px;
+        height: 36px;
+    }
+    &-dropdown {
+        top: 80px;
+        right: 0;
+    }
+}
+
+.arrow {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/svg/down.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.2s;
+}
+
+.burger {
+    display: none;
+}

@@ -1,0 +1,10 @@
+.header-stages {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    &__container {
+        padding: 13px 24px 14px 48px;
+    }
+}

@@ -1,0 +1,85 @@
+.choices {
+    min-width: 192px;
+    margin-bottom: 0;
+    &__inner {
+        width: calc(100% - 95px);
+        min-height: auto;
+        background-image: url(../img/svg/angle-down.svg);
+        background-color: var(--color-super-light);
+        background-size: 24px;
+        background-position: top 8px right 12px;
+        background-repeat: no-repeat;
+        border: none;
+        padding: 12.5px 79px 12.5px 16px !important;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--color-dark-gray);
+    }
+    &__list {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        &--single {
+            padding: 0;
+        }
+        &--dropdown {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+            margin-top: 4px;
+            border: none;
+            border-radius: 6px;
+            .choices__item {
+                padding: 12px 10px;
+            }
+        }
+    }
+    &:after {
+        display: none;
+    }
+    &__item--choice {
+        color: var(--color-middle-gray);
+        font-size: 14px;
+        font-weight: 500;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        &:not(:last-child) {
+            border-bottom: 1px solid var(--color-purple);
+        }
+    }
+    &__item {
+        &--selectable {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+    }
+}
+.choices__list--dropdown .choices__item--selectable {
+    padding-right: 0 !important;
+}
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+    background-color: #fff;
+}
+.is-open {
+    .choices__inner {
+        border-radius: 6px;
+    }
+}
+.choices__list--dropdown .choices__list {
+    padding: 10px 20px;
+}
+.choices__placeholder {
+    display: none;
+    opacity: 1;
+}
+.choices__list--single {
+    .choices__placeholder {
+        display: block;
+    }
+}
+.is-flipped.is-open .choices__inner {
+    border-radius: 6px;
+}
+.is-flipped .choices__list--dropdown {
+    margin-bottom: 4px;
+    border-radius: 6px;
+}

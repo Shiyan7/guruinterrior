@@ -1,0 +1,13 @@
+.btn-remove {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background-color: var(--main-bg);
+    background-image: url(../img/svg/close2.svg);
+    background-position: center;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}

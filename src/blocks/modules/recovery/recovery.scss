@@ -1,0 +1,33 @@
+.recovery {
+    min-height: 480px;
+    &-content {
+        flex-direction: column;
+        padding: 88px 207px 100px 207px;
+        &__desc {
+            text-align: center;
+            max-width: none;
+            margin-bottom: 16px;
+        }
+        &__btns {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        &__back {
+            color: var(--color-middle-gray);
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 15px;
+        }
+        &__btn {
+            display: inline-block;
+            width: auto;
+            padding: 6.5px 17px 5.5px;
+            margin-bottom: 0;
+        }
+        .js-validate-error-label {
+            margin-right: auto;
+        }
+    }
+}

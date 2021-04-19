@@ -1,0 +1,13 @@
+.btn-create {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background-color: var(--color-purple);
+    background-image: url(../img/svg/plus2.svg);
+    background-position: center;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}

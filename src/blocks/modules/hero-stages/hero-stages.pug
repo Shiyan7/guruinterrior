@@ -1,0 +1,42 @@
+section.hero-stages
+    .container.hero-stages__container
+        .hero-stage__item
+            img.hero-stage__image(src="img/avatar.png", alt="")
+            .hero-stage__left
+                h1.hero-stage__title Дизайн-проект квартиры на улице Бородинской
+                address.hero-stage__map.project__map
+                    +icon("map")
+                    | г. Новосибирск, ул. Бородинская, д. 7
+                .progressbar.hero-stage__progressbar
+                    progress.progressbar__line(value="4" max="10")
+                    .progressbar-bottom
+                        span.progressbar-bottom__desc
+                            +icon("start")
+                            | 1 сен 2020
+                        span.progressbar-bottom__desc
+                            +icon("finish")
+                            | 10 сен 2020
+                    span.hero-stages__tooltip Осталось 6 дней
+            .hero-stage__right
+                .hero-stage__info
+                    .hero-stage__info-item
+                        .hero-stage__info-image
+                            +icon("square")
+                        .hero-stage__info-text
+                            span.hero-stage__info-name 1250 м
+                                sup 2
+                            span.hero-stage__info-desc площадь
+                    .hero-stage__info-item
+                        .hero-stage__info-image
+                            +icon("purse")
+                        .hero-stage__info-text
+                            span.hero-stage__info-name 1200 ₽
+                            span.hero-stage__info-desc цена за м
+                                sup 2
+                    .hero-stage__info-item
+                        .hero-stage__info-image
+                            +icon("cost")
+                        .hero-stage__info-text
+                            span.hero-stage__info-name 250 000 ₽ 
+                            span.hero-stage__info-desc стомость
+                a.hero-stage__link.btn-new(href="#") Новый этап

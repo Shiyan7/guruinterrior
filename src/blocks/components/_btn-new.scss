@@ -1,0 +1,25 @@
+.btn-new {
+    position: relative;
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 13px 25px 13px 48px;
+    background-color: var(--color-dark-gray);
+    color: var(--color-white);
+    transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    &:hover {
+        box-shadow: 0 10px 15px -6px rgba(69, 164, 255, 0.7);
+        background-color: #304d6e;
+    }
+    &:before {
+        @include pseudo();
+        position: absolute;
+        top: 50%;
+        left: 25px;
+        width: 12px;
+        height: 12px;
+        transform: translateY(-50%);
+        background-image: url(../img/svg/plus.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

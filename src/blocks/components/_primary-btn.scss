@@ -1,0 +1,19 @@
+.primary-btn {
+    display: inline-block;
+    padding: 6px 52px 6px 22px;
+    font-weight: 700;
+    color: var(--color-white);
+    background-color: var(--color-accent);
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 20px;
+    background-image: url(../img/svg/further.svg);
+    background-position: top 4px right 18px;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    &:hover {
+        background-color: #5BB5FF;
+        box-shadow: 0px 10px 10px -10px #3C95DE;
+    }
+}

@@ -1,0 +1,94 @@
+.footer {
+    background-color: var(--color-dark-gray);
+    color: var(--color-white);
+    &__container {
+        padding-top: 78px;
+        padding-bottom: 78px;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 57px;
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+    }
+    &__logo {
+        margin-bottom: 19px;
+    }
+    &__desc {
+        font-weight: 400;
+        max-width: 200px;
+        font-size: 12px;
+        line-height: 18px;
+        color: rgba(#95F0F0, 0.8)
+    }
+    &-list {
+        display: grid;
+        column-gap: 0px;
+        row-gap: 16px;
+        grid-template-columns: repeat(3, 1fr);
+        &__link {
+            font-size: 13px;
+            letter-spacing: 0.02em;
+            color: var(--main-bg);
+            line-height: 28px;
+            transition: color 0.2s;
+            &:hover {
+                color: #5AD9D1;
+            }
+        }
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &-support {
+        display: flex;
+        align-items: center;
+        padding: 17px 20px;
+        background-color: rgba(#090F17, 0.2);
+        border-radius: 4px;
+        margin-bottom: 15px;
+        &__text {
+            display: flex;
+            flex-direction: column;
+            padding-left: 6px;
+        }
+        &__desc {
+            font-size: 12px;
+            line-height: 15px;
+            margin-bottom: 5px;
+        }
+        &__value {
+            color: var(--color-accent);
+            font-size: 16px;
+            line-height: 24px;
+        }
+        svg {
+            display: block;
+            width: 40px;
+            height: 40px;
+        }
+    }
+    &__mail {
+        display: flex;
+        align-items: center;
+        color: var(--color-accent);
+        font-size: 12px;
+        svg {
+            display: block;
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            fill: var(--color-white);
+        }
+    }
+    &__copy {
+        font-size: 11px;
+        line-height: 16px;
+        color: var(--color-purple);
+    }
+}

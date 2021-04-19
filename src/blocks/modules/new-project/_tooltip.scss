@@ -1,0 +1,47 @@
+.tooltip {
+    svg {
+        display: block;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+    &:hover {
+        .tooltip__txt {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &__txt {
+        position: absolute;
+        z-index: 50;
+        top: auto;
+        bottom: 40px;
+        left: calc(100% - 12px);
+        min-width: 420px;
+        max-width: 100%;
+        padding: 20px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-50%);
+        background-color: var(--color-white);
+        color: var(--color-middle-gray);
+        border-radius: 6px;
+        box-shadow: 0 2px 30px rgba(0, 0, 0, 0.12);
+        font-size: 14px;
+        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.08)), drop-shadow(0 15px 30px rgba(0, 0, 0, 0.12));
+        &:before {
+            @include pseudo();
+            position: absolute;
+            top: auto;
+            bottom: -16px;
+            left: 50%;
+            width: 32px;
+            height: 16px;
+            transform: translateX(-50%) rotate(180deg);
+            background-image: url(../img/svg/triangle.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}

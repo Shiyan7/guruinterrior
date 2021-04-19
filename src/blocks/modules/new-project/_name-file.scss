@@ -1,0 +1,36 @@
+.name-file {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    background-color: var(--main-bg);
+    border-radius: 6px;
+    overflow: hidden;
+    &__close {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url(../img/svg/close2.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 8px;
+    }
+    &__desc {
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--color-dark-gray);
+        letter-spacing: 0.01em;
+        margin-right: 26px;
+    }
+    &__type {
+        padding: 12.5px 8px;
+        color: var(--main-bg);
+        background-color: #3C1987;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 500;
+    }
+    &--hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+}

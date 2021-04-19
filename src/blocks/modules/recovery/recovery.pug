@@ -1,0 +1,16 @@
+.recovery.auth
+    .recovery__container.auth-container
+        form.recovery-content.auth-content.validate-form(action="#")
+            h1.login-content__title Восстановление пароля
+            p.login-content__desc.recovery-content__desc Введите логин или адрес электронной почты
+            input.login-content__input(data-validate-field="text" type="text", name="text" placeholder="Логин или Email" required)
+            .recovery-content__btns
+                a.recovery-content__back.login-content__link(href="login.html") Отмена
+                button.btn-reset.login-content__enter.recovery-content__btn Восстановить пароль
+        .login-footer
+            span.footer__copy.login-footer__copy &copy;&nbsp;GuruInterrior 2021-2025
+            a.footer-support.login-footer__support(href="tel:84950326687")
+                +icon("support2")
+                .footer-support__text
+                    span.footer-support__desc.login-footer__support-desc Техническая поддержка 24/7
+                    span.footer-support__value 8 495 032 66 87

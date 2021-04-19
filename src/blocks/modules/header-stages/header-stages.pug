@@ -1,0 +1,63 @@
+header.header.header-stages
+    .header__container.header-stages__container
+        button.btn-reset.burger(aria-label="Бургер меню")
+            span.burger__line
+        a.logo.header__logo(href="/") GuruInterrior
+        .header__right
+            .header-actions
+                .bookmarks
+                    button.btn-reset.bookmarks__btn
+                        +icon("bookmarks", "bookmarks__icon")
+                    ul.list-reset.dropdown.bookmarks-dropdown
+                        li.bookmarks-dropdown__item.dropdown__item
+                            a.bookmarks-dropdown__link.dropdown__link(href="#") В избранное
+                .more
+                    button.btn-reset.more__btn.dropdown__btn
+                        +icon("more", "more__icon")
+                    ul.more-dropdown.list-reset.dropdown
+                        li.more-dropdown__item.dropdown__item
+                            a.more-dropdown__link.dropdown__link(href="#")
+                                +icon("edit")
+                                | Редактировать
+                        li.more-dropdown__item.dropdown__item
+                            a.more-dropdown__link.dropdown__link(href="#")
+                                +icon("copy")
+                                | Копировать
+                        li.more-dropdown__item.dropdown__item
+                            a.more-dropdown__link.dropdown__link(href="#")
+                                +icon("close")
+                                | Закрыть
+                        li.more-dropdown__item.dropdown__item
+                            a.more-dropdown__link.dropdown__link(href="#")
+                                +icon("archive")
+                                | В архив
+            .user
+                button.btn-reset.user__btn.dropdown__btn
+                    +icon("user", "user__icon")
+                    span.arrow.user__arrow
+                ul.user-dropdown.list-reset.dropdown
+                    li.user-dropdown__item.dropdown__item
+                        a.user-dropdown__link.dropdown__link(href="#")
+                            +icon("user-small")
+                            | Аккаунт
+                    li.user-dropdown__item.dropdown__item
+                        a.user-dropdown__link.dropdown__link(href="#")
+                            +icon("setting")
+                            | Настройки
+                    li.user-dropdown__item.dropdown__item
+                        a.user-dropdown__link.dropdown__link(href="#")
+                            +icon("notifications")
+                            | Уведомления
+                    li.user-dropdown__item.dropdown__item
+                        a.user-dropdown__link.dropdown__link(href="#")
+                            +icon("wallet")
+                            | Баланс
+                    li.user-dropdown__item.dropdown__item
+                        a.user-dropdown__link.dropdown__link(href="#")
+                            +icon("support")
+                            | Поддержка
+                    li.user-dropdown__item.dropdown__item
+                        a.user-dropdown__link.dropdown__link(href="#")
+                            +icon("exit")
+                            | Выход
+    .overlay

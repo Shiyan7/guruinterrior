@@ -1,0 +1,33 @@
+.input-file {
+    &__container {
+        position: relative;
+    }
+    &__input {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+    }
+    &__button {
+        display: flex;
+        align-items: center;
+        padding: 6.5px 12px;
+        color: var(--color-white);
+        background-color: var(--color-dark-gray);
+        border-radius: 4px;
+        line-height: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        cursor: pointer;
+        transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+        &:hover {
+            box-shadow: 0 10px 15px -6px rgba(69, 164, 255, 0.7);
+            background-color: #304d6e;
+        }
+        svg {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+    }
+}

@@ -1,0 +1,119 @@
+.register {
+    min-height: 760px;
+    &-content {
+        padding: 32px 0;
+        &__left {
+            padding: 0 20px;
+        }
+        &__right {
+            padding: 19px 43px;
+        }
+        &__title {
+            margin-bottom: 30px;
+        }
+        &__btn {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--color-white);
+            background-color: var(--color-green-st);
+            border-radius: 4px;
+            padding: 6.5px 69.5px 5.5px 69.5px;
+            transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+            &:hover {
+                background-color: #6BCA79;
+                box-shadow: 0 10px 10px -10px #6BCA79;
+            }
+        }
+        &__desc {
+            max-width: 126px;
+            line-height: 16px;
+            text-align: left;
+        }
+        .js-validate-error-label {
+            display: none;
+            margin-bottom: 0;
+            margin-top: 4px;
+        }
+    }
+    &-tabs {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        border-radius: 6px;
+        overflow: hidden;
+        margin-bottom: 16px;
+        &__btn {
+            width: 100%;
+            padding: 7px 0 8px;
+            letter-spacing: 0.01em;
+            font-weight: 500;
+            line-height: 15px;
+            font-size: 12px;
+            color: var(--color-dark-gray);
+            background-color: var(--main-bg);
+            &:hover {
+                transition: background-color 0.3s;
+                background-color: transparent;
+            }
+            &.tabs__btn--active {
+                color: var(--main-bg);
+                background-color: var(--color-accent);
+            }
+        }
+    }
+    &-form {
+        display: none;
+        &__input {
+            &:not(:last-child) {
+                margin-bottom: 0;
+            }
+        }
+        &.tabs__content--active {
+            display: block;
+        }
+    }
+    &__content {
+        display: grid;
+        column-gap: 36px;
+        row-gap: 16px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 26px;
+        .login-content__input {
+            margin-bottom: 0 !important;
+        }
+        .js-validate-error-label {
+            display: block;
+        }
+    }
+    &__custom-checkbox {
+        &+label {
+            align-items: flex-start;
+            margin-bottom: 20px;
+            max-width: 374px;
+            text-align: left;
+        }
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 40px;
+        &-tooltip {
+            position: absolute;
+            right: 0;
+            bottom: 40px;
+            left: auto;
+            min-width: auto;
+            transform: none;
+            &:before {
+                display: none;
+            }
+        }
+    }
+    &__slider {
+        width: 100%;
+        max-width: 326px;
+        margin: 8px 25px 0 auto;
+    }
+}

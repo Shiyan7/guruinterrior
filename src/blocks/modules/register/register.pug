@@ -1,0 +1,102 @@
+.register.auth
+    .register__container.auth-container
+        .register-content.auth-content
+            .login-content__left.register-content__left
+                img.login-content__image(src="img/avatar.png", alt="")
+                span.logo.login-content__logo GuruInterrior
+                span.login-content__desc Платформа для ведения интерьерных проектов
+            .login-content__right.register-content__right.tabs-box
+                h1.login-content__title.register-content__title Регистрация пользователя
+                ul.register-tabs.list-reset
+                    li.register-tabs__item
+                        button.btn-reset.register-tabs__btn.tabs__btn.tabs__btn--active(data-tabs-path="designer") Дизайнер
+                    li.register-tabs__item
+                        button.btn-reset.register-tabs__btn.tabs__btn(data-tabs-path="specialist") Специалист
+                    li.register-tabs__item
+                        button.btn-reset.register-tabs__btn.tabs__btn(data-tabs-path="client") Заказчик
+                form.register-form.tabs__content.validate-form.tabs__content--active(action="#" data-tabs-target="designer")
+                    .register__content
+                        .register-form__item
+                            input.login-content__input.register-form__input(data-validate-field="name" type="text" name="name" placeholder="Имя")
+                        .register-form__item
+                            input.login-content__input.register-form__input(data-validate-field="text" type="text" name="surname" placeholder="Фамилия")
+                        .register-form__item
+                            input.login-content__input.register-form__input(data-validate-field="email" type="email" name="email" placeholder="Email")
+                        .register-form__item
+                            input.login-content__input.register-form__input(data-validate-field="tel" type="tel" name="tel" placeholder="Телефон")
+                        .register-form__item
+                            input.login-content__input.register-form__input(data-validate-field="password" type="password" name="password1" placeholder="Пароль")
+                        .register-form__item
+                            input.login-content__input.register-form__input(data-validate-field="password2" type="password" name="password2" placeholder="Повторите пароль")
+                    .register__bottom
+                        span.login-content__desc.register-content__desc Стоимость проектов Руб. за м²
+                        .slider.register__slider
+                        .tooltip
+                            +icon("question-circle")
+                            .tooltip__txt.register__bottom-tooltip Регистрация пользователя
+                    input.custom-checkbox.register__custom-checkbox(data-validate-field="checkbox1" type="checkbox", id="accept1")
+                    label(for="accept1") Я принимаю условия Политики приватности и даю своё согласие на обработку персональных данных
+                    input.custom-checkbox.register__custom-checkbox(data-validate-field="checkbox2" type="checkbox", id="accept2")
+                    label(for="accept2") Я cогласен получать email-уведомления о рекламных материалах, финансах и новостях
+                    button.btn-reset.register-content__btn Зарегистрироваться
+                form.register-form.tabs__content.validate-form--2(action="#" data-tabs-target="specialist")
+                    .register__content
+                        .register-form__item
+                            input.login-content__input.register-form__input(data-validate-field="name" type="text" name="name2" placeholder="Имя")
+                        .register-form__item
+                            input.login-content__input.register-form__input(data-validate-field="text" type="text" name="surname2" placeholder="Фамилия")
+                        .register-form__item
+                            input.login-content__input.register-form__input(data-validate-field="email" type="email" name="email2" placeholder="Email")
+                        .register-form__item
+                            input.login-content__input.register-form__input(data-validate-field="tel" type="tel" name="tel2" placeholder="Телефон")
+                        .register-form__item
+                            input.login-content__input.register-form__input(data-validate-field="password" type="password" name="password3" placeholder="Пароль")
+                        .register-form__item
+                            input.login-content__input.register-form__input(data-validate-field="password2" type="password" name="password4" placeholder="Повторите пароль")
+                    .register__bottom
+                        span.login-content__desc.register-content__desc Стоимость проектов Руб. за м²
+                        .slider.register__slider
+                        .tooltip
+                            +icon("question-circle")
+                            .tooltip__txt.register__bottom-tooltip Регистрация пользователя
+                    input.custom-checkbox.register__custom-checkbox(data-validate-field="checkbox1" type="checkbox", id="accept3")
+                    label(for="accept3") Я принимаю условия Политики приватности и даю своё согласие на обработку персональных данных
+                    input.custom-checkbox.register__custom-checkbox(data-validate-field="checkbox2" type="checkbox", id="accept4")
+                    label(for="accept4") Я cогласен получать email-уведомления о рекламных материалах, финансах и новостях
+                    button.btn-reset.register-content__btn Зарегистрироваться
+                form.register-form.tabs__content.validate-form--3(action="#" data-tabs-target="client")
+                    .register__content
+                        .register-form__item
+                            input.login-content__input.register-form__input(data-validate-field="name" type="text" name="name3" placeholder="Имя")
+                        .register-form__item
+                            input.login-content__input.register-form__input(data-validate-field="text" type="text" name="surname3" placeholder="Фамилия")
+                        .register-form__item
+                            input.login-content__input.register-form__input(data-validate-field="email" type="email" name="email3" placeholder="Email")
+                        .register-form__item
+                            input.login-content__input.register-form__input(data-validate-field="tel" type="tel" name="tel3" placeholder="Телефон")
+                        .register-form__item
+                            input.login-content__input.register-form__input(data-validate-field="password" type="password" name="password5" placeholder="Пароль")
+                        .register-form__item
+                            input.login-content__input.register-form__input(data-validate-field="password2" type="password" name="password6" placeholder="Повторите пароль")
+                    .register__bottom
+                        span.login-content__desc.register-content__desc Стоимость проектов Руб. за м²
+                        .slider.register__slider
+                        .tooltip
+                            +icon("question-circle")
+                            .tooltip__txt.register__bottom-tooltip Регистрация пользователя
+                    input.custom-checkbox.register__custom-checkbox(data-validate-field="checkbox1" type="checkbox", id="accept5")
+                    label(for="accept5") Я принимаю условия Политики приватности и даю своё согласие на обработку персональных данных
+                    input.custom-checkbox.register__custom-checkbox(data-validate-field="checkbox2" type="checkbox", id="accept6")
+                    label(for="accept6") Я cогласен получать email-уведомления о рекламных материалах, финансах и новостях
+                    button.btn-reset.register-content__btn Зарегистрироваться
+        .login-footer
+            span.footer__copy.login-footer__copy &copy;&nbsp;GuruInterrior 2021-2025
+            .login-footer__right
+                a.login-footer__mail.footer__mail(href="mailto:support@gurudesign.com")
+                    +icon("mail")
+                    | Support@gurudesign.com
+                a.footer-support.login-footer__support(href="tel:84950326687")
+                    +icon("support2")
+                    .footer-support__text
+                        span.footer-support__desc.login-footer__support-desc Техническая поддержка 24/7
+                        span.footer-support__value 8 495 032 66 87

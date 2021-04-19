@@ -1,0 +1,47 @@
+.archive-projects {
+    &__link {
+        border: 1px solid var(--color-middle-gray);
+        padding: 6px 22px;
+        color: var(--color-middle-gray) !important;
+        font-size: 14px;
+        border-radius: 4px;
+        font-weight: 700;
+    }
+}
+
+.archive-project {
+    background-image: none !important;
+    .project {
+        &-item {
+            &__map {
+                color: var(--color-middle-gray);
+            }
+        }
+        &__author {
+            .author__image {
+                filter: grayscale(100%);
+            }
+            .author__name {
+                color: var(--color-middle-gray);
+            }
+        }
+        &-info {
+            &__image {
+                background-color: var(--color-super-light);
+            }
+        }
+        &-members {
+            &__image {
+                filter: grayscale(100%);
+            }
+        }
+        &__progressbar {
+            .progressbar__line::-webkit-progress-value {
+                background-color: var(--color-middle-gray);
+            }
+            .progressbar__line::-moz-progress-bar {
+                background-color: var(--color-middle-gray);
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:after *:before {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg);
+    font-family: "Geometria", sans-serif;
+    font-weight: 500;
+    font-size: var(--font-size);
+    counter-reset: number;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+a, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+.site-container {
+    overflow: hidden;
+    overflow-anchor: none;
+}
+
+.list-reset {
+    list-style: none;
+    padding: 0;
+}
+
+.btn-reset {
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+}
+.lock {
+    overflow: hidden;
+}
+.container {
+    @include container();
+}
+.is-open {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-results-button, input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}

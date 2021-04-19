@@ -1,0 +1,354 @@
+section.new-project.section
+    h2.visually-hidden Новый проект
+    nav.nav
+        ul.nav__list.list-reset
+            li.nav__item
+                a.nav__link(href="/")
+                    +icon("home")
+                    | Главная
+            li.nav__item
+                a.nav__link.nav__link--current
+                    +icon("projects")
+                    | проекты
+            li.nav__item
+                a.nav__link(href="#")
+                    +icon("calendar")
+                    | календарь
+            li.nav__item
+                a.nav__link(href="#")
+                    +icon("members")
+                    | участники
+            li.nav__item
+                a.nav__link(href="#")
+                    +icon("notifications2")
+                    | уведомления
+            li.nav__item
+                a.nav__link(href="#")
+                    +icon("setting")
+                    | Аккаунт
+    .container.page__container
+        ul.project-nav.list-reset.projects__project-nav
+            li.project-nav__item
+                a.project-nav__link(href="#") Главная
+            li.project-nav__item
+                a.project-nav__link.project-nav__link--current Проекты
+            li.project-nav__item
+                a.project-nav__link(href="#") файлы
+            li.project-nav__item
+                a.project-nav__link(href="#") события
+            li.project-nav__item
+                a.project-nav__link(href="#") Контакты
+            li.project-nav__item
+                a.project-nav__link(href="#") Аккаунт
+            li.project-nav__item
+                a.project-nav__link(href="#") Сделка
+        h1.section-title.new-project__title Новый проект
+        form.new-project__form(action="#")
+            .new-item
+                .new-item__content
+                    .new-item__top
+                        h2.new-item__title Основное
+                    .new-item__body
+                        input.new-item__input.new-item__name(type="text" name="name-project" placeholder="Название проекта")
+                        input.new-item__input.new-item__date(type="text", name="date1" placeholder="Старт")
+                        .toolbar
+                            button.btn-reset.ql-bold.ql-btn
+                                +icon("bold")
+                            button.btn-reset.ql-italic.ql-btn
+                                +icon("italic")
+                            button.btn-reset.ql-underline.ql-btn
+                                +icon("underline")
+                            button.btn-reset.check-list-btn.ql-btn
+                                +icon("check-list")
+                            button.btn-reset.ql-list.ql-btn(value="bullet")
+                                +icon("list-ul")
+                            button.btn-reset.ql-list.ql-btn(value="ordered")
+                                +icon("list-ol")
+                            button.btn-reset.ql-blockquote.ql-btn
+                                +icon("blockquote")
+                            button.btn-reset.ql-background.ql-btn
+                                +icon("background")
+                            button.btn-reset.ql-link.ql-btn
+                                +icon("link")
+                            button.btn-reset.ql-at.ql-btn
+                                +icon("at")
+                            button.btn-reset.ql-code.ql-btn
+                                +icon("code")
+                        input.new-item__input.new-item__date.new-item__date--2(type="text", name="date2" placeholder="Финиш")
+                    .editor
+                    .new-item__bottom
+                        .new-item__bottom-left
+                            select.select.new-item__select
+                                option Обмерный план
+                                option Фото объекта
+                                option Референсы
+                                option Документы
+                                option Другое
+                            button.btn-reset.btn-create.create-upload(type="button")
+                        .input-file__container
+                            input.input-file__input(id="input__file" name="file" type="file" multiple)
+                            label.input-file__button(for="input__file")
+                                +icon("upload")
+                                | Загрузить файл
+                        .name-file
+                            button.btn-reset.name-file__close(type="button")
+                            span.name-file__desc Название файла
+                            span.name-file__type PNG
+                aside.new-sidebar
+                    h2.new-sidebar__title Заказчик
+                    p.new-sidebar__desc Видит только те задачи проекта, в которые добавлен в качестве подписчика
+                    select.select.new-sidebar__select
+                        option(value="") Заказчик
+                        option(value="invite") Пригласить
+                        option(value="valentine") Валентин Абрамсон
+                        option(value="timothy") Тимофей Порошич
+                    button.btn-reset.primary-btn.new-sidebar__btn(type="button") Пригласить
+            .new-item
+                .new-item__content
+                    .new-item__top
+                        .new-item__top-left
+                            h2.new-item__title Участники
+                            .tooltip
+                                +icon("question-circle")
+                                .tooltip__txt Вы можете выбрать заказчика или подписчика из числа своих контактов, пригласить специалиста с платформы или пригласить в проект. После создания проекта подписчики получат приглашение по e-mail.
+                    .new-item__members
+                        .tooltip
+                            +icon("question-circle")
+                            .tooltip__txt Вы можете выбрать заказчика или подписчика из числа своих контактов, пригласить специалиста с платформы или пригласить в проект. После создания проекта подписчики получат приглашение по e-mail.
+                        select.select.new-item__select--2
+                            option(value="") Подписчики
+                            option(value="members") Подписчики
+                            option(value="contacts") Ваши контакты
+                            option(value="specialists") Специалисты платформы
+                            option(value="invite") Пригласить
+                        button.btn-reset.btn-clear(type="button") Очистить
+            .new-item
+                .new-item__content
+                    .new-item__top
+                        h2.new-item__title Данные проекта
+                    .new-project__inputs
+                        input.new-item__input.new-project__input(type="text" name="area" placeholder="Площадь, м²")
+                        select.select.new-project__input(name="house type")
+                            option(value="") Тип дома
+                            option(value="brick") Кирпичный
+                            option(value="monolithic") Монолитный
+                            option(value="panel") Панельный
+                            option(value="blocky") Блочный
+                            option(value="wood") Деревянный
+                            option(value="other") Другое  
+                        select.select.new-project__input(name="quantity rooms")
+                            option(value="") Количество комнат
+                            option(value="1") 1
+                            option(value="2") 2
+                            option(value="3") 3
+                            option(value="4") 4
+                            option(value="5") 5
+                            option(value="6") 6
+                            option(value="7") 7
+                            option(value="8") 8
+                            option(value="9") 9
+                            option(value="10") 10
+                        input.new-item__input.new-project__input(type="text" name="price" placeholder="Цена, руб./м²")
+                        input.new-item__input.new-project__input(type="text" name="floors" placeholder="Этажей")
+                        input.new-item__input.new-project__input(type="text" name="ceiling height" placeholder="Высота потолков, м")
+                        input.new-item__input.new-project__input(type="text" name="reserve" placeholder="Резерв")
+                    textarea.new-project__textarea.new-item__input(name="addresses", placeholder="Адреса объектов")
+                    .tabs-box
+                        ul.new-tabs.list-reset
+                            li.new-tabs__item
+                                button.btn-reset.new-tabs__btn.tabs__btn.tabs__btn--active(data-tabs-path="apartments" type="button") Квартиры
+                            li.new-tabs__item
+                                button.btn-reset.new-tabs__btn.tabs__btn(data-tabs-path="privare house" type="button") Частный дом
+                            li.new-tabs__item
+                                button.btn-reset.new-tabs__btn.tabs__btn(data-tabs-path="penthouse" type="button") Пентхаус
+                            li.new-tabs__item
+                                button.btn-reset.new-tabs__btn.tabs__btn(data-tabs-path="commercial" type="button") Коммерческая
+                            li.new-tabs__item
+                                button.btn-reset.new-tabs__btn.tabs__btn(data-tabs-path="other" type="button") Другое
+                        .tabs__content.new-project__data.tabs__content--active(data-tabs-target="apartments")
+                            .new-project__data-left
+                                .new-project__data-block
+                                    select.select(name="premises")
+                                        option(value="") Нет помещения
+                                        option(value="bathroom") Ванная
+                                        option(value="brick") Детская
+                                        option(value="children") Кабинет
+                                        option(value="brick") Коридор
+                                        option(value="corridor") Лоджия
+                                        option(value="kitchen") Кухня
+                                        option(value="bedroom") Спальня
+                                        option(value="canteen") Столовая
+                                        option(value="wardrobe") Гардероб
+                                        option(value="another") Другое...
+                                    button.btn-reset.btn-create.create-data(type="button")
+                                    input.new-item__input.new-project__data-input(type="text" name="area" placeholder="Площадь, м²")
+                                .new-project__data-block
+                                    select.select(name="premises")
+                                        option(value="") Нет помещения
+                                        option(value="bathroom") Ванная
+                                        option(value="brick") Детская
+                                        option(value="children") Кабинет
+                                        option(value="brick") Коридор
+                                        option(value="corridor") Лоджия
+                                        option(value="kitchen") Кухня
+                                        option(value="bedroom") Спальня
+                                        option(value="canteen") Столовая
+                                        option(value="wardrobe") Гардероб
+                                        option(value="another") Другое...
+                                    button.btn-reset.btn-remove.remove-data(type="button")
+                                    input.new-item__input.new-project__data-input(type="text" name="area" placeholder="Площадь, м²")
+                            p.new-item__desc.new-item__info Для каждого помещения на каждом этапе дизайн-проекта будет создана задача. При этом вы можете добавлять, редактировать и удалять задачи в любой момент.
+                        .tabs__content.new-project__data(data-tabs-target="privare house")
+                            .new-project__data-left
+                                .new-project__data-block
+                                    select.select(name="premises")
+                                        option(value="") Нет помещения
+                                        option(value="bathroom") Ванная
+                                        option(value="brick") Детская
+                                        option(value="children") Кабинет
+                                        option(value="brick") Коридор
+                                        option(value="corridor") Лоджия
+                                        option(value="kitchen") Кухня
+                                        option(value="bedroom") Спальня
+                                        option(value="canteen") Столовая
+                                        option(value="wardrobe") Гардероб
+                                        option(value="another") Другое...
+                                    button.btn-reset.btn-create.create-data(type="button")
+                                    input.new-item__input.new-project__data-input(type="text" name="area" placeholder="Площадь, м²")
+                                .new-project__data-block
+                                    select.select(name="premises")
+                                        option(value="") Нет помещения
+                                        option(value="bathroom") Ванная
+                                        option(value="brick") Детская
+                                        option(value="children") Кабинет
+                                        option(value="brick") Коридор
+                                        option(value="corridor") Лоджия
+                                        option(value="kitchen") Кухня
+                                        option(value="bedroom") Спальня
+                                        option(value="canteen") Столовая
+                                        option(value="wardrobe") Гардероб
+                                        option(value="another") Другое...
+                                    button.btn-reset.btn-remove.remove-data(type="button")
+                                    input.new-item__input.new-project__data-input(type="text" name="area" placeholder="Площадь, м²")
+                            p.new-item__desc.new-item__info Для каждого помещения на каждом этапе дизайн-проекта будет создана задача. При этом вы можете добавлять, редактировать и удалять задачи в любой момент.
+                        .tabs__content.new-project__data(data-tabs-target="penthouse")
+                            .new-project__data-left
+                                .new-project__data-block
+                                    select.select(name="premises")
+                                        option(value="") Нет помещения
+                                        option(value="bathroom") Ванная
+                                        option(value="brick") Детская
+                                        option(value="children") Кабинет
+                                        option(value="brick") Коридор
+                                        option(value="corridor") Лоджия
+                                        option(value="kitchen") Кухня
+                                        option(value="bedroom") Спальня
+                                        option(value="canteen") Столовая
+                                        option(value="wardrobe") Гардероб
+                                        option(value="another") Другое...
+                                    button.btn-reset.btn-create.create-data(type="button")
+                                    input.new-item__input.new-project__data-input(type="text" name="area" placeholder="Площадь, м²")
+                                .new-project__data-block
+                                    select.select(name="premises")
+                                        option(value="") Нет помещения
+                                        option(value="bathroom") Ванная
+                                        option(value="brick") Детская
+                                        option(value="children") Кабинет
+                                        option(value="brick") Коридор
+                                        option(value="corridor") Лоджия
+                                        option(value="kitchen") Кухня
+                                        option(value="bedroom") Спальня
+                                        option(value="canteen") Столовая
+                                        option(value="wardrobe") Гардероб
+                                        option(value="another") Другое...
+                                    button.btn-reset.btn-remove.remove-data(type="button")
+                                    input.new-item__input.new-project__data-input(type="text" name="area" placeholder="Площадь, м²")
+                            p.new-item__desc.new-item__info Для каждого помещения на каждом этапе дизайн-проекта будет создана задача. При этом вы можете добавлять, редактировать и удалять задачи в любой момент.
+                        .tabs__content.new-project__data(data-tabs-target="commercial")
+                            .new-project__data-left
+                                .new-project__data-block
+                                    select.select(name="premises")
+                                        option(value="") Нет помещения
+                                        option(value="bathroom") Ванная
+                                        option(value="brick") Детская
+                                        option(value="children") Кабинет
+                                        option(value="brick") Коридор
+                                        option(value="corridor") Лоджия
+                                        option(value="kitchen") Кухня
+                                        option(value="bedroom") Спальня
+                                        option(value="canteen") Столовая
+                                        option(value="wardrobe") Гардероб
+                                        option(value="another") Другое...
+                                    button.btn-reset.btn-create.create-data(type="button")
+                                    input.new-item__input.new-project__data-input(type="text" name="area" placeholder="Площадь, м²")
+                                .new-project__data-block
+                                    select.select(name="premises")
+                                        option(value="") Нет помещения
+                                        option(value="bathroom") Ванная
+                                        option(value="brick") Детская
+                                        option(value="children") Кабинет
+                                        option(value="brick") Коридор
+                                        option(value="corridor") Лоджия
+                                        option(value="kitchen") Кухня
+                                        option(value="bedroom") Спальня
+                                        option(value="canteen") Столовая
+                                        option(value="wardrobe") Гардероб
+                                        option(value="another") Другое...
+                                    button.btn-reset.btn-remove.remove-data(type="button")
+                                    input.new-item__input.new-project__data-input(type="text" name="area" placeholder="Площадь, м²")
+                            p.new-item__desc.new-item__info Для каждого помещения на каждом этапе дизайн-проекта будет создана задача. При этом вы можете добавлять, редактировать и удалять задачи в любой момент.
+                        .tabs__content.new-project__data(data-tabs-target="other")
+                            .new-project__data-left
+                                .new-project__data-block
+                                    select.select(name="premises")
+                                        option(value="") Нет помещения
+                                        option(value="bathroom") Ванная
+                                        option(value="brick") Детская
+                                        option(value="children") Кабинет
+                                        option(value="brick") Коридор
+                                        option(value="corridor") Лоджия
+                                        option(value="kitchen") Кухня
+                                        option(value="bedroom") Спальня
+                                        option(value="canteen") Столовая
+                                        option(value="wardrobe") Гардероб
+                                        option(value="another") Другое...
+                                    button.btn-reset.btn-create.create-data(type="button")
+                                    input.new-item__input.new-project__data-input(type="text" name="area" placeholder="Площадь, м²")
+                                .new-project__data-block
+                                    select.select(name="premises")
+                                        option(value="") Нет помещения
+                                        option(value="bathroom") Ванная
+                                        option(value="brick") Детская
+                                        option(value="children") Кабинет
+                                        option(value="brick") Коридор
+                                        option(value="corridor") Лоджия
+                                        option(value="kitchen") Кухня
+                                        option(value="bedroom") Спальня
+                                        option(value="canteen") Столовая
+                                        option(value="wardrobe") Гардероб
+                                        option(value="another") Другое...
+                                    button.btn-reset.btn-remove.remove-data(type="button")
+                                    input.new-item__input.new-project__data-input(type="text" name="area" placeholder="Площадь, м²")
+                            p.new-item__desc.new-item__info Для каждого помещения на каждом этапе дизайн-проекта будет создана задача. При этом вы можете добавлять, редактировать и удалять задачи в любой момент.
+            .new-item
+                .new-item__content
+                    .new-item__top
+                        .new-item__top-left
+                            h2.new-item__title Реквизиты и договор
+                            .tooltip
+                                +icon("question-circle")
+                                .tooltip__txt Вы можете выбрать заказчика или подписчика из числа своих контактов, пригласить специалиста с платформы или пригласить в проект. После создания проекта подписчики получат приглашение по e-mail.
+                        button.btn-reset.btn-add.add-requisites(type="button") Добавить
+                    .new-project__requisites-text
+                        span.new-item__desc.new-project__requisites-desc Между дизайнером и заказчиком
+                        p.new-item__desc.new-item__info.new-project__requisites-info Для корректного составления договора все пункты из 3-го шага должны быть заполнены без ошибок.
+                aside.new-sidebar.contract-template
+                    h2.new-sidebar__title Шаблон договора
+                    p.new-sidebar__desc Наши юристы проработали шаблон договора между заказчиком дизайна интерьера и дизайнером. Этот двусторонний договор составлен на основе многолетнего опыта работы в сфере дизайна интерьеров и охватывает практически все возможные пожелания и требования сторон. Рекомендуем использовать данный шаблон договора в работе.
+                    footer.new-sidebar__footer
+                        +icon("document-info", "contract-template__icon")
+                        .contact-template__text
+                            h3.contract-template__title Шаблон договора.docx
+                            span.contract-template__weight 248 KB
+                            a.contract-template__link(href="#") Описание
+                button.btn-reset.new-project__btn Создать проект

@@ -1,0 +1,1775 @@
+section.projects.section
+    h1.visually-hidden Список всех архивных проектов
+    nav.nav
+        ul.nav__list.list-reset
+            li.nav__item
+                a.nav__link(href="/")
+                    +icon("home")
+                    | Главная
+            li.nav__item
+                a.nav__link.nav__link--current
+                    +icon("projects")
+                    | проекты
+            li.nav__item
+                a.nav__link(href="#")
+                    +icon("calendar")
+                    | календарь
+            li.nav__item
+                a.nav__link(href="#")
+                    +icon("members")
+                    | участники
+            li.nav__item
+                a.nav__link(href="#")
+                    +icon("notifications2")
+                    | уведомления
+            li.nav__item
+                a.nav__link(href="#")
+                    +icon("setting")
+                    | Аккаунт
+    .container.page__container
+        ul.project-nav.list-reset.projects__project-nav
+            li.project-nav__item
+                a.project-nav__link(href="#") Главная
+            li.project-nav__item
+                a.project-nav__link.project-nav__link--current Проекты
+            li.project-nav__item
+                a.project-nav__link(href="#") файлы
+            li.project-nav__item
+                a.project-nav__link(href="#") события
+            li.project-nav__item
+                a.project-nav__link(href="#") Контакты
+            li.project-nav__item
+                a.project-nav__link(href="#") Аккаунт
+            li.project-nav__item
+                a.project-nav__link(href="#") Сделка
+        .projects__top.archive-projects__top
+            h2.section-title.projects__title Архивные проекты
+            a.btn-reset.btn-new(href="#") Новый проект
+        ul.projects-grid.list-reset
+            li.projects-grid__item.project-item.archive-project
+                .project-item__top
+                    a.project-item__title(href="stages.html") Дизайн-проект квартиры на Бородинской улице в Новосибирске
+                    .more
+                        button.btn-reset.project-item__btn.dropdown__btn
+                            +icon("more", "more__icon")
+                        ul.more-dropdown.list-reset.dropdown.stage__dropdown
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("edit")
+                                    | Редактировать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("add")
+                                    | Добавить задачу
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("change")
+                                    | Пригласить в проект
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("file")
+                                    | Файлы
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("rename")
+                                    | Переименовать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("archive")
+                                    | В архив
+                address.project-item__map.project__map.map--gray
+                    +icon("map")
+                    | г. Новосибирск, ул. Бородинская, д. 7
+                .author.project__author
+                    a.author-left(href="#")
+                        img.author__image(src="img/stage-1.png", alt="Коробков Сергей")
+                        span.author__name Марина Ковальская
+                    span.author__desc заказчик
+                .project-info
+                    .project-info__item
+                        .project-info__image.project-info__image--1
+                            +icon("price")
+                        .project-info__desc Цена&nbsp;
+                            span 1200 ₽/м
+                                sup 2
+                    .project-info__item
+                        .project-info__image.project-info__image--2
+                            +icon("square2")
+                        .project-info__desc Площадь&nbsp;
+                            span 25 м
+                                sup 2
+                .project-members
+                    .project-members__left
+                        img.project-members__image(src="img/stage-1.png", alt="Human image 1")
+                        img.project-members__image(src="img/stage-2.png", alt="Human image 2")
+                        img.project-members__image(src="img/stage-3.png", alt="Human image 3")
+                        img.project-members__image(src="img/stage-4.png", alt="Human image 4")
+                        img.project-members__image(src="img/stage-5.png", alt="Human image 5")
+                        span.project-members__more + 5
+                    a.project-members__link(href="#") подписчики
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc
+                            +icon("start")
+                            | 1 сен 2020
+                        span.progressbar-bottom__desc
+                            +icon("finish")
+                            | 10 сен 2020
+                    progress.progressbar__line.project__progressbar-line(value="50" max="100")
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc 40% Выполнено 
+                        span.progressbar-bottom__desc 2 задачи из 5
+                    progress.progressbar__line.project__progressbar-line(value="70" max="100")
+            li.projects-grid__item.project-item.archive-project
+                .project-item__top
+                    a.project-item__title(href="#") Дизайн проект-Коттеджа
+                    .more
+                        button.btn-reset.project-item__btn.dropdown__btn
+                            +icon("more", "more__icon")
+                        ul.more-dropdown.list-reset.dropdown.stage__dropdown
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("edit")
+                                    | Редактировать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("add")
+                                    | Добавить задачу
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("change")
+                                    | Пригласить в проект
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("file")
+                                    | Файлы
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("rename")
+                                    | Переименовать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("archive")
+                                    | В архив
+                address.project-item__map.project__map.map--gray
+                    +icon("map")
+                    | г. Новосибирск, ул. Бородинская, д. 7
+                .author.project__author
+                    a.author-left(href="#")
+                        img.author__image(src="img/stage-1.png", alt="Коробков Сергей")
+                        span.author__name Марина Ковальская
+                    span.author__desc заказчик
+                .project-info
+                    .project-info__item
+                        .project-info__image.project-info__image--1
+                            +icon("price")
+                        .project-info__desc Цена&nbsp;
+                            span 1200 ₽/м
+                                sup 2
+                    .project-info__item
+                        .project-info__image.project-info__image--2
+                            +icon("square2")
+                        .project-info__desc Площадь&nbsp;
+                            span 25 м
+                                sup 2
+                .project-members
+                    .project-members__left
+                        img.project-members__image(src="img/stage-1.png", alt="Human image 1")
+                        img.project-members__image(src="img/stage-2.png", alt="Human image 2")
+                        img.project-members__image(src="img/stage-3.png", alt="Human image 3")
+                        img.project-members__image(src="img/stage-4.png", alt="Human image 4")
+                        img.project-members__image(src="img/stage-5.png", alt="Human image 5")
+                        span.project-members__more + 5
+                    a.project-members__link(href="#") подписчики
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc
+                            +icon("start")
+                            | 1 сен 2020
+                        span.progressbar-bottom__desc
+                            +icon("finish")
+                            | 10 сен 2020
+                    progress.progressbar__line.project__progressbar-line(value="50" max="100")
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc 40% Выполнено 
+                        span.progressbar-bottom__desc 2 задачи из 5
+                    progress.progressbar__line.project__progressbar-line(value="70" max="100")
+            li.projects-grid__item.project-item.archive-project
+                .project-item__top
+                    a.project-item__title(href="#") Дизайн интерьера пентхауса в Магадане
+                    .more
+                        button.btn-reset.project-item__btn.dropdown__btn
+                            +icon("more", "more__icon")
+                        ul.more-dropdown.list-reset.dropdown.stage__dropdown
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("edit")
+                                    | Редактировать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("add")
+                                    | Добавить задачу
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("change")
+                                    | Пригласить в проект
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("file")
+                                    | Файлы
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("rename")
+                                    | Переименовать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("archive")
+                                    | В архив
+                address.project-item__map.project__map.map--gray
+                    +icon("map")
+                    | г. Новосибирск, ул. Бородинская, д. 7
+                .author.project__author
+                    a.author-left(href="#")
+                        img.author__image(src="img/stage-1.png", alt="Коробков Сергей")
+                        span.author__name Марина Ковальская
+                    span.author__desc заказчик
+                .project-info
+                    .project-info__item
+                        .project-info__image.project-info__image--1
+                            +icon("price")
+                        .project-info__desc Цена&nbsp;
+                            span 1200 ₽/м
+                                sup 2
+                    .project-info__item
+                        .project-info__image.project-info__image--2
+                            +icon("square2")
+                        .project-info__desc Площадь&nbsp;
+                            span 25 м
+                                sup 2
+                .project-members
+                    .project-members__left
+                        img.project-members__image(src="img/stage-1.png", alt="Human image 1")
+                        img.project-members__image(src="img/stage-2.png", alt="Human image 2")
+                        img.project-members__image(src="img/stage-3.png", alt="Human image 3")
+                        img.project-members__image(src="img/stage-4.png", alt="Human image 4")
+                        img.project-members__image(src="img/stage-5.png", alt="Human image 5")
+                        span.project-members__more + 5
+                    a.project-members__link(href="#") подписчики
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc
+                            +icon("start")
+                            | 1 сен 2020
+                        span.progressbar-bottom__desc
+                            +icon("finish")
+                            | 10 сен 2020
+                    progress.progressbar__line.project__progressbar-line(value="50" max="100")
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc 40% Выполнено 
+                        span.progressbar-bottom__desc 2 задачи из 5
+                    progress.progressbar__line.project__progressbar-line(value="70" max="100")
+            li.projects-grid__item.project-item.archive-project
+                .project-item__top
+                    a.project-item__title(href="stages.html") Дизайн-проект квартиры на Бородинской улице в Новосибирске
+                    .more
+                        button.btn-reset.project-item__btn.dropdown__btn
+                            +icon("more", "more__icon")
+                        ul.more-dropdown.list-reset.dropdown.stage__dropdown
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("edit")
+                                    | Редактировать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("add")
+                                    | Добавить задачу
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("change")
+                                    | Пригласить в проект
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("file")
+                                    | Файлы
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("rename")
+                                    | Переименовать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("archive")
+                                    | В архив
+                address.project-item__map.project__map.map--gray
+                    +icon("map")
+                    | г. Новосибирск, ул. Бородинская, д. 7
+                .author.project__author
+                    a.author-left(href="#")
+                        img.author__image(src="img/stage-1.png", alt="Коробков Сергей")
+                        span.author__name Марина Ковальская
+                    span.author__desc заказчик
+                .project-info
+                    .project-info__item
+                        .project-info__image.project-info__image--1
+                            +icon("price")
+                        .project-info__desc Цена&nbsp;
+                            span 1200 ₽/м
+                                sup 2
+                    .project-info__item
+                        .project-info__image.project-info__image--2
+                            +icon("square2")
+                        .project-info__desc Площадь&nbsp;
+                            span 25 м
+                                sup 2
+                .project-members
+                    .project-members__left
+                        img.project-members__image(src="img/stage-1.png", alt="Human image 1")
+                        img.project-members__image(src="img/stage-2.png", alt="Human image 2")
+                        img.project-members__image(src="img/stage-3.png", alt="Human image 3")
+                        img.project-members__image(src="img/stage-4.png", alt="Human image 4")
+                        img.project-members__image(src="img/stage-5.png", alt="Human image 5")
+                        span.project-members__more + 5
+                    a.project-members__link(href="#") подписчики
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc
+                            +icon("start")
+                            | 1 сен 2020
+                        span.progressbar-bottom__desc
+                            +icon("finish")
+                            | 10 сен 2020
+                    progress.progressbar__line.project__progressbar-line(value="50" max="100")
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc 40% Выполнено 
+                        span.progressbar-bottom__desc 2 задачи из 5
+                    progress.progressbar__line.project__progressbar-line(value="70" max="100")
+            li.projects-grid__item.project-item.archive-project
+                .project-item__top
+                    a.project-item__title(href="stages.html") Дизайн-проект квартиры на Бородинской улице в Новосибирске
+                    .more
+                        button.btn-reset.project-item__btn.dropdown__btn
+                            +icon("more", "more__icon")
+                        ul.more-dropdown.list-reset.dropdown.stage__dropdown
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("edit")
+                                    | Редактировать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("add")
+                                    | Добавить задачу
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("change")
+                                    | Пригласить в проект
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("file")
+                                    | Файлы
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("rename")
+                                    | Переименовать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("archive")
+                                    | В архив
+                address.project-item__map.project__map.map--gray
+                    +icon("map")
+                    | г. Новосибирск, ул. Бородинская, д. 7
+                .author.project__author
+                    a.author-left(href="#")
+                        img.author__image(src="img/stage-1.png", alt="Коробков Сергей")
+                        span.author__name Марина Ковальская
+                    span.author__desc заказчик
+                .project-info
+                    .project-info__item
+                        .project-info__image.project-info__image--1
+                            +icon("price")
+                        .project-info__desc Цена&nbsp;
+                            span 1200 ₽/м
+                                sup 2
+                    .project-info__item
+                        .project-info__image.project-info__image--2
+                            +icon("square2")
+                        .project-info__desc Площадь&nbsp;
+                            span 25 м
+                                sup 2
+                .project-members
+                    .project-members__left
+                        img.project-members__image(src="img/stage-1.png", alt="Human image 1")
+                        img.project-members__image(src="img/stage-2.png", alt="Human image 2")
+                        img.project-members__image(src="img/stage-3.png", alt="Human image 3")
+                        img.project-members__image(src="img/stage-4.png", alt="Human image 4")
+                        img.project-members__image(src="img/stage-5.png", alt="Human image 5")
+                        span.project-members__more + 5
+                    a.project-members__link(href="#") подписчики
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc
+                            +icon("start")
+                            | 1 сен 2020
+                        span.progressbar-bottom__desc
+                            +icon("finish")
+                            | 10 сен 2020
+                    progress.progressbar__line.project__progressbar-line(value="50" max="100")
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc 40% Выполнено 
+                        span.progressbar-bottom__desc 2 задачи из 5
+                    progress.progressbar__line.project__progressbar-line(value="70" max="100")
+            li.projects-grid__item.project-item.archive-project
+                .project-item__top
+                    a.project-item__title(href="stages.html") Дизайн-проект квартиры на Бородинской улице в Новосибирске
+                    .more
+                        button.btn-reset.project-item__btn.dropdown__btn
+                            +icon("more", "more__icon")
+                        ul.more-dropdown.list-reset.dropdown.stage__dropdown
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("edit")
+                                    | Редактировать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("add")
+                                    | Добавить задачу
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("change")
+                                    | Пригласить в проект
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("file")
+                                    | Файлы
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("rename")
+                                    | Переименовать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("archive")
+                                    | В архив
+                address.project-item__map.project__map.map--gray
+                    +icon("map")
+                    | г. Новосибирск, ул. Бородинская, д. 7
+                .author.project__author
+                    a.author-left(href="#")
+                        img.author__image(src="img/stage-1.png", alt="Коробков Сергей")
+                        span.author__name Марина Ковальская
+                    span.author__desc заказчик
+                .project-info
+                    .project-info__item
+                        .project-info__image.project-info__image--1
+                            +icon("price")
+                        .project-info__desc Цена&nbsp;
+                            span 1200 ₽/м
+                                sup 2
+                    .project-info__item
+                        .project-info__image.project-info__image--2
+                            +icon("square2")
+                        .project-info__desc Площадь&nbsp;
+                            span 25 м
+                                sup 2
+                .project-members
+                    .project-members__left
+                        img.project-members__image(src="img/stage-1.png", alt="Human image 1")
+                        img.project-members__image(src="img/stage-2.png", alt="Human image 2")
+                        img.project-members__image(src="img/stage-3.png", alt="Human image 3")
+                        img.project-members__image(src="img/stage-4.png", alt="Human image 4")
+                        img.project-members__image(src="img/stage-5.png", alt="Human image 5")
+                        span.project-members__more + 5
+                    a.project-members__link(href="#") подписчики
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc
+                            +icon("start")
+                            | 1 сен 2020
+                        span.progressbar-bottom__desc
+                            +icon("finish")
+                            | 10 сен 2020
+                    progress.progressbar__line.project__progressbar-line(value="50" max="100")
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc 40% Выполнено 
+                        span.progressbar-bottom__desc 2 задачи из 5
+                    progress.progressbar__line.project__progressbar-line(value="70" max="100")
+            li.projects-grid__item.project-item.archive-project
+                .project-item__top
+                    a.project-item__title(href="stages.html") Дизайн-проект квартиры на Бородинской улице в Новосибирске
+                    .more
+                        button.btn-reset.project-item__btn.dropdown__btn
+                            +icon("more", "more__icon")
+                        ul.more-dropdown.list-reset.dropdown.stage__dropdown
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("edit")
+                                    | Редактировать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("add")
+                                    | Добавить задачу
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("change")
+                                    | Пригласить в проект
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("file")
+                                    | Файлы
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("rename")
+                                    | Переименовать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("archive")
+                                    | В архив
+                address.project-item__map.project__map.map--gray
+                    +icon("map")
+                    | г. Новосибирск, ул. Бородинская, д. 7
+                .author.project__author
+                    a.author-left(href="#")
+                        img.author__image(src="img/stage-1.png", alt="Коробков Сергей")
+                        span.author__name Марина Ковальская
+                    span.author__desc заказчик
+                .project-info
+                    .project-info__item
+                        .project-info__image.project-info__image--1
+                            +icon("price")
+                        .project-info__desc Цена&nbsp;
+                            span 1200 ₽/м
+                                sup 2
+                    .project-info__item
+                        .project-info__image.project-info__image--2
+                            +icon("square2")
+                        .project-info__desc Площадь&nbsp;
+                            span 25 м
+                                sup 2
+                .project-members
+                    .project-members__left
+                        img.project-members__image(src="img/stage-1.png", alt="Human image 1")
+                        img.project-members__image(src="img/stage-2.png", alt="Human image 2")
+                        img.project-members__image(src="img/stage-3.png", alt="Human image 3")
+                        img.project-members__image(src="img/stage-4.png", alt="Human image 4")
+                        img.project-members__image(src="img/stage-5.png", alt="Human image 5")
+                        span.project-members__more + 5
+                    a.project-members__link(href="#") подписчики
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc
+                            +icon("start")
+                            | 1 сен 2020
+                        span.progressbar-bottom__desc
+                            +icon("finish")
+                            | 10 сен 2020
+                    progress.progressbar__line.project__progressbar-line(value="50" max="100")
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc 40% Выполнено 
+                        span.progressbar-bottom__desc 2 задачи из 5
+                    progress.progressbar__line.project__progressbar-line(value="70" max="100")
+            li.projects-grid__item.project-item.archive-project
+                .project-item__top
+                    a.project-item__title(href="stages.html") Дизайн-проект квартиры на Бородинской улице в Новосибирске
+                    .more
+                        button.btn-reset.project-item__btn.dropdown__btn
+                            +icon("more", "more__icon")
+                        ul.more-dropdown.list-reset.dropdown.stage__dropdown
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("edit")
+                                    | Редактировать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("add")
+                                    | Добавить задачу
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("change")
+                                    | Пригласить в проект
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("file")
+                                    | Файлы
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("rename")
+                                    | Переименовать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("archive")
+                                    | В архив
+                address.project-item__map.project__map.map--gray
+                    +icon("map")
+                    | г. Новосибирск, ул. Бородинская, д. 7
+                .author.project__author
+                    a.author-left(href="#")
+                        img.author__image(src="img/stage-1.png", alt="Коробков Сергей")
+                        span.author__name Марина Ковальская
+                    span.author__desc заказчик
+                .project-info
+                    .project-info__item
+                        .project-info__image.project-info__image--1
+                            +icon("price")
+                        .project-info__desc Цена&nbsp;
+                            span 1200 ₽/м
+                                sup 2
+                    .project-info__item
+                        .project-info__image.project-info__image--2
+                            +icon("square2")
+                        .project-info__desc Площадь&nbsp;
+                            span 25 м
+                                sup 2
+                .project-members
+                    .project-members__left
+                        img.project-members__image(src="img/stage-1.png", alt="Human image 1")
+                        img.project-members__image(src="img/stage-2.png", alt="Human image 2")
+                        img.project-members__image(src="img/stage-3.png", alt="Human image 3")
+                        img.project-members__image(src="img/stage-4.png", alt="Human image 4")
+                        img.project-members__image(src="img/stage-5.png", alt="Human image 5")
+                        span.project-members__more + 5
+                    a.project-members__link(href="#") подписчики
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc
+                            +icon("start")
+                            | 1 сен 2020
+                        span.progressbar-bottom__desc
+                            +icon("finish")
+                            | 10 сен 2020
+                    progress.progressbar__line.project__progressbar-line(value="50" max="100")
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc 40% Выполнено 
+                        span.progressbar-bottom__desc 2 задачи из 5
+                    progress.progressbar__line.project__progressbar-line(value="70" max="100")
+            li.projects-grid__item.project-item.archive-project
+                .project-item__top
+                    a.project-item__title(href="stages.html") Дизайн-проект квартиры на Бородинской улице в Новосибирске
+                    .more
+                        button.btn-reset.project-item__btn.dropdown__btn
+                            +icon("more", "more__icon")
+                        ul.more-dropdown.list-reset.dropdown.stage__dropdown
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("edit")
+                                    | Редактировать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("add")
+                                    | Добавить задачу
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("change")
+                                    | Пригласить в проект
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("file")
+                                    | Файлы
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("rename")
+                                    | Переименовать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("archive")
+                                    | В архив
+                address.project-item__map.project__map.map--gray
+                    +icon("map")
+                    | г. Новосибирск, ул. Бородинская, д. 7
+                .author.project__author
+                    a.author-left(href="#")
+                        img.author__image(src="img/stage-1.png", alt="Коробков Сергей")
+                        span.author__name Марина Ковальская
+                    span.author__desc заказчик
+                .project-info
+                    .project-info__item
+                        .project-info__image.project-info__image--1
+                            +icon("price")
+                        .project-info__desc Цена&nbsp;
+                            span 1200 ₽/м
+                                sup 2
+                    .project-info__item
+                        .project-info__image.project-info__image--2
+                            +icon("square2")
+                        .project-info__desc Площадь&nbsp;
+                            span 25 м
+                                sup 2
+                .project-members
+                    .project-members__left
+                        img.project-members__image(src="img/stage-1.png", alt="Human image 1")
+                        img.project-members__image(src="img/stage-2.png", alt="Human image 2")
+                        img.project-members__image(src="img/stage-3.png", alt="Human image 3")
+                        img.project-members__image(src="img/stage-4.png", alt="Human image 4")
+                        img.project-members__image(src="img/stage-5.png", alt="Human image 5")
+                        span.project-members__more + 5
+                    a.project-members__link(href="#") подписчики
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc
+                            +icon("start")
+                            | 1 сен 2020
+                        span.progressbar-bottom__desc
+                            +icon("finish")
+                            | 10 сен 2020
+                    progress.progressbar__line.project__progressbar-line(value="50" max="100")
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc 40% Выполнено 
+                        span.progressbar-bottom__desc 2 задачи из 5
+                    progress.progressbar__line.project__progressbar-line(value="70" max="100")
+            li.projects-grid__item.project-item.archive-project
+                .project-item__top
+                    a.project-item__title(href="stages.html") Дизайн-проект квартиры на Бородинской улице в Новосибирске
+                    .more
+                        button.btn-reset.project-item__btn.dropdown__btn
+                            +icon("more", "more__icon")
+                        ul.more-dropdown.list-reset.dropdown.stage__dropdown
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("edit")
+                                    | Редактировать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("add")
+                                    | Добавить задачу
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("change")
+                                    | Пригласить в проект
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("file")
+                                    | Файлы
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("rename")
+                                    | Переименовать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("archive")
+                                    | В архив
+                address.project-item__map.project__map.map--gray
+                    +icon("map")
+                    | г. Новосибирск, ул. Бородинская, д. 7
+                .author.project__author
+                    a.author-left(href="#")
+                        img.author__image(src="img/stage-1.png", alt="Коробков Сергей")
+                        span.author__name Марина Ковальская
+                    span.author__desc заказчик
+                .project-info
+                    .project-info__item
+                        .project-info__image.project-info__image--1
+                            +icon("price")
+                        .project-info__desc Цена&nbsp;
+                            span 1200 ₽/м
+                                sup 2
+                    .project-info__item
+                        .project-info__image.project-info__image--2
+                            +icon("square2")
+                        .project-info__desc Площадь&nbsp;
+                            span 25 м
+                                sup 2
+                .project-members
+                    .project-members__left
+                        img.project-members__image(src="img/stage-1.png", alt="Human image 1")
+                        img.project-members__image(src="img/stage-2.png", alt="Human image 2")
+                        img.project-members__image(src="img/stage-3.png", alt="Human image 3")
+                        img.project-members__image(src="img/stage-4.png", alt="Human image 4")
+                        img.project-members__image(src="img/stage-5.png", alt="Human image 5")
+                        span.project-members__more + 5
+                    a.project-members__link(href="#") подписчики
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc
+                            +icon("start")
+                            | 1 сен 2020
+                        span.progressbar-bottom__desc
+                            +icon("finish")
+                            | 10 сен 2020
+                    progress.progressbar__line.project__progressbar-line(value="50" max="100")
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc 40% Выполнено 
+                        span.progressbar-bottom__desc 2 задачи из 5
+                    progress.progressbar__line.project__progressbar-line(value="70" max="100")
+            li.projects-grid__item.project-item.archive-project
+                .project-item__top
+                    a.project-item__title(href="stages.html") Дизайн-проект квартиры на Бородинской улице в Новосибирске
+                    .more
+                        button.btn-reset.project-item__btn.dropdown__btn
+                            +icon("more", "more__icon")
+                        ul.more-dropdown.list-reset.dropdown.stage__dropdown
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("edit")
+                                    | Редактировать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("add")
+                                    | Добавить задачу
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("change")
+                                    | Пригласить в проект
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("file")
+                                    | Файлы
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("rename")
+                                    | Переименовать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("archive")
+                                    | В архив
+                address.project-item__map.project__map.map--gray
+                    +icon("map")
+                    | г. Новосибирск, ул. Бородинская, д. 7
+                .author.project__author
+                    a.author-left(href="#")
+                        img.author__image(src="img/stage-1.png", alt="Коробков Сергей")
+                        span.author__name Марина Ковальская
+                    span.author__desc заказчик
+                .project-info
+                    .project-info__item
+                        .project-info__image.project-info__image--1
+                            +icon("price")
+                        .project-info__desc Цена&nbsp;
+                            span 1200 ₽/м
+                                sup 2
+                    .project-info__item
+                        .project-info__image.project-info__image--2
+                            +icon("square2")
+                        .project-info__desc Площадь&nbsp;
+                            span 25 м
+                                sup 2
+                .project-members
+                    .project-members__left
+                        img.project-members__image(src="img/stage-1.png", alt="Human image 1")
+                        img.project-members__image(src="img/stage-2.png", alt="Human image 2")
+                        img.project-members__image(src="img/stage-3.png", alt="Human image 3")
+                        img.project-members__image(src="img/stage-4.png", alt="Human image 4")
+                        img.project-members__image(src="img/stage-5.png", alt="Human image 5")
+                        span.project-members__more + 5
+                    a.project-members__link(href="#") подписчики
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc
+                            +icon("start")
+                            | 1 сен 2020
+                        span.progressbar-bottom__desc
+                            +icon("finish")
+                            | 10 сен 2020
+                    progress.progressbar__line.project__progressbar-line(value="50" max="100")
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc 40% Выполнено 
+                        span.progressbar-bottom__desc 2 задачи из 5
+                    progress.progressbar__line.project__progressbar-line(value="70" max="100")
+            li.projects-grid__item.project-item.project-item--hidden.archive-project
+                .project-item__top
+                    a.project-item__title(href="stages.html") Дизайн-проект квартиры на Бородинской улице в Новосибирске
+                    .more
+                        button.btn-reset.project-item__btn.dropdown__btn
+                            +icon("more", "more__icon")
+                        ul.more-dropdown.list-reset.dropdown.stage__dropdown
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("edit")
+                                    | Редактировать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("add")
+                                    | Добавить задачу
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("change")
+                                    | Пригласить в проект
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("file")
+                                    | Файлы
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("rename")
+                                    | Переименовать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("archive")
+                                    | В архив
+                address.project-item__map.project__map.map--gray
+                    +icon("map")
+                    | г. Новосибирск, ул. Бородинская, д. 7
+                .author.project__author
+                    a.author-left(href="#")
+                        img.author__image(src="img/stage-1.png", alt="Коробков Сергей")
+                        span.author__name Марина Ковальская
+                    span.author__desc заказчик
+                .project-info
+                    .project-info__item
+                        .project-info__image.project-info__image--1
+                            +icon("price")
+                        .project-info__desc Цена&nbsp;
+                            span 1200 ₽/м
+                                sup 2
+                    .project-info__item
+                        .project-info__image.project-info__image--2
+                            +icon("square2")
+                        .project-info__desc Площадь&nbsp;
+                            span 25 м
+                                sup 2
+                .project-members
+                    .project-members__left
+                        img.project-members__image(src="img/stage-1.png", alt="Human image 1")
+                        img.project-members__image(src="img/stage-2.png", alt="Human image 2")
+                        img.project-members__image(src="img/stage-3.png", alt="Human image 3")
+                        img.project-members__image(src="img/stage-4.png", alt="Human image 4")
+                        img.project-members__image(src="img/stage-5.png", alt="Human image 5")
+                        span.project-members__more + 5
+                    a.project-members__link(href="#") подписчики
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc
+                            +icon("start")
+                            | 1 сен 2020
+                        span.progressbar-bottom__desc
+                            +icon("finish")
+                            | 10 сен 2020
+                    progress.progressbar__line.project__progressbar-line(value="50" max="100")
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc 40% Выполнено 
+                        span.progressbar-bottom__desc 2 задачи из 5
+                    progress.progressbar__line.project__progressbar-line(value="70" max="100")
+            li.projects-grid__item.project-item.project-item--hidden.archive-project
+                .project-item__top
+                    a.project-item__title(href="stages.html") Дизайн-проект квартиры на Бородинской улице в Новосибирске
+                    .more
+                        button.btn-reset.project-item__btn.dropdown__btn
+                            +icon("more", "more__icon")
+                        ul.more-dropdown.list-reset.dropdown.stage__dropdown
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("edit")
+                                    | Редактировать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("add")
+                                    | Добавить задачу
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("change")
+                                    | Пригласить в проект
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("file")
+                                    | Файлы
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("rename")
+                                    | Переименовать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("archive")
+                                    | В архив
+                address.project-item__map.project__map.map--gray
+                    +icon("map")
+                    | г. Новосибирск, ул. Бородинская, д. 7
+                .author.project__author
+                    a.author-left(href="#")
+                        img.author__image(src="img/stage-1.png", alt="Коробков Сергей")
+                        span.author__name Марина Ковальская
+                    span.author__desc заказчик
+                .project-info
+                    .project-info__item
+                        .project-info__image.project-info__image--1
+                            +icon("price")
+                        .project-info__desc Цена&nbsp;
+                            span 1200 ₽/м
+                                sup 2
+                    .project-info__item
+                        .project-info__image.project-info__image--2
+                            +icon("square2")
+                        .project-info__desc Площадь&nbsp;
+                            span 25 м
+                                sup 2
+                .project-members
+                    .project-members__left
+                        img.project-members__image(src="img/stage-1.png", alt="Human image 1")
+                        img.project-members__image(src="img/stage-2.png", alt="Human image 2")
+                        img.project-members__image(src="img/stage-3.png", alt="Human image 3")
+                        img.project-members__image(src="img/stage-4.png", alt="Human image 4")
+                        img.project-members__image(src="img/stage-5.png", alt="Human image 5")
+                        span.project-members__more + 5
+                    a.project-members__link(href="#") подписчики
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc
+                            +icon("start")
+                            | 1 сен 2020
+                        span.progressbar-bottom__desc
+                            +icon("finish")
+                            | 10 сен 2020
+                    progress.progressbar__line.project__progressbar-line(value="50" max="100")
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc 40% Выполнено 
+                        span.progressbar-bottom__desc 2 задачи из 5
+                    progress.progressbar__line.project__progressbar-line(value="70" max="100")
+            li.projects-grid__item.project-item.project-item--hidden.archive-project
+                .project-item__top
+                    a.project-item__title(href="stages.html") Дизайн-проект квартиры на Бородинской улице в Новосибирске
+                    .more
+                        button.btn-reset.project-item__btn.dropdown__btn
+                            +icon("more", "more__icon")
+                        ul.more-dropdown.list-reset.dropdown.stage__dropdown
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("edit")
+                                    | Редактировать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("add")
+                                    | Добавить задачу
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("change")
+                                    | Пригласить в проект
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("file")
+                                    | Файлы
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("rename")
+                                    | Переименовать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("archive")
+                                    | В архив
+                address.project-item__map.project__map.map--gray
+                    +icon("map")
+                    | г. Новосибирск, ул. Бородинская, д. 7
+                .author.project__author
+                    a.author-left(href="#")
+                        img.author__image(src="img/stage-1.png", alt="Коробков Сергей")
+                        span.author__name Марина Ковальская
+                    span.author__desc заказчик
+                .project-info
+                    .project-info__item
+                        .project-info__image.project-info__image--1
+                            +icon("price")
+                        .project-info__desc Цена&nbsp;
+                            span 1200 ₽/м
+                                sup 2
+                    .project-info__item
+                        .project-info__image.project-info__image--2
+                            +icon("square2")
+                        .project-info__desc Площадь&nbsp;
+                            span 25 м
+                                sup 2
+                .project-members
+                    .project-members__left
+                        img.project-members__image(src="img/stage-1.png", alt="Human image 1")
+                        img.project-members__image(src="img/stage-2.png", alt="Human image 2")
+                        img.project-members__image(src="img/stage-3.png", alt="Human image 3")
+                        img.project-members__image(src="img/stage-4.png", alt="Human image 4")
+                        img.project-members__image(src="img/stage-5.png", alt="Human image 5")
+                        span.project-members__more + 5
+                    a.project-members__link(href="#") подписчики
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc
+                            +icon("start")
+                            | 1 сен 2020
+                        span.progressbar-bottom__desc
+                            +icon("finish")
+                            | 10 сен 2020
+                    progress.progressbar__line.project__progressbar-line(value="50" max="100")
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc 40% Выполнено 
+                        span.progressbar-bottom__desc 2 задачи из 5
+                    progress.progressbar__line.project__progressbar-line(value="70" max="100")
+            li.projects-grid__item.project-item.project-item--hidden.archive-project
+                .project-item__top
+                    a.project-item__title(href="stages.html") Дизайн-проект квартиры на Бородинской улице в Новосибирске
+                    .more
+                        button.btn-reset.project-item__btn.dropdown__btn
+                            +icon("more", "more__icon")
+                        ul.more-dropdown.list-reset.dropdown.stage__dropdown
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("edit")
+                                    | Редактировать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("add")
+                                    | Добавить задачу
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("change")
+                                    | Пригласить в проект
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("file")
+                                    | Файлы
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("rename")
+                                    | Переименовать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("archive")
+                                    | В архив
+                address.project-item__map.project__map.map--gray
+                    +icon("map")
+                    | г. Новосибирск, ул. Бородинская, д. 7
+                .author.project__author
+                    a.author-left(href="#")
+                        img.author__image(src="img/stage-1.png", alt="Коробков Сергей")
+                        span.author__name Марина Ковальская
+                    span.author__desc заказчик
+                .project-info
+                    .project-info__item
+                        .project-info__image.project-info__image--1
+                            +icon("price")
+                        .project-info__desc Цена&nbsp;
+                            span 1200 ₽/м
+                                sup 2
+                    .project-info__item
+                        .project-info__image.project-info__image--2
+                            +icon("square2")
+                        .project-info__desc Площадь&nbsp;
+                            span 25 м
+                                sup 2
+                .project-members
+                    .project-members__left
+                        img.project-members__image(src="img/stage-1.png", alt="Human image 1")
+                        img.project-members__image(src="img/stage-2.png", alt="Human image 2")
+                        img.project-members__image(src="img/stage-3.png", alt="Human image 3")
+                        img.project-members__image(src="img/stage-4.png", alt="Human image 4")
+                        img.project-members__image(src="img/stage-5.png", alt="Human image 5")
+                        span.project-members__more + 5
+                    a.project-members__link(href="#") подписчики
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc
+                            +icon("start")
+                            | 1 сен 2020
+                        span.progressbar-bottom__desc
+                            +icon("finish")
+                            | 10 сен 2020
+                    progress.progressbar__line.project__progressbar-line(value="50" max="100")
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc 40% Выполнено 
+                        span.progressbar-bottom__desc 2 задачи из 5
+                    progress.progressbar__line.project__progressbar-line(value="70" max="100")
+            li.projects-grid__item.project-item.project-item--hidden.archive-project
+                .project-item__top
+                    a.project-item__title(href="stages.html") Дизайн-проект квартиры на Бородинской улице в Новосибирске
+                    .more
+                        button.btn-reset.project-item__btn.dropdown__btn
+                            +icon("more", "more__icon")
+                        ul.more-dropdown.list-reset.dropdown.stage__dropdown
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("edit")
+                                    | Редактировать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("add")
+                                    | Добавить задачу
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("change")
+                                    | Пригласить в проект
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("file")
+                                    | Файлы
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("rename")
+                                    | Переименовать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("archive")
+                                    | В архив
+                address.project-item__map.project__map.map--gray
+                    +icon("map")
+                    | г. Новосибирск, ул. Бородинская, д. 7
+                .author.project__author
+                    a.author-left(href="#")
+                        img.author__image(src="img/stage-1.png", alt="Коробков Сергей")
+                        span.author__name Марина Ковальская
+                    span.author__desc заказчик
+                .project-info
+                    .project-info__item
+                        .project-info__image.project-info__image--1
+                            +icon("price")
+                        .project-info__desc Цена&nbsp;
+                            span 1200 ₽/м
+                                sup 2
+                    .project-info__item
+                        .project-info__image.project-info__image--2
+                            +icon("square2")
+                        .project-info__desc Площадь&nbsp;
+                            span 25 м
+                                sup 2
+                .project-members
+                    .project-members__left
+                        img.project-members__image(src="img/stage-1.png", alt="Human image 1")
+                        img.project-members__image(src="img/stage-2.png", alt="Human image 2")
+                        img.project-members__image(src="img/stage-3.png", alt="Human image 3")
+                        img.project-members__image(src="img/stage-4.png", alt="Human image 4")
+                        img.project-members__image(src="img/stage-5.png", alt="Human image 5")
+                        span.project-members__more + 5
+                    a.project-members__link(href="#") подписчики
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc
+                            +icon("start")
+                            | 1 сен 2020
+                        span.progressbar-bottom__desc
+                            +icon("finish")
+                            | 10 сен 2020
+                    progress.progressbar__line.project__progressbar-line(value="50" max="100")
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc 40% Выполнено 
+                        span.progressbar-bottom__desc 2 задачи из 5
+                    progress.progressbar__line.project__progressbar-line(value="70" max="100")
+            li.projects-grid__item.project-item.project-item--hidden.archive-project
+                .project-item__top
+                    a.project-item__title(href="stages.html") Дизайн-проект квартиры на Бородинской улице в Новосибирске
+                    .more
+                        button.btn-reset.project-item__btn.dropdown__btn
+                            +icon("more", "more__icon")
+                        ul.more-dropdown.list-reset.dropdown.stage__dropdown
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("edit")
+                                    | Редактировать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("add")
+                                    | Добавить задачу
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("change")
+                                    | Пригласить в проект
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("file")
+                                    | Файлы
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("rename")
+                                    | Переименовать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("archive")
+                                    | В архив
+                address.project-item__map.project__map.map--gray
+                    +icon("map")
+                    | г. Новосибирск, ул. Бородинская, д. 7
+                .author.project__author
+                    a.author-left(href="#")
+                        img.author__image(src="img/stage-1.png", alt="Коробков Сергей")
+                        span.author__name Марина Ковальская
+                    span.author__desc заказчик
+                .project-info
+                    .project-info__item
+                        .project-info__image.project-info__image--1
+                            +icon("price")
+                        .project-info__desc Цена&nbsp;
+                            span 1200 ₽/м
+                                sup 2
+                    .project-info__item
+                        .project-info__image.project-info__image--2
+                            +icon("square2")
+                        .project-info__desc Площадь&nbsp;
+                            span 25 м
+                                sup 2
+                .project-members
+                    .project-members__left
+                        img.project-members__image(src="img/stage-1.png", alt="Human image 1")
+                        img.project-members__image(src="img/stage-2.png", alt="Human image 2")
+                        img.project-members__image(src="img/stage-3.png", alt="Human image 3")
+                        img.project-members__image(src="img/stage-4.png", alt="Human image 4")
+                        img.project-members__image(src="img/stage-5.png", alt="Human image 5")
+                        span.project-members__more + 5
+                    a.project-members__link(href="#") подписчики
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc
+                            +icon("start")
+                            | 1 сен 2020
+                        span.progressbar-bottom__desc
+                            +icon("finish")
+                            | 10 сен 2020
+                    progress.progressbar__line.project__progressbar-line(value="50" max="100")
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc 40% Выполнено 
+                        span.progressbar-bottom__desc 2 задачи из 5
+                    progress.progressbar__line.project__progressbar-line(value="70" max="100")
+            li.projects-grid__item.project-item.project-item--hidden.archive-project
+                .project-item__top
+                    a.project-item__title(href="stages.html") Дизайн-проект квартиры на Бородинской улице в Новосибирске
+                    .more
+                        button.btn-reset.project-item__btn.dropdown__btn
+                            +icon("more", "more__icon")
+                        ul.more-dropdown.list-reset.dropdown.stage__dropdown
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("edit")
+                                    | Редактировать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("add")
+                                    | Добавить задачу
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("change")
+                                    | Пригласить в проект
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("file")
+                                    | Файлы
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("rename")
+                                    | Переименовать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("archive")
+                                    | В архив
+                address.project-item__map.project__map.map--gray
+                    +icon("map")
+                    | г. Новосибирск, ул. Бородинская, д. 7
+                .author.project__author
+                    a.author-left(href="#")
+                        img.author__image(src="img/stage-1.png", alt="Коробков Сергей")
+                        span.author__name Марина Ковальская
+                    span.author__desc заказчик
+                .project-info
+                    .project-info__item
+                        .project-info__image.project-info__image--1
+                            +icon("price")
+                        .project-info__desc Цена&nbsp;
+                            span 1200 ₽/м
+                                sup 2
+                    .project-info__item
+                        .project-info__image.project-info__image--2
+                            +icon("square2")
+                        .project-info__desc Площадь&nbsp;
+                            span 25 м
+                                sup 2
+                .project-members
+                    .project-members__left
+                        img.project-members__image(src="img/stage-1.png", alt="Human image 1")
+                        img.project-members__image(src="img/stage-2.png", alt="Human image 2")
+                        img.project-members__image(src="img/stage-3.png", alt="Human image 3")
+                        img.project-members__image(src="img/stage-4.png", alt="Human image 4")
+                        img.project-members__image(src="img/stage-5.png", alt="Human image 5")
+                        span.project-members__more + 5
+                    a.project-members__link(href="#") подписчики
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc
+                            +icon("start")
+                            | 1 сен 2020
+                        span.progressbar-bottom__desc
+                            +icon("finish")
+                            | 10 сен 2020
+                    progress.progressbar__line.project__progressbar-line(value="50" max="100")
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc 40% Выполнено 
+                        span.progressbar-bottom__desc 2 задачи из 5
+                    progress.progressbar__line.project__progressbar-line(value="70" max="100")
+            li.projects-grid__item.project-item.project-item--hidden.archive-project
+                .project-item__top
+                    a.project-item__title(href="stages.html") Дизайн-проект квартиры на Бородинской улице в Новосибирске
+                    .more
+                        button.btn-reset.project-item__btn.dropdown__btn
+                            +icon("more", "more__icon")
+                        ul.more-dropdown.list-reset.dropdown.stage__dropdown
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("edit")
+                                    | Редактировать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("add")
+                                    | Добавить задачу
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("change")
+                                    | Пригласить в проект
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("file")
+                                    | Файлы
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("rename")
+                                    | Переименовать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("archive")
+                                    | В архив
+                address.project-item__map.project__map.map--gray
+                    +icon("map")
+                    | г. Новосибирск, ул. Бородинская, д. 7
+                .author.project__author
+                    a.author-left(href="#")
+                        img.author__image(src="img/stage-1.png", alt="Коробков Сергей")
+                        span.author__name Марина Ковальская
+                    span.author__desc заказчик
+                .project-info
+                    .project-info__item
+                        .project-info__image.project-info__image--1
+                            +icon("price")
+                        .project-info__desc Цена&nbsp;
+                            span 1200 ₽/м
+                                sup 2
+                    .project-info__item
+                        .project-info__image.project-info__image--2
+                            +icon("square2")
+                        .project-info__desc Площадь&nbsp;
+                            span 25 м
+                                sup 2
+                .project-members
+                    .project-members__left
+                        img.project-members__image(src="img/stage-1.png", alt="Human image 1")
+                        img.project-members__image(src="img/stage-2.png", alt="Human image 2")
+                        img.project-members__image(src="img/stage-3.png", alt="Human image 3")
+                        img.project-members__image(src="img/stage-4.png", alt="Human image 4")
+                        img.project-members__image(src="img/stage-5.png", alt="Human image 5")
+                        span.project-members__more + 5
+                    a.project-members__link(href="#") подписчики
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc
+                            +icon("start")
+                            | 1 сен 2020
+                        span.progressbar-bottom__desc
+                            +icon("finish")
+                            | 10 сен 2020
+                    progress.progressbar__line.project__progressbar-line(value="50" max="100")
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc 40% Выполнено 
+                        span.progressbar-bottom__desc 2 задачи из 5
+                    progress.progressbar__line.project__progressbar-line(value="70" max="100")
+            li.projects-grid__item.project-item.project-item--hidden.archive-project
+                .project-item__top
+                    a.project-item__title(href="stages.html") Дизайн-проект квартиры на Бородинской улице в Новосибирске
+                    .more
+                        button.btn-reset.project-item__btn.dropdown__btn
+                            +icon("more", "more__icon")
+                        ul.more-dropdown.list-reset.dropdown.stage__dropdown
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("edit")
+                                    | Редактировать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("add")
+                                    | Добавить задачу
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("change")
+                                    | Пригласить в проект
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("file")
+                                    | Файлы
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("rename")
+                                    | Переименовать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("archive")
+                                    | В архив
+                address.project-item__map.project__map.map--gray
+                    +icon("map")
+                    | г. Новосибирск, ул. Бородинская, д. 7
+                .author.project__author
+                    a.author-left(href="#")
+                        img.author__image(src="img/stage-1.png", alt="Коробков Сергей")
+                        span.author__name Марина Ковальская
+                    span.author__desc заказчик
+                .project-info
+                    .project-info__item
+                        .project-info__image.project-info__image--1
+                            +icon("price")
+                        .project-info__desc Цена&nbsp;
+                            span 1200 ₽/м
+                                sup 2
+                    .project-info__item
+                        .project-info__image.project-info__image--2
+                            +icon("square2")
+                        .project-info__desc Площадь&nbsp;
+                            span 25 м
+                                sup 2
+                .project-members
+                    .project-members__left
+                        img.project-members__image(src="img/stage-1.png", alt="Human image 1")
+                        img.project-members__image(src="img/stage-2.png", alt="Human image 2")
+                        img.project-members__image(src="img/stage-3.png", alt="Human image 3")
+                        img.project-members__image(src="img/stage-4.png", alt="Human image 4")
+                        img.project-members__image(src="img/stage-5.png", alt="Human image 5")
+                        span.project-members__more + 5
+                    a.project-members__link(href="#") подписчики
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc
+                            +icon("start")
+                            | 1 сен 2020
+                        span.progressbar-bottom__desc
+                            +icon("finish")
+                            | 10 сен 2020
+                    progress.progressbar__line.project__progressbar-line(value="50" max="100")
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc 40% Выполнено 
+                        span.progressbar-bottom__desc 2 задачи из 5
+                    progress.progressbar__line.project__progressbar-line(value="70" max="100")
+            li.projects-grid__item.project-item.project-item--hidden.archive-project
+                .project-item__top
+                    a.project-item__title(href="stages.html") Дизайн-проект квартиры на Бородинской улице в Новосибирске
+                    .more
+                        button.btn-reset.project-item__btn.dropdown__btn
+                            +icon("more", "more__icon")
+                        ul.more-dropdown.list-reset.dropdown.stage__dropdown
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("edit")
+                                    | Редактировать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("add")
+                                    | Добавить задачу
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("change")
+                                    | Пригласить в проект
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("file")
+                                    | Файлы
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("rename")
+                                    | Переименовать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("archive")
+                                    | В архив
+                address.project-item__map.project__map.map--gray
+                    +icon("map")
+                    | г. Новосибирск, ул. Бородинская, д. 7
+                .author.project__author
+                    a.author-left(href="#")
+                        img.author__image(src="img/stage-1.png", alt="Коробков Сергей")
+                        span.author__name Марина Ковальская
+                    span.author__desc заказчик
+                .project-info
+                    .project-info__item
+                        .project-info__image.project-info__image--1
+                            +icon("price")
+                        .project-info__desc Цена&nbsp;
+                            span 1200 ₽/м
+                                sup 2
+                    .project-info__item
+                        .project-info__image.project-info__image--2
+                            +icon("square2")
+                        .project-info__desc Площадь&nbsp;
+                            span 25 м
+                                sup 2
+                .project-members
+                    .project-members__left
+                        img.project-members__image(src="img/stage-1.png", alt="Human image 1")
+                        img.project-members__image(src="img/stage-2.png", alt="Human image 2")
+                        img.project-members__image(src="img/stage-3.png", alt="Human image 3")
+                        img.project-members__image(src="img/stage-4.png", alt="Human image 4")
+                        img.project-members__image(src="img/stage-5.png", alt="Human image 5")
+                        span.project-members__more + 5
+                    a.project-members__link(href="#") подписчики
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc
+                            +icon("start")
+                            | 1 сен 2020
+                        span.progressbar-bottom__desc
+                            +icon("finish")
+                            | 10 сен 2020
+                    progress.progressbar__line.project__progressbar-line(value="50" max="100")
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc 40% Выполнено 
+                        span.progressbar-bottom__desc 2 задачи из 5
+                    progress.progressbar__line.project__progressbar-line(value="70" max="100")
+            li.projects-grid__item.project-item.project-item--hidden.archive-project
+                .project-item__top
+                    a.project-item__title(href="stages.html") Дизайн-проект квартиры на Бородинской улице в Новосибирске
+                    .more
+                        button.btn-reset.project-item__btn.dropdown__btn
+                            +icon("more", "more__icon")
+                        ul.more-dropdown.list-reset.dropdown.stage__dropdown
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("edit")
+                                    | Редактировать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("add")
+                                    | Добавить задачу
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("change")
+                                    | Пригласить в проект
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("file")
+                                    | Файлы
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("rename")
+                                    | Переименовать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("archive")
+                                    | В архив
+                address.project-item__map.project__map.map--gray
+                    +icon("map")
+                    | г. Новосибирск, ул. Бородинская, д. 7
+                .author.project__author
+                    a.author-left(href="#")
+                        img.author__image(src="img/stage-1.png", alt="Коробков Сергей")
+                        span.author__name Марина Ковальская
+                    span.author__desc заказчик
+                .project-info
+                    .project-info__item
+                        .project-info__image.project-info__image--1
+                            +icon("price")
+                        .project-info__desc Цена&nbsp;
+                            span 1200 ₽/м
+                                sup 2
+                    .project-info__item
+                        .project-info__image.project-info__image--2
+                            +icon("square2")
+                        .project-info__desc Площадь&nbsp;
+                            span 25 м
+                                sup 2
+                .project-members
+                    .project-members__left
+                        img.project-members__image(src="img/stage-1.png", alt="Human image 1")
+                        img.project-members__image(src="img/stage-2.png", alt="Human image 2")
+                        img.project-members__image(src="img/stage-3.png", alt="Human image 3")
+                        img.project-members__image(src="img/stage-4.png", alt="Human image 4")
+                        img.project-members__image(src="img/stage-5.png", alt="Human image 5")
+                        span.project-members__more + 5
+                    a.project-members__link(href="#") подписчики
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc
+                            +icon("start")
+                            | 1 сен 2020
+                        span.progressbar-bottom__desc
+                            +icon("finish")
+                            | 10 сен 2020
+                    progress.progressbar__line.project__progressbar-line(value="50" max="100")
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc 40% Выполнено 
+                        span.progressbar-bottom__desc 2 задачи из 5
+                    progress.progressbar__line.project__progressbar-line(value="70" max="100")
+            li.projects-grid__item.project-item.project-item--hidden.archive-project
+                .project-item__top
+                    a.project-item__title(href="stages.html") Дизайн-проект квартиры на Бородинской улице в Новосибирске
+                    .more
+                        button.btn-reset.project-item__btn.dropdown__btn
+                            +icon("more", "more__icon")
+                        ul.more-dropdown.list-reset.dropdown.stage__dropdown
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("edit")
+                                    | Редактировать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("add")
+                                    | Добавить задачу
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("change")
+                                    | Пригласить в проект
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("file")
+                                    | Файлы
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("rename")
+                                    | Переименовать
+                            li.more-dropdown__item.dropdown__item
+                                a.more-dropdown__link.dropdown__link(href="#")
+                                    +icon("archive")
+                                    | В архив
+                address.project-item__map.project__map.map--gray
+                    +icon("map")
+                    | г. Новосибирск, ул. Бородинская, д. 7
+                .author.project__author
+                    a.author-left(href="#")
+                        img.author__image(src="img/stage-1.png", alt="Коробков Сергей")
+                        span.author__name Марина Ковальская
+                    span.author__desc заказчик
+                .project-info
+                    .project-info__item
+                        .project-info__image.project-info__image--1
+                            +icon("price")
+                        .project-info__desc Цена&nbsp;
+                            span 1200 ₽/м
+                                sup 2
+                    .project-info__item
+                        .project-info__image.project-info__image--2
+                            +icon("square2")
+                        .project-info__desc Площадь&nbsp;
+                            span 25 м
+                                sup 2
+                .project-members
+                    .project-members__left
+                        img.project-members__image(src="img/stage-1.png", alt="Human image 1")
+                        img.project-members__image(src="img/stage-2.png", alt="Human image 2")
+                        img.project-members__image(src="img/stage-3.png", alt="Human image 3")
+                        img.project-members__image(src="img/stage-4.png", alt="Human image 4")
+                        img.project-members__image(src="img/stage-5.png", alt="Human image 5")
+                        span.project-members__more + 5
+                    a.project-members__link(href="#") подписчики
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc
+                            +icon("start")
+                            | 1 сен 2020
+                        span.progressbar-bottom__desc
+                            +icon("finish")
+                            | 10 сен 2020
+                    progress.progressbar__line.project__progressbar-line(value="50" max="100")
+                .progressbar.project__progressbar
+                    .progressbar-bottom.project__progressbar-bottom
+                        span.progressbar-bottom__desc 40% Выполнено 
+                        span.progressbar-bottom__desc 2 задачи из 5
+                    progress.progressbar__line.project__progressbar-line(value="70" max="100")
+        .projects__more
+            button.btn-reset.primary-btn.projects__more-btn(data-count="12") Ещё 12 проектов

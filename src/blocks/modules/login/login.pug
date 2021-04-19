@@ -1,0 +1,47 @@
+.login.auth
+    .login__container.auth-container
+        .login-content.auth-content
+            .login-content__left
+                img.login-content__image(src="img/avatar.png", alt="")
+                span.logo.login-content__logo GuruInterrior
+                span.login-content__question Ещё нет аккаунта?
+                a.login-content__register(href="register.html") Зарегистрироваться
+                span.login-content__desc Входя в систему, вы соглашаетесь c 
+                    a(href="#").login-content__link Правилами системы 
+                    | и 
+                    a(href="#").login-content__link Политикой конфиденциальности
+            form.login-content__right.validate-form(action="#")
+                h1.login-content__title Вход в личный кабинет
+                input.login-content__input(data-validate-field="email" type="email", name="email" placeholder="Email")
+                input.login-content__input(data-validate-field="password" type="password", name="password" placeholder="Пароль")
+                .login-content__bottom
+                    input.custom-checkbox(type="checkbox", id="remember")
+                    label(for="remember") Запомнить меня
+                    a.login-content__link(href="recovery.html") Забыли пароль ?
+                button.btn-reset.login-content__enter Войти
+                ul.login-social.list-reset
+                    li.login-social__item
+                        a.login-social__link.login-social__link--google(href="#")
+                            +icon("google")
+                    li.login-social__item
+                        a.login-social__link(href="#")
+                            +icon("vk")
+                    li.login-social__item
+                        a.login-social__link(href="#")
+                            +icon("facebook")
+                    li.login-social__item
+                        a.login-social__link(href="#")
+                            +icon("instagram")
+
+                a.login-content__link(href="#") Войти с помощью SMS
+        .login-footer
+            span.footer__copy.login-footer__copy &copy;&nbsp;GuruInterrior 2021-2025
+            .login-footer__right
+                a.login-footer__mail.footer__mail(href="mailto:support@gurudesign.com")
+                    +icon("mail")
+                    | Support@gurudesign.com
+                a.footer-support.login-footer__support(href="tel:84950326687")
+                    +icon("support2")
+                    .footer-support__text
+                        span.footer-support__desc.login-footer__support-desc Техническая поддержка 24/7
+                        span.footer-support__value 8 495 032 66 87

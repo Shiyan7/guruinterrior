@@ -1,0 +1,35 @@
+header.header 
+    .header__container
+        button.btn-reset.burger(aria-label="Бургер меню")
+            span.burger__line
+        a.logo.header__logo(href="/") GuruInterrior
+        .user
+            button.btn-reset.user__btn.dropdown__btn
+                +icon("user", "user__icon")
+                span.arrow.user__arrow
+            ul.user-dropdown.list-reset.dropdown
+                li.user-dropdown__item.dropdown__item
+                    a.user-dropdown__link.dropdown__link(href="#")
+                        +icon("user-small")
+                        | Аккаунт
+                li.user-dropdown__item.dropdown__item
+                    a.user-dropdown__link.dropdown__link(href="#")
+                        +icon("setting")
+                        | Настройки
+                li.user-dropdown__item.dropdown__item
+                    a.user-dropdown__link.dropdown__link(href="#")
+                        +icon("notifications")
+                        | Уведомления
+                li.user-dropdown__item.dropdown__item
+                    a.user-dropdown__link.dropdown__link(href="#")
+                        +icon("wallet")
+                        | Баланс
+                li.user-dropdown__item.dropdown__item
+                    a.user-dropdown__link.dropdown__link(href="#")
+                        +icon("support")
+                        | Поддержка
+                li.user-dropdown__item.dropdown__item
+                    a.user-dropdown__link.dropdown__link(href="#")
+                        +icon("exit")
+                        | Выход
+    .overlay
