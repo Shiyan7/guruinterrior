@@ -1,7 +1,7 @@
 const newItemAuthor = document.querySelectorAll(".new-item__author");
+const newItemMembers = document.querySelector(".new-item__members");
 
-if(newItemAuthor) {
-    const newItemMembers = document.querySelector(".new-item__members");
+if(newItemAuthor && newItemMembers) {
     newItemMembers.addEventListener("change", (e) => {
         const specialists = document.querySelector('[value="members"]');
         const btnClear = document.querySelector(".btn-clear");
