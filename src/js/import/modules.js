@@ -15,7 +15,7 @@ import "%modules%/new-project/create-data";
 import "%modules%/new-project/calendar";
 import "%modules%/new-project/requisites-form";
 import "%modules%/new-project/input-type-date";
-import "%modules%/login/imask";
+import "%modules%/login/validate-form";
 import "%modules%/register/tabs";
 import "%modules%/register/nouislider";
 import "%modules%/footer/footer";
